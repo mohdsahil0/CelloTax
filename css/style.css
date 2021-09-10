@@ -117,12 +117,12 @@
 
 .hero .form-area h3 {
     font-size: 1.5rem;
-    padding: 0 0 60px 0;
+    padding: 0 0 45px 0;
     text-align: center;
 }
 
 .hero .form-area .line {
-    margin: 5px 43px;
+    margin: 5px 50px;
     width: 95px;
     border: 1px solid black;
 }
@@ -137,7 +137,7 @@
 }
 
 .hero .form-area input {
-    height: 35px;
+    height: 40px;
     width: 280px;
 }
 
@@ -153,7 +153,7 @@
     padding: 10px 35px;
     border-radius: 35px;
     transition: background-color .4s ease-in-out;
-    margin: 60px 0 0 150px;
+    margin: 50px 0 0 150px;
 }
 
 .hero .form-area .form a:hover {
