@@ -82,8 +82,17 @@
 }
 
 .hero .content {
-    font-size: 1.1rem;
-    padding: 0px 20px;
+    padding: 0px 30px;
+}
+
+.hero .content h1 {
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.hero .content h3 {
+    color: #e6e6e6;
+    font-size: 27px;
 }
 
 .hero .content .content-color {
@@ -108,7 +117,7 @@
 }
 
 .hero .form-area {
-    padding: 40px 50px;
+    padding: 30px 40px;
     /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); */
     border-radius: 35px;
     background-color: rgb(0, 0, 0);
@@ -153,11 +162,54 @@
     padding: 10px 35px;
     border-radius: 35px;
     transition: background-color .4s ease-in-out;
-    margin: 50px 0 0 150px;
+    margin: 40px 0 0 150px;
 }
 
 .hero .form-area .form a:hover {
     background-color: #66AC4C;
+}
+
+#home .lable {
+    position: absolute;
+    bottom: 50px;
+    left: 350px;
+}
+
+#home .lable img {
+    width: 65%;
+}
+
+#home .social {
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    transform: translate(0, -40%);
+}
+
+#home .social ul {
+    background-color: black;
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+    padding: 15px 0;
+}
+
+#home .social ul li {
+    padding: 15px 5px;
+    list-style: none;
+    text-align: center;
+}
+
+#home .social ul li img {
+    width: 70%;
+}
+
+#home .connect {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+}
+
+#home .connect img {
+    width: 70%;
 }
 
 
@@ -165,19 +217,34 @@
 
 #services {
     width: 100%;
-    background-color: blanchedalmond;
 }
 
 #services .heading {
-    width: 90%;
-    margin: auto;
     text-align: center;
-    padding: 50px 0;
+    margin-top: 50px;
 }
 
-#services .heading h1 {
+#services .heading .box-4 h1 {
     font-size: 2.5rem;
     font-weight: bold;
+    padding: 5px 0 0;
+    margin-bottom: 0px;
+}
+
+#services .heading .box-4 {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+    background-color: #ffffff;
+    margin-bottom: -1px;
+    position: relative;
+}
+
+#services .heading p {
+    border-top: 1px solid #e6e6e6;
+    margin-bottom: 60px;
 }
 
 #services .heading h3 {
