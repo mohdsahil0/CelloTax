@@ -229,6 +229,7 @@
     font-weight: bold;
     padding: 5px 0 0;
     margin-bottom: 0px;
+    letter-spacing: 4px;
 }
 
 #services .heading .box-4 {
@@ -245,10 +246,7 @@
 #services .heading p {
     border-top: 1px solid #e6e6e6;
     margin-bottom: 60px;
-}
-
-#services .heading h3 {
-    font-size: 1.3rem;
+    font-size: 20px;
 }
 
 #services .main {
