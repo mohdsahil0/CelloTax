@@ -974,7 +974,7 @@ outline: none;
 .blog .add-blog {
     height: 40vh;
     width: 100%;
-    background: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/newblogbg.png);
     position: relative
 }
 
@@ -1011,6 +1011,8 @@ outline: none;
 .register-plan .register-social {
     width: 100%;
     background: #e8e8e8;
+    width: 100%;
+    background: #e8e8e8;
     text-align: center;
 }
 
@@ -1025,4 +1027,50 @@ outline: none;
 
 .register-plan .register-social ul li {
     padding: 0 30px;
+}
+
+
+/* -----------blog-view------ */
+
+.blogpanel {
+    background-color: #f1f1f1;
+}
+
+.blogpanel .blog-width {
+    width: 75%;
+    padding: 180px 0 40px 70px;
+}
+
+.blogpanel .blog-width .blog-content {
+    border: 1px solid #7e7e7e;
+}
+
+.blogpanel .blog-width .blog-head h1 {
+    background-color: #221837;
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+    padding: 10px;
+    text-align: center;
+}
+
+.blogpanel .blog-width .blog-img img {
+    padding: 10px 20px;
+    width: 100%;
+    height: 450px;
+}
+
+.blogpanel .blog-width .blog-data {
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.blogpanel .blog-width .blog-data p {
+    font-size: 18px;
+}
+
+.blogpanel .blog-width .blog-data h2 {
+    color: black;
+    font-size: 22px;
+    font-weight: 900;
 }
