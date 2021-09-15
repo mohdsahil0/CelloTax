@@ -23,10 +23,6 @@
     position: fixed;
     width: 100%;
     z-index: 999999;
-    /* position: fixed;
-top: 0;
-width: 100%;
-transition: top 0.3s; */
 }
 
 .nav-bar .container {
