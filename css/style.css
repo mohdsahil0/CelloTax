@@ -924,3 +924,109 @@ outline: none;
 }
 
 .gst .top-card .card .card-body .content ol li {}
+
+
+/* -----------BLOG PAGE----------- */
+
+.blog-form {
+    background: rgb(0, 208, 175);
+    background: linear-gradient(90deg, rgba(0, 208, 175, 1) 0%, rgba(142, 197, 252, 1) 48%, rgba(0, 208, 175, 1) 100%);
+    height: 75vh;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.blog-form .form-area {
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    padding: 0 80px;
+    top: 30%;
+}
+
+.blog-form .heading h2 {
+    font-size: 34px;
+    color: black;
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-decoration-color: #7e7e7e;
+    text-decoration-style: 1px solid;
+    text-underline-offset: 10px;
+    margin-bottom: 40px;
+}
+
+.blog-form .form-area form input {
+    border-radius: 0px;
+    height: 45px;
+    margin: 10px 0 50px;
+}
+
+.blog-form .form-area form a {
+    color: #ffffff;
+    padding: 5px 35px;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 500;
+    border: 1px solid #023C6C;
+    border-radius: 35px;
+}
+
+.blog .card {
+    margin: 40px 0;
+}
+
+.blog .add-blog {
+    height: 40vh;
+    width: 100%;
+    background: black;
+    position: relative
+}
+
+.blog .add-blog .new-blog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blog .add-blog .new-blog a {
+    color: black;
+    text-decoration: none;
+    padding: 30px 140px;
+    background: #66AC4C;
+    font-size: 22px;
+    font-weight: 900;
+    border-radius: 40px;
+    transition: .4s;
+}
+
+.blog .add-blog .new-blog a:hover {
+    background: white;
+    color: #66AC4C;
+}
+
+
+/* ---------register plan ------- */
+
+.register-plan .blog-form {
+    border-radius: 0px;
+}
+
+.register-plan .register-social {
+    width: 100%;
+    background: #e8e8e8;
+    text-align: center;
+}
+
+.register-plan .register-social ul {
+    display: flex;
+    list-style: none;
+    padding: 80px 0;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.register-plan .register-social ul li {
+    padding: 0 30px;
+}
