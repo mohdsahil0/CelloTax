@@ -40,6 +40,14 @@
     color: white;
 }
 
+.nav-bar .menu ul li.active a {
+    color: #66AC4C;
+}
+
+.mob-nav ul li.active a {
+    color: #66AC4C;
+}
+
 .nav-bar .menu ul li:not(:last-child)::after {
     content: "/";
     color: #023C6C;
@@ -53,11 +61,11 @@
     color: #023C6C;
     font-size: .9rem;
     font-weight: bold;
+    transition: .5s;
 }
 
 .nav-bar .menu ul li a:hover {
     color: #66AC4C;
-    transition: .5s;
 }
 
 .nav-bar .logo img {
@@ -102,6 +110,10 @@
     color: #023C6C;
     font-size: .9rem;
     font-weight: bold;
+}
+
+#sidebar-menu ul li a:hover {
+    color: #66AC4C;
 }
 
 .hambar i {
@@ -975,7 +987,8 @@ outline: none;
     padding: 0px 0px 0px 80px;
 }
 
-.gst .top-card .card .card-body .content ol li {}
+
+/* .gst .top-card .card .card-body .content ol li {} */
 
 
 /* -----------BLOG PAGE----------- */

@@ -17,3 +17,7 @@ $(document).ready(function() {
         });
     });
 });
+
+$(document).on('click', 'ul li', function() {
+    $(this).addClass('active')
+});
