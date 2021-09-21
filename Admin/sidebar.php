@@ -16,24 +16,11 @@
     <script src="./js/admin.js"></script>
     <script>
         $(document).ready(function() {
-    // $(".user-btn").click(function() {
-    //     $(".user-show").toggleClass(".show");
-    // });
-
-
-
-
-
-
-    $('#user-btn').click(function() {
-        $('#user-show').css({
-            'display': 'block',
+            $("#user-btn").click(function(){
+                $("#user-show").toggleClass("show");
+                $(".first").toggleClass("rotate");
+            });
         });
-        // $('#hambar').css({
-        //     'display': 'none'
-        // });
-    });
-});
     </script>
     <title>CelloTax - Admin Panel</title>
 </head>
@@ -62,8 +49,6 @@
   </ul>
 
 </nav>
-<!-- Navbar -->
-<!-- Navbar -->
     </div>
     <div class="main_box">
         <input type="checkbox" id="check">
@@ -85,22 +70,22 @@
                 <ul>
                     <li>
                         
-                        <a href="#">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
-                    <li>
-                        <a href="#" id="user-btn">Users</a>
-                        <i class="fa fa-caret-down"></i>
+                    <li  id="user-btn" >
+                        <a href="javascript:;">Users</a>
+                        <i class="fa fa-caret-down first"></i>
                         <ul id="user-show">
                             <li>    
-                                <a href="#">Registered</a>
+                                <a href="registered.php">Registered</a>
                             </li>
                             <li>    
-                                <a href="#">Contected</a>
+                                <a href="contacted.php">Contacted</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a href="blog.php">Blog</a>
                     </li>
                     <li>
                         <a href="#">Log Out</a>
