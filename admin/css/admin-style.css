@@ -369,14 +369,14 @@
 
 /* BASIC */
 
-a {
+.log-in a {
     color: #92badd;
     display: inline-block;
     text-decoration: none;
     font-weight: 400;
 }
 
-h2 {
+.log-in h2 {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -389,7 +389,7 @@ h2 {
 
 /* STRUCTURE */
 
-.wrapper {
+.log-in .wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -399,7 +399,7 @@ h2 {
     padding: 50px;
 }
 
-#formContent {
+.log-in #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
     background: #fff;
@@ -413,7 +413,7 @@ h2 {
     text-align: center;
 }
 
-#formFooter {
+.log-in #formFooter {
     background-color: #f6f6f6;
     border-top: 1px solid #dce8f1;
     padding: 25px;
@@ -425,11 +425,11 @@ h2 {
 
 /* TABS */
 
-h2.inactive {
+.log-in h2.inactive {
     color: #cccccc;
 }
 
-h2.active {
+.log-in h2.active {
     color: #0d0d0d;
     border-bottom: 2px solid #66AC4C;
 }
@@ -437,9 +437,9 @@ h2.active {
 
 /* FORM TYPOGRAPHY*/
 
-input[type=button],
-input[type=submit],
-input[type=reset] {
+.log-in input[type=button],
+.log-in input[type=submit],
+.log-in input[type=reset] {
     background-color: #66AC4C;
     border: none;
     color: white;
@@ -461,15 +461,15 @@ input[type=reset] {
     transition: all 0.3s ease-in-out;
 }
 
-input[type=button]:hover,
-input[type=submit]:hover,
-input[type=reset]:hover {
+.log-in input[type=button]:hover,
+.log-in input[type=submit]:hover,
+.log-in input[type=reset]:hover {
     background-color: #023C6C;
 }
 
-input[type=button]:active,
-input[type=submit]:active,
-input[type=reset]:active {
+.log-in input[type=button]:active,
+.log-in input[type=submit]:active,
+.log-in input[type=reset]:active {
     -moz-transform: scale(0.95);
     -webkit-transform: scale(0.95);
     -o-transform: scale(0.95);
@@ -477,8 +477,8 @@ input[type=reset]:active {
     transform: scale(0.95);
 }
 
-input[type=text],
-input[type=password] {
+.log-in input[type=text],
+.log-in input[type=password] {
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
@@ -499,14 +499,14 @@ input[type=password] {
     border-radius: 5px 5px 5px 5px;
 }
 
-input[type=text]:focus,
-input[type=password]:focus {
+.log-in input[type=text]:focus,
+.log-in input[type=password]:focus {
     background-color: #fff;
     border-bottom: 2px solid #66AC4C;
 }
 
-input[type=text]:placeholder,
-input[type=password]:placeholder {
+.log-in input[type=text]:placeholder,
+.log-in input[type=password]:placeholder {
     color: #cccccc;
 }
 
@@ -516,7 +516,7 @@ input[type=password]:placeholder {
 
 /* Simple CSS3 Fade-in-down Animation */
 
-.fadeInDown {
+.log-in .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
     -webkit-animation-duration: 1s;
@@ -581,7 +581,7 @@ input[type=password]:placeholder {
     }
 }
 
-.fadeIn {
+.log-in .fadeIn {
     opacity: 0;
     -webkit-animation: fadeIn ease-in 1;
     -moz-animation: fadeIn ease-in 1;
@@ -594,25 +594,25 @@ input[type=password]:placeholder {
     animation-duration: 1s;
 }
 
-.fadeIn.first {
+.log-in .fadeIn.first {
     -webkit-animation-delay: 0.4s;
     -moz-animation-delay: 0.4s;
     animation-delay: 0.4s;
 }
 
-.fadeIn.second {
+.log-in .fadeIn.second {
     -webkit-animation-delay: 0.6s;
     -moz-animation-delay: 0.6s;
     animation-delay: 0.6s;
 }
 
-.fadeIn.third {
+.log-in .fadeIn.third {
     -webkit-animation-delay: 0.8s;
     -moz-animation-delay: 0.8s;
     animation-delay: 0.8s;
 }
 
-.fadeIn.fourth {
+.log-in .fadeIn.fourth {
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
     animation-delay: 1s;
@@ -621,7 +621,7 @@ input[type=password]:placeholder {
 
 /* Simple CSS3 Fade-in Animation */
 
-.underlineHover:after {
+.log-in .underlineHover:after {
     display: block;
     left: 0;
     bottom: -10px;
@@ -632,11 +632,11 @@ input[type=password]:placeholder {
     transition: width 0.2s;
 }
 
-.underlineHover:hover {
+.log-in .underlineHover:hover {
     color: #0d0d0d;
 }
 
-.underlineHover:hover:after {
+.log-in .underlineHover:hover:after {
     width: 100%;
 }
 
@@ -647,7 +647,7 @@ input[type=password]:placeholder {
     outline: none;
 }
 
-#icon {
+.log-in #icon {
     width: 40%;
     padding: 30px 0;
 }

@@ -31,9 +31,9 @@
                         <div class="menu col-md-8">
                             <ul>
                                 <li class="item active"><a href="#home">HOME</a></li>
-                                <li class="item"><a href="incometax.html">INCOMETAX</a></li>
-                                <li class="item"><a href="gst.html">GST</a></li>
-                                <li class="item"><a href="blog.html">BLOG</a></li>
+                                <li class="item"><a href="it.php">INCOMETAX</a></li>
+                                <li class="item"><a href="gst.php">GST</a></li>
+                                <li class="item"><a href="blog.php">BLOG</a></li>
                                 <li class="item"><a href="#contact">CONTACT US</a></li>
                             </ul>
                         </div>
@@ -49,9 +49,9 @@
                     <div class="cros" id="cros"><i class="fa fa-times"></i></div>
                     <ul>
                         <li class="item active"><a href="#home">HOME</a></li>
-                        <li class="item"><a href="incometax.html">INCOMETAX</a></li>
-                        <li class="item"><a href="gst.html">GST</a></li>
-                        <li class="item"><a href="blog.html">BLOG</a></li>
+                        <li class="item"><a href="it.php">INCOMETAX</a></li>
+                        <li class="item"><a href="gst.php">GST</a></li>
+                        <li class="item"><a href="blog.php">BLOG</a></li>
                         <li class="item"><a href="#contact">CONTACT US</a></li>
                     </ul>
                 </div>
@@ -112,11 +112,14 @@
                 </ul>
             </div>
             <div class="connect">
-                <a href="#"><img src="./assets/icons/chat.png" alt=""></a>
+                <a href="#" onclick="toggle()"><img src="./assets/icons/chat.png" alt=""></a>
             </div>
         </div>
+        
     </div>
-
+    <div id="popup">
+                <div class="close"><a href="#" onclick="toggle()"><i class="fa fa-times"></i></a></div>
+        </div>
     <div id="services">
         <div class="heading">
             <div class="box-4">
@@ -138,7 +141,7 @@
                             </ul>
                             <img src="./assets/icons/incometax.png" alt="">
                         </div>
-                        <a class="learn-more-btn" href="incometax.html">Learn More</a>
+                        <a class="learn-more-btn" href="it.php">Learn More</a>
                     </div>
                     <div class="gst">
                         <h2>GST <span class="gst-sub">(Goods and Services Tax)</span></h2>
@@ -151,13 +154,26 @@
                             </ul>
                             <img src="./assets/icons/gst.png" alt="">
                         </div>
-                        <a class="learn-more-btn" href="gst.html">Learn More</a>
+                        <a class="learn-more-btn" href="gst.php">Learn More</a>
                     </div>
                 </div>
                 <div class="right">
                     <div class="tax-notice">
                         <img src="./assets/icons/mail.png" alt="">
-                        <a class="learn-more-btn" href="register-plan.html">Learn More</a>
+                        <div class="tax-notice-content">
+                            <h4>Received Tax Notice?</h4>
+                            <p>Under Section:</p>
+                            <ul>
+                                <li>1 - 139 (9)</li>
+                                <li>2 - 142 (2)</li>
+                                <li>3 - 143 (1)</li>
+                                <li>4 - 143 (2)</li>
+                                <li>5 - 143 (3)</li>
+                                <li>6 - 154</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <a class="learn-more-btn" href="register_plan.php">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -177,7 +193,7 @@
                             <h3 class="">Income Tax exemption in new tax slab on NPS!</h3>
                             <p class="card-text">A system of new tax slab is being given for the taxpayers along with the old slab from 2020-21. This was peoposed by the Finance Minister of India in the Budget-2020</p>
                             <div class="text-right">
-                                <a href="blog-view.html" class="read-more-btn">Read More...</a>
+                                <a href="blog-view.php" class="read-more-btn">Read More...</a>
                             </div>
                         </div>
                     </div>
@@ -190,7 +206,7 @@
                             <h5>Introduction of Section 194H:</h5>
                             <p class="card-text">Any income from commission or brokerage includes any payment made directly.</p>
                             <div class="text-right">
-                                <a href="blog-view.html" class="read-more-btn">Read More...</a>
+                                <a href="blog-view.php" class="read-more-btn">Read More...</a>
                             </div>
                         </div>
                     </div>
@@ -203,7 +219,7 @@
                             <h5>Introduction of Section 194C:</h5>
                             <p class="card-text">Any person responsible for paying any amount to any resident (hereafter in this section referred to as the contractor)</p>
                             <div class="text-right">
-                                <a href="blog-view.html" class="read-more-btn">Read More...</a>
+                                <a href="blog-view.php" class="read-more-btn">Read More...</a>
                             </div>
                         </div>
                     </div>
@@ -233,15 +249,6 @@
                 <div class="col-xs-3 col-md-3">
                     <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
                 </div>
-                <!-- <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div> -->
             </div>
         </div>
         <div class="client-details">
@@ -317,18 +324,6 @@
             </div>
         </div>
     </div>
-    <!-- <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-50px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    </script> -->
 </body>
 
 </html>

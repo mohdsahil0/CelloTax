@@ -31,10 +31,10 @@
                     <div class="row nav">
                         <div class="menu col-md-8">
                             <ul>
-                                <li class="item"><a href="index.html">HOME</a></li>
-                                <li class="item active"><a href="incometax.html">INCOMETAX</a></li>
-                                <li class="item"><a href="gst.html">GST</a></li>
-                                <li class="item"><a href="blog.html">BLOG</a></li>
+                                <li class="item"><a href="index.php">HOME</a></li>
+                                <li class="item active"><a href="it.php">INCOMETAX</a></li>
+                                <li class="item"><a href="gst.php">GST</a></li>
+                                <li class="item"><a href="blog.php">BLOG</a></li>
                                 <li class="item"><a href="#contact">CONTACT US</a></li>
                             </ul>
                         </div>
@@ -49,10 +49,10 @@
                 <div id="sidebar-menu">
                     <div class="cros" id="cros"><i class="fa fa-times"></i></div>
                     <ul>
-                        <li class="item"><a href="index.html">HOME</a></li>
-                        <li class="item active"><a href="incometax.html">INCOMETAX</a></li>
-                        <li class="item"><a href="gst.html">GST</a></li>
-                        <li class="item"><a href="blog.html">BLOG</a></li>
+                        <li class="item"><a href="index.php">HOME</a></li>
+                        <li class="item active"><a href="incometax.php">INCOMETAX</a></li>
+                        <li class="item"><a href="gst.php">GST</a></li>
+                        <li class="item"><a href="blog.php">BLOG</a></li>
                         <li class="item"><a href="#contact">CONTACT US</a></li>
                     </ul>
                 </div>

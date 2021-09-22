@@ -21,3 +21,10 @@ $(document).ready(function() {
 $(document).on('click', 'ul li', function() {
     $(this).addClass('active')
 });
+
+function toggle() {
+    var blur = document.getElementById('home');
+    blur.classList.toggle('active');
+    var popup = document.getElementById('popup');
+    popup.classList.toggle('active');
+}
