@@ -7,7 +7,7 @@
 }
 
 .top-nav .nav-col {
-    background-color: #66AC4C;
+    background-color: #023C6C;
 }
 
 .top-nav a.user-name {
@@ -136,7 +136,7 @@
 }
 
 .main_box .btn_one i {
-    color: #023C6C;
+    color: #fff;
     font-size: 30px;
     font-weight: 700;
     position: absolute;
@@ -148,7 +148,6 @@
     transition: all 0.3s linear;
     padding: 2px 5px;
     border-radius: 2px;
-    background-color: #66AC4C;
 }
 
 .sidebar_menu .btn_two i {
