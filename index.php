@@ -47,6 +47,9 @@
                 <div class="hambar" id="hambar"><i class="fa fa-bars"></i></div>
                 <div id="sidebar-menu">
                     <div class="cros" id="cros"><i class="fa fa-times"></i></div>
+                    <div class="mob-logo">
+                            <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
+                    </div>
                     <ul>
                         <li class="item active"><a href="#home">HOME</a></li>
                         <li class="item"><a href="it.php">INCOMETAX</a></li>
@@ -65,7 +68,9 @@
                     <hr class="line1 line">
                     <hr class="line2 line">
                     <hr class="line3 line">
-
+                    <div class="lable">
+                        <img src="./assets/icons/staysafe.png" alt="" class="staysafe">
+                    </div>
                 </div>
                 <div class="form-area">
                     <h3>Register For Plan
@@ -92,9 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lable">
-                <img src="./assets/icons/staysafe.png" alt="" class="staysafe">
-            </div>
+            
             <div class="social">
                 <ul>
                     <li>
@@ -119,6 +122,17 @@
     </div>
     <div id="popup">
                 <div class="close"><a href="#" onclick="toggle()"><i class="fa fa-times"></i></a></div>
+                <div class="chat-box">
+                    <div class="chat-bubble left">Hello</div>
+                    <div class="chat-bubble left">Welcome to CelloTax.com</div>
+                    <div class="chat-bubble left">Please Ask.</div>
+                    <div class="chat-bubble right">Typing...</div>
+                    <div class="chat-bubble right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestias in dolorem soluta eum, consequuntur expedita necessitatibus non assumenda numquam.</div>
+                </div>
+                <div class="message-box">
+                    <textarea type="text" class="message-input" placeholder="Type Here..."></textarea>
+                    <button type="submit" class="message-submit">Send</button>
+                </div>
         </div>
     <div id="services">
         <div class="heading">
@@ -186,7 +200,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12 mb-3">
                     <div class="card" style="width: 19rem;">
                         <img class="card-img-top" src="./assets/icons/blog3.png" alt="Card image cap">
                         <div class="card-body">
@@ -198,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12 mb-3">
                     <div class="card" style="width: 19rem;">
                         <img class="card-img-top" src="./assets/icons/blog2.png" alt="Card image cap">
                         <div class="card-body">
@@ -211,7 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12">
                     <div class="card" style="width: 19rem;">
                         <img class="card-img-top" src="./assets/icons/blog3.png" alt="Card image cap">
                         <div class="card-body">
@@ -278,20 +292,15 @@
                 </div>
                 <div class="connect">
                     <div class="mail">
-                        <div class="mail1"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></div>
-                        <div class="mail2"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></div>
+                        <div class="mail1"><a href="#"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
+                        <div class="mail2"><a href="#"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
                     </div>
                     <div class="social">
                         <p>FOLLOW US</p>
                         <ul>
-                            <li>
-                                <a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-facebook-f"></i></a>
-                            </li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
                             <li>
                                 <a href="#"><i class="fa fa-whatsapp"></i></a>
                             </li>

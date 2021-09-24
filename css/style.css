@@ -95,7 +95,6 @@
 
 #sidebar-menu ul {
     list-style: none;
-    padding: 50px 0;
     margin: 0;
     text-align: center;
 }
@@ -133,6 +132,15 @@
     right: 20px;
     top: 15px;
     cursor: pointer;
+}
+
+.mob-nav .mob-logo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.mob-nav .mob-logo img {
+    width: 70%;
 }
 
 .hero {
@@ -196,8 +204,8 @@
 }
 
 .hero .form-area .line {
-    margin: 5px 50px;
-    width: 95px;
+    margin: 2px 18%;
+    width: 35%;
     border: 1px solid black;
 }
 
@@ -243,8 +251,7 @@ outline: none;
 
 #home .lable {
     position: absolute;
-    bottom: 50px;
-    left: 350px;
+    left: 200px;
 }
 
 #home .lable img {
@@ -256,6 +263,7 @@ outline: none;
     right: 0px;
     top: 50%;
     transform: translate(0, -40%);
+    z-index: 99;
 }
 
 .main-home .social ul {
@@ -278,6 +286,7 @@ outline: none;
     position: fixed;
     bottom: 30px;
     right: 10px;
+    z-index: 99;
 }
 
 #home .connect img {
@@ -320,6 +329,116 @@ outline: none;
     position: absolute;
     top: 20px;
     right: 25px;
+}
+
+#popup .chat-box {
+    margin-top: 40px;
+    overflow: scroll;
+    max-height: 350px;
+}
+
+#popup .chat-bubble {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 7px 15px;
+    position: relative;
+    margin: 10px;
+    max-width: 80%;
+    width: 70%;
+}
+
+#popup .chat-bubble:before {
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    width: 9px;
+    position: absolute;
+    bottom: -7.5px;
+}
+
+#popup .chat-bubble.left {
+    background-color: #00FF88;
+    float: left;
+}
+
+#popup .chat-bubble.left:before {
+    background-color: #00FF88;
+    left: 10px;
+    transform: rotate(70deg) skew(6deg);
+}
+
+.chat-bubble.right {
+    background-color: #e6e5eb;
+    float: right;
+    /* margin-right: 55px; */
+}
+
+.chat-bubble.right:before {
+    background-color: #e6e5eb;
+    right: 10px;
+    transform: rotate(118deg) skew(-6deg);
+}
+
+.message-box {
+    flex: 0 1 42px;
+    width: 90%;
+    background: #fff;
+    margin: 2px auto;
+    /*-webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);*/
+    /*background: rgba(0, 0, 0, 0.3);
+      border-top:1px solid #e3e3e3;*/
+    padding: 10px;
+    position: relative;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    height: 14px;
+    border: 1px solid #ccc;
+    height: 42px;
+}
+
+.message-box .message-input {
+    background: none;
+    border: none;
+    outline: none!important;
+    resize: none;
+    /* color: rgba(255, 255, 255, .8);*/
+    font-size: 15px;
+    height: 24px;
+    margin: 0;
+    padding-right: 20px;
+    width: 265px;
+    color: #444;
+}
+
+textarea:focus:-webkit-placeholder {
+    color: transparent;
+}
+
+.message-submit {
+    position: absolute;
+    z-index: 1;
+    top: 9px;
+    right: 10px;
+    color: #4A90E2;
+    border: none;
+    /* background: #c29d5f;*/
+    background: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 5px;
+    outline: none!important;
+    /* transition: background .2s ease; */
+    cursor: pointer;
+}
+
+.message-submit:hover {
+    background: #fff;
+    color: #333;
 }
 
 
@@ -651,6 +770,11 @@ outline: none;
 
 #contact .connect .mail {
     padding: 50px 0;
+    text-decoration: none;
+}
+
+#contact .connect .mail a {
+    text-decoration: none;
 }
 
 #contact .connect .mail .mail1 i {
@@ -693,24 +817,34 @@ outline: none;
     list-style: none;
     display: inline-block;
     position: relative;
-    height: 65px;
-    font-weight: 65px;
+    height: 40px;
+    width: 40px;
+    transition: .4s;
+    /* font-weight: 30px; */
+    background-color: #66AC4C;
+    border-radius: 50%;
 }
 
 #contact .connect .social ul li a {
-    color: white;
-    margin: 10px 10px;
+    color: #fff;
     font-size: 20px;
     padding: 10px;
-    border-radius: 50%;
-    transition: .4s;
-    background-color: #66AC4C;
+    /* border-radius: 50%; */
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    /* background-color: #66AC4C; */
 }
 
-#contact .connect .social ul li a:hover {
-    color: #66AC4C;
+#contact .connect .social ul li:hover {
     box-shadow: 1px 2px 5px #7e7e7e;
     background-color: white;
+}
+
+#contact .connect .social ul li:hover a {
+    color: #66AC4C;
 }
 
 #contact .right {

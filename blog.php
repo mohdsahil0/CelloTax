@@ -47,6 +47,9 @@
                 <div class="hambar" id="hambar"><i class="fa fa-bars"></i></div>
                 <div id="sidebar-menu">
                     <div class="cros" id="cros"><i class="fa fa-times"></i></div>
+                    <div class="mob-logo">
+                            <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
+                    </div>
                     <ul>
                         <li class="item "><a href="index.php">HOME</a></li>
                         <li class="item"><a href="it.php">INCOMETAX</a></li>
