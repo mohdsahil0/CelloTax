@@ -1,5 +1,9 @@
 <?php
-include('mysql.php');
+include('../mysql.php');
+
+header('Content-Type: application/json');
+header('Access-Control-Allow-Methods: GET');
+header('Access-Control-Allow-Origin: *');
 
 $sql = "SELECT * FROM users";
 $result = mysqli_query($conn, $sql);

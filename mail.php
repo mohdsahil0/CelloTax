@@ -1,5 +1,5 @@
 <?php
-$to = "aliakhanna1212@gmail.com";
+$to = "aliakhanna1212@gmail.com, sahilstack@gmail.com";
 $subject = "Cellotax";
 
 $message = "
@@ -21,5 +21,10 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= 'From: <admin@cellotax.com>' . "\r\n";
 // $headers .= 'Cc: myboss@example.com' . "\r\n";
 
-mail($to,$subject,$message,$headers);
+if(mail($to,$subject,$message,$headers)) {
+    echo 'MAIL SENT!';
+} else {
+    echo 'MAIL NOT SENT!';
+}
+
 ?>
