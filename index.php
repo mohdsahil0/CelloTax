@@ -278,7 +278,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
             </div>
             <div class="read-more">
-                <a href="#">Read More...</a>
+                <a href="client-review.php">Read More...</a>
             </div>
             <div class="rating">
                 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
