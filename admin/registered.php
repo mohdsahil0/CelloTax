@@ -1,5 +1,17 @@
 <?php
 include('sidebar.php');
+include_once('../mysql.php');
+
+$sql = "SELECT * FROM users";
+$result = mysqli_query($conn, $sql);
+
+// if (mysqli_num_rows($result) > 0) {
+//     // output data of each row
+//     while($row = mysqli_fetch_assoc($result)) {
+//       // echo "id: " . $row["id"]. " - Name: " . $row["name"]. " - " . $row["phone"]. "<br>";
+//       $json_array[] = $row;
+//     }
+//   }
 ?>
 
    <div class="container">
@@ -15,16 +27,17 @@ include('sidebar.php');
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                    <th scope="row">1</th>
-                    <td>Mohd Sahil</td>
-                    <td>8383******</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>Parth Aggarwal</td>
-                    <td>98********</td>
-                    </tr>
+                <?php if(mysqli_num_rows($result) > 0) {
+while($row = mysqli_fetch_assoc($result)) {
+    echo '                    <tr>
+    <th scope="row">'.$row["id"].'</th>
+    <td>'.$row["name"].'</td>
+    <td>'.$row["phone"].'</td>
+    </tr>';
+}
+                    }
+
+                    ?>
                 </tbody>
                 </table>
            </div>
