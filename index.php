@@ -36,7 +36,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <li class="item"><a href="it.php">INCOMETAX</a></li>
                                 <li class="item"><a href="gst.php">GST</a></li>
                                 <li class="item"><a href="blog.php">BLOG</a></li>
-                            7    <li class="item"><a href="#contact">CONTACT US</a></li>
+                                <li class="item"><a href="#contact">CONTACT US</a></li>
                             </ul>
                         </div>
                         <div class="logo col-md-4">
@@ -94,7 +94,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <div class="form-group">
                                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                             </div>
-                            <a class="btn" href="#">Submit</a>
+                            <a class="btn" href="thankyou.php">Submit</a>
                         </form>
                     </div>
                 </div>

@@ -151,9 +151,9 @@
     margin: auto;
     align-items: center;
     position: absolute;
-    top: 80%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, -50%);
 }
 
 .hero .content {
@@ -765,6 +765,10 @@ textarea:focus:-webkit-placeholder {
     max-width: 65%;
 }
 
+#contact .left .sub-logo {
+    text-align: center;
+}
+
 #contact .left .sub-logo img {
     width: 50%;
     margin: 40px 0;
@@ -825,7 +829,7 @@ textarea:focus:-webkit-placeholder {
     /* font-weight: 30px; */
     background-color: #66AC4C;
     border-radius: 50%;
-    margin: 0 5px;
+    margin: 0 5px 0 0px;
 }
 
 #contact .connect .social ul li a {
@@ -877,7 +881,8 @@ textarea:focus:-webkit-placeholder {
     font-size: 24px;
 }
 
-#contact .right .right-form a {
+#contact .right .right-form a,
+#contact .right .right-form .submit input {
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -1357,6 +1362,104 @@ textarea:focus:-webkit-placeholder {
     font-weight: 900;
 }
 
-.client-review {
+.client-reviews {
     background-color: #e6e6e6;
+    height: 100vh;
+}
+
+.client-reviews .client-hero {
+    display: flex;
+    position: absolute;
+    top: 60%;
+    transform: translate(0, -50%);
+    align-items: flex-end;
+}
+
+.client-reviews .client-hero .left {}
+
+.client-reviews .client-hero .left .client-img img {
+    height: 350px;
+    width: 550px;
+}
+
+.client-reviews .client-hero .left .client-img {
+    position: relative;
+}
+
+.client-reviews .client-hero .left .client-img .client-name {
+    position: absolute;
+    top: 20px;
+    right: -200px;
+}
+
+.client-reviews .client-hero .left .client-img .client-name h2 {
+    color: black;
+    font-size: 35px;
+    background-color: #cccccc;
+    padding: 15px 60px;
+    font-weight: 900;
+}
+
+.client-reviews .client-hero .right {
+    padding: 0px;
+}
+
+.client-reviews .client-hero .right .content {
+    align-items: center;
+    margin: 5px 10px;
+    align-items: center;
+}
+
+.client-reviews .client-hero .right .content p {
+    font-size: 26px;
+}
+
+.client-reviews .client-hero .right .content ul {
+    display: flex;
+    list-style: none;
+    text-align: left;
+    padding: 30px 0 0;
+}
+
+.client-reviews .client-hero .right .content ul li {
+    padding-right: 10px;
+}
+
+.client-reviews .client-hero .right .content ul img {
+    height: 70%;
+}
+
+.thankyou {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/thankyou.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.thankyou .thanks {
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.thankyou .thanks img {
+    height: 80px;
+}
+
+.thankyou .thanks h1 {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    color: black;
+    margin-top: 10px;
+}
+
+.thankyou .thanks p {
+    font-size: 40px;
+    color: white;
+    letter-spacing: 5px;
 }

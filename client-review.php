@@ -20,7 +20,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="client-review">
+    <div class="client-page">
+    <div class="client-reviews">
     <div class="main-home">
             <div class="nav-bar" id="navbar">
                 <div class="container">
@@ -57,11 +58,20 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="left">
-                <img src="./assets/images/campaign-creators-pypeCEaJeZY-unsplash.png" alt="">
-            </div>
-            <div class="right">
+        <div class="container">
+        <div class="row client-hero">
+           <div class=" left" >
+           
+                <div class="client-img">
+                    <img src="./assets/images/campaign-creators-pypeCEaJeZY-unsplash.png" alt="">
+                    <div class="client-name">
+                        <h2>Mohd Asim</h2>
+                    </div>
+                </div>
+                
+  
+           </div>
+            <div class=" right ">
                 <div class="content">
                     <p>Highly responsive ! my IT return has been done in 1 hour, so fast service. The staff also of good nature and helpful.</p>
                     <ul>
@@ -73,6 +83,30 @@
                 </div>
             </div>
         </div>
+        
+        </div>
+        
     </div>
+    <div class="client-form">
+        <div class="container">
+        
+                    <div class="heading">
+                        <h2 class="text-center">Register For Plan</h2>
+                    </div>
+                    <form>
+                        <div class="row ">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Enter Your Number">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Enter Your Name">
+                            </div>
+                        </div>
+                        <a href="#">SUBMIT</a>
+                    </form>
+                </div>
+        </div>
+    </div>
+
 </body>
 </html>
