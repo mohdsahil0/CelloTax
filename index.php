@@ -1,5 +1,7 @@
 <?php
-
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    echo $_POST['contactemail'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +36,7 @@
                                 <li class="item"><a href="it.php">INCOMETAX</a></li>
                                 <li class="item"><a href="gst.php">GST</a></li>
                                 <li class="item"><a href="blog.php">BLOG</a></li>
-                                <li class="item"><a href="#contact">CONTACT US</a></li>
+                            7    <li class="item"><a href="#contact">CONTACT US</a></li>
                             </ul>
                         </div>
                         <div class="logo col-md-4">
@@ -315,20 +317,23 @@
         <div class="right">
             <div class="right-form">
                 <h1>CONTACT US</h1>
-                <form action="" method="POST">
+                <form action="/" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your name">
+                        <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Enter Your name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="contactemail" placeholder="Enter email">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputnumber1" placeholder="Enter Your Number">
+                        <input type="text" class="form-control" id="exampleInputnumber1" name="contactphone" placeholder="Enter Your Number">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Your Message" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="contactmsg" placeholder="Enter Your Message" rows="3"></textarea>
                     </div>
-                    <a href="#" class="submit">SUBMIT</a>
+                    <!-- <a href="#" class="submit">SUBMIT</a> -->
+                    <div class="submit">
+                        <input type="submit" />
+                    </div>
                 </form>
             </div>
         </div>

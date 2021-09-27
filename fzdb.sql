@@ -16,3 +16,13 @@ CREATE TABLE IF NOT EXISTS `gstPlans` (
     `timeperiod` varchar(100) NOT NULL,
     PRIMARY KEY (`id`)
 );
+
+/* Contact Users */
+CREATE TABLE IF NOT EXISTS `contactusers` (
+    `id` bigint(10) NOT NULL,
+    `name` varchar(100) NOT NULL,
+    `email` varchar(100) NOT NULL,
+    `phone` varchar(100) NOT NULL,
+    `message` TEXT NOT NULL,
+    PRIMARY KEY(`id`)
+)
