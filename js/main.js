@@ -53,3 +53,8 @@ $(document).ready(function() {
 
     })
 });
+
+window.addEventListener('scroll', function() {
+    let header = document.querySelector('.nav-bar');
+    header.classList.toggle('scrolling-active', window.scrollY > 0);
+})

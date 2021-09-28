@@ -10,21 +10,26 @@
 #023C6C Blue */
 
 #home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/campaign-creators-pypeCEaJeZY-unsplash.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/campaign-creators-pypeCEaJeZY-unsplash.png);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .nav-bar {
-    background-color: #ffffff;
-    opacity: 75%;
+    /* background-color: #ffffff;
+    opacity: 75%; */
     /* height: 155px; */
     position: fixed;
     width: 100%;
     z-index: 9999;
     /* display: none; */
     margin: auto 0px;
+}
+
+.scrolling-active {
+    background-color: #fff;
+    opacity: 75%;
 }
 
 .nav-bar .menu {
