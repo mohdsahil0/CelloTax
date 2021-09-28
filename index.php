@@ -17,6 +17,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/main.js">
@@ -251,23 +259,17 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="heading">
             <h1>Our Clients Reviews</h1>
         </div>
-        <div class="container horizontal-scrollable ">
-            <div class="row text-center scroll">
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-        <div class="client-details">
+        <!-- <div class="client-wrapper">
+            <div class="review">1</div>
+            <div class="review">2</div>
+            <div class="review">3</div>
+            <div class="review">4</div>
+            <div class="review">5</div>
+        </div> -->
+        <section class="yorum">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+            <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
             <div class="count">
                 <h1>01</h1>
             </div>
@@ -284,6 +286,132 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
             </div>
         </div>
+        <div class="item"><a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
+            <div class="count">
+                <h1>02</h1>
+            </div>
+            <div class="client-name">
+                <h3>Mohd Asim</h3>
+            </div>
+            <div class="client-text">
+                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+            </div>
+            <div class="read-more">
+                <a href="client-review.php">Read More...</a>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="item"><a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
+            <div class="count">
+                <h1>03</h1>
+            </div>
+            <div class="client-name">
+                <h3>Mohd Asim</h3>
+            </div>
+            <div class="client-text">
+                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+            </div>
+            <div class="read-more">
+                <a href="client-review.php">Read More...</a>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="item"><a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
+            <div class="count">
+                <h1>04</h1>
+            </div>
+            <div class="client-name">
+                <h3>Mohd Asim</h3>
+            </div>
+            <div class="client-text">
+                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+            </div>
+            <div class="read-more">
+                <a href="client-review.php">Read More...</a>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="item"><a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
+            <div class="count">
+                <h1>05</h1>
+            </div>
+            <div class="client-name">
+                <h3>Mohd Asim</h3>
+            </div>
+            <div class="client-text">
+                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+            </div>
+            <div class="read-more">
+                <a href="client-review.php">Read More...</a>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="item"><a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
+            <div class="count">
+                <h1>06</h1>
+            </div>
+            <div class="client-name">
+                <h3>Mohd Asim</h3>
+            </div>
+            <div class="client-text">
+                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+            </div>
+            <div class="read-more">
+                <a href="client-review.php">Read More...</a>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+        </div>
+        <!-- <div class="item"><h4>7</h4></div>
+        <div class="item"><h4>8</h4></div>
+        <div class="item"><h4>9</h4></div>
+        <div class="item"><h4>10</h4></div>
+        <div class="item"><h4>11</h4></div>
+        <div class="item"><h4>12</h4></div> -->
+      </div>
+    </section>
+        <!-- <div class="container horizontal-scrollable ">
+            <div class="row text-center scroll">
+                <div class="col-xs-3 col-md-3">
+                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="client-details">
+            <div class="count">
+                <h1>01</h1>
+            </div>
+            <div class="client-name">
+                <h3>Mohd Asim</h3>
+            </div>
+            <div class="client-text">
+                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+            </div>
+            <div class="read-more">
+                <a href="client-review.php">Read More...</a>
+            </div>
+            <div class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+        </div> -->
     </div>
 
     <div id="contact">
@@ -332,7 +460,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
                     <!-- <a href="#" class="submit">SUBMIT</a> -->
                     <div class="submit">
-                        <input type="submit" />
+                        <input type="submit" value="SUBMIT" />
                     </div>
                 </form>
             </div>

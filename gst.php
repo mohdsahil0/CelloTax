@@ -110,7 +110,7 @@
         <div class="tax-card-back">
             <div class="container">
                 <div class="row top-card">
-                    <div class="col-sm-12 col-md-6 col-6">
+                    <div class="col-sm-12 col-md-6 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">GST Registration</h4>
@@ -129,7 +129,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-6">
+                    <div class="col-sm-12 col-md-6 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Registration Modification</h4>
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <div class="row pb-4 bottom-card">
-                    <div class="col-sm-6 col-md-4 col-12">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Plan - A</h4>
@@ -180,7 +180,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-12">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Plan - B</h4>
@@ -210,7 +210,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-12">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Plan - C</h4>
@@ -243,7 +243,7 @@
                     <!-- </div>
 
                 <div class="row pb-5 pt-4"> -->
-                    <div class="col-sm-6 col-md-4 col-12">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Plan - D</h4>
@@ -271,7 +271,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-12">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">GSTR-9</h4>

@@ -1,4 +1,14 @@
-    @media (min-width:1320px) {}
+    @media (min-width:1320px) {
+        .hero {
+            color: white;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
     
     @media (max-width:1320px) {
         #home .connect {
@@ -10,6 +20,16 @@
         }
         .hero .form-area .form a {
             margin: 30px 0 0 150px;
+        }
+        .hero {
+            color: white;
+            display: flex;
+            margin: auto;
+            align-items: center;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
     
@@ -35,6 +55,9 @@
         .income-tax .card .card-body .content {
             padding: 10px 0px 10px 20px;
         }
+        .gst .card .card-body .who a {
+            font-size: 16px;
+        }
     }
     
     @media (max-width:991px) {
@@ -49,14 +72,13 @@
         }
         .hero {
             flex-direction: column;
-            padding: 23% 0 0 0;
-            position: unset;
-            top: 0;
-            left: 0;
-            transform: translate(0, 0);
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -10%) !important;
         }
         .hero .form-area {
-            margin: 170px 0;
+            margin: 200px 0;
         }
         .hero .form-area .form a {
             margin: 30px 0 0 170px;
@@ -99,12 +121,16 @@
         }
         #services .content .right .tax-notice-content h4 {
             font-size: 18px;
+            margin-bottom: unset;
         }
         #services .content .right .tax-notice-content p {
             font-size: 14px;
         }
         #services .content .right .tax-notice-content ul li {
             font-size: 14px;
+        }
+        #services .content .right .tax-notice-content ul li:last-child {
+            margin-left: -18px;
         }
         #blog .card {
             margin: 0 auto;
@@ -118,24 +144,24 @@
             font-size: 28px;
             padding: 50px 0;
         }
-        #client-review .client-details .count h1 {
+        #client-review .item .count h1 {
             font-size: 35px;
         }
-        #client-review .client-details .client-name h3 {
+        #client-review .item .client-name h3 {
             font-size: 26px;
             margin: 10px;
         }
-        #client-review .client-details .client-text p {
+        #client-review .item .client-text p {
             font-size: 22px;
         }
-        #client-review .client-details {
+        #client-review .item-details {
             max-width: 80%;
         }
-        #client-review .client-details .read-more a {
+        #client-review .item .read-more a {
             font-size: 20px;
             margin: 10px 0;
         }
-        #client-review .client-details .rating i {
+        #client-review .item .rating i {
             font-size: 24px;
         }
         #contact .connect .social ul li {
@@ -173,26 +199,54 @@
         .thankyou .thanks p {
             font-size: 34px;
         }
-        .tax-home .hero .tax-img img {
+        .tax-home .hero .tax-img img,
+        .gst-home .hero .gst-img img {
             display: none;
         }
-        .tax-home .hero {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .tax-home .hero,
+        .gst-home .hero {
+            margin: 0px;
             padding: 0px;
+            transform: translate(-50%, -50%) !important;
+            /* position: unset !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(0%, -50%) !important;
+        /* position: absolute; */
+            /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0px;
+        */
         }
         .income-tax .heading h1 {
             font-size: 28px;
             max-width: 375px;
         }
+        .right .right-form .submit input {
+            padding: 10px 30px;
+        }
+        .gst .heading h1 {
+            font-size: 28px;
+            max-width: 250px;
+        }
+        .gst .heading h3 {
+            font-size: 22px;
+        }
+        .gst .card .card-body h4 {
+            font-size: 22px;
+        }
+        .gst .top-card .card {
+            margin: 20px 0;
+            height: 265px;
+        }
+        .gst .top-card .card .card-body .content {
+            padding: 7px 30px 10px 60px;
+        }
     }
     
     @media (max-width:767px) {
-        .hero {
-            padding: 30% 0;
-        }
+        .hero {}
         .hero .content h1 {
             font-size: 26px;
         }
@@ -203,7 +257,7 @@
             width: 70%;
         }
         .hero .form-area {
-            margin: 185px 0;
+            margin: 150px 0;
         }
         .hero .form-area h3 {
             font-size: 20px;
@@ -247,6 +301,21 @@
         #services .content .right .tax-notice img {
             margin: 20px;
         }
+        #client-review .owl-item {
+            padding: 10px;
+            text-align: center;
+            padding: 0px 30px;
+            /* width: 400px!important; */
+        }
+        /* #client-review .item {
+width: 400px;
+} */
+        #client-review .item .client-text p {
+            font-size: 18px;
+        }
+        #client-review .item .read-more a {
+            font-size: 18px;
+        }
         #contact {
             display: flex;
             flex-direction: column;
@@ -287,13 +356,18 @@
         }
         .income-tax .card {
             max-width: 400px;
-            margin: 0 auto;
+            margin: 20px auto;
+        }
+        .gst .card,
+        .gst .top-card .card {
+            width: 400px;
+            margin: 20px auto;
         }
     }
     
     @media (max-width:580px) {
         .hero {
-            padding: 40% 20px;
+            padding: 5% 20px;
         }
         .hero .content h1 {
             font-size: 20px;
@@ -343,7 +417,7 @@
             font-size: 14px;
         }
         #services .heading .box-4 {
-            max-width: 300px;
+            max-width: 215px;
         }
         .hero .form-area .form a {
             font-size: 14px;
@@ -362,14 +436,21 @@
             padding: 40px 0;
             letter-spacing: 0px;
         }
-        #client-review .client-details .client-name h3 {
+        #client-review .item .client-name h3 {
             font-size: 22px;
         }
-        #client-review .client-details .client-text p {
-            font-size: 18px;
+        #client-review .item .client-text p {
+            font-size: 16px;
         }
-        #client-review .client-details .read-more a {
-            font-size: 18px;
+        #client-review .item .read-more a {
+            font-size: 16px;
+        }
+        #client-review .item .rating i {
+            font-size: 20px;
+            padding: 10px 5px;
+        }
+        .owl-carousel .owl-item img {
+            height: 150px;
         }
         #contact .left .sub-logo img {
             width: 30%;
@@ -421,10 +502,56 @@
             height: 425px;
         }
         .income-tax .card .card-body h4 {
-            font-size: 28px;
+            font-size: 24px;
         }
         .income-tax .card .card-body .amt h5 {
+            font-size: 22px;
+        }
+        .income-tax .card .card-body .buy-btn {
+            font-size: 14px;
+            padding: 2px 20px;
+        }
+        .income-tax .card {
+            max-width: 350px;
+        }
+        .income-tax .card {
+            height: 500px;
+        }
+        .income-tax .card .card-body .who a {
+            font-size: 14px;
+        }
+        #contact .right .right-form a,
+        #contact .right .right-form .submit input {
+            padding: 7px 30px;
+        }
+        .gst .card .card-body .amt h5 {
+            font-size: 26px;
+        }
+        .gst .card .card-body .amt h5 .per-annum {
+            font-size: 18px;
+        }
+        .gst .card .card-body .buy-btn {
+            font-size: 16px;
+            padding: 3px 25px
+        }
+        .gst .card,
+        .gst .top-card .card {
+            width: 375px;
+        }
+        .gst .card .card-body .who a {
+            font-size: 14px;
+        }
+        .income-tax .heading h1 {
             font-size: 24px;
+        }
+        .gst .heading h1 {
+            font-size: 24px;
+        }
+        .gst .heading h3 {
+            font-size: 18px;
+        }
+        .income-tax .heading h1 {
+            max-width: 350px;
         }
     }
     
@@ -436,7 +563,7 @@
             font-size: 14px;
         }
         .hero {
-            padding: 47% 20px;
+            padding: 10% 20px;
         }
         #services .content .left {
             width: 100%;
@@ -460,21 +587,75 @@
             font-size: 12px;
             line-height: 20px;
         }
-        #client-review .client-details .client-name h3 {
+        #client-review .item .client-name h3 {
             font-size: 20px;
             margin: 5px;
         }
-        #client-review .client-details .client-text p {
+        #client-review .item .client-text p {
             font-size: 16px;
         }
-        #client-review .client-details .read-more a {
+        #client-review .item .read-more a {
+            font-size: 16px;
+        }
+        .owl-carousel .owl-item img {
+            height: 100px;
+        }
+        #client-review .item .count h1 {
+            font-size: 25px;
+            margin: 15px 0;
+        }
+        #client-review .item .client-name h3 {
+            font-size: 20px;
+            margin: 5px;
+        }
+        #client-review .item .client-text p {
+            font-size: 14px;
+        }
+        #client-review .item .read-more a {
+            font-size: 14px;
+        }
+        #client-review .item .rating i {
+            font-size: 18px;
+            padding: 5px 2px;
+        }
+        .income-tax .card {
+            max-width: 320px;
+        }
+        .gst .card .card-body h4 {
+            font-size: 20px;
+        }
+        .gst .card .card-body .amt h5 {
+            font-size: 22px;
+        }
+        .gst .card .card-body .amt h5 .paise {
+            font-size: 18px;
+        }
+        .gst .card .card-body .amt h5 .per-annum {
+            font-size: 16px;
+        }
+        .gst .card .card-body .content ol li {
+            line-height: 18px;
+        }
+        .gst .card {
+            height: 475px;
+        }
+        #services .heading .box-4 h1 {
+            font-size: 22px;
+        }
+        .income-tax .heading h1 {
+            font-size: 22px;
+        }
+        .gst .heading h1 {
+            font-size: 22px;
+        }
+        .gst .heading h3 {
             font-size: 16px;
         }
     }
     
     @media (max-width:400px) {
         .hero {
-            padding: 50% 20px;
+            padding: 10% 20px;
         }
         #services .content .right .tax-notice-content h4 {
             margin-top: 20px;
@@ -482,5 +663,9 @@
         }
         #services .content .right .tax-notice-content h4 {
             font-size: 14px;
+        }
+        .gst .card,
+        .gst .top-card .card {
+            width: 300px;
         }
     }

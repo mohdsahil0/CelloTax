@@ -83,7 +83,7 @@
         <div id="blog">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
                             <img class="card-img-top" src="./assets/icons/blog3.png" alt="Card image cap">
                             <div class="card-body">
@@ -95,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
                             <img class="card-img-top" src="./assets/icons/blog2.png" alt="Card image cap">
                             <div class="card-body">
@@ -108,7 +108,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
                             <img class="card-img-top" src="./assets/icons/blog3.png" alt="Card image cap">
                             <div class="card-body">
@@ -123,7 +123,7 @@
                     </div>
                     <!-- </div>
                 <div class="row"> -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
                             <img class="card-img-top" src="./assets/icons/blog3.png" alt="Card image cap">
                             <div class="card-body">
@@ -135,7 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
                             <img class="card-img-top" src="./assets/icons/blog2.png" alt="Card image cap">
                             <div class="card-body">
@@ -148,7 +148,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
                             <img class="card-img-top" src="./assets/icons/blog3.png" alt="Card image cap">
                             <div class="card-body">

@@ -16,6 +16,8 @@ $(document).ready(function() {
             'display': 'block'
         });
     });
+
+
 });
 
 $(document).on('click', 'ul li', function() {
@@ -28,3 +30,26 @@ function toggle() {
     var popup = document.getElementById('popup');
     popup.classList.toggle('active');
 }
+
+$(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+        stagePadding: 150,
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+
+            },
+            1000: {
+                items: 1,
+
+            }
+        }
+
+    })
+});
