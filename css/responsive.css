@@ -431,6 +431,12 @@ width: 400px;
             .client-reviews .client-hero .left .client-img .client-name h2 {
                 font-size: 26px !important;
             }
+            .app .app-row p {
+                font-size: 16px;
+            }
+            .app .app-row img {
+                width: 170px;
+            }
         }
         
         @media (max-width:580px) {
@@ -686,6 +692,13 @@ width: 400px;
                 width: 100px;
                 height: 100px;
             }
+            .copyright p {
+                font-size: 14px;
+            }
+            .app .app-row img {
+                width: 140px;
+                padding: 20px 5px;
+            }
         }
         
         @media (max-width:480px) {
@@ -844,6 +857,15 @@ width: 400px;
             .client-reviews .client-hero .right .content ul li {
                 padding-right: 3px;
             }
+            .app .app-row p {
+                font-size: 14px;
+            }
+            .app .app-row img {
+                width: 100px;
+            }
+            .app .app-row p {
+                font-size: 12px;
+            }
         }
         
         @media (max-width:400px) {
@@ -864,6 +886,9 @@ width: 400px;
             .client-reviews .client-hero .left .client-img img {
                 height: 200px;
                 width: 300px;
+            }
+            .app .app-row p {
+                font-size: 12px;
             }
         }
         

@@ -222,6 +222,9 @@
             </div>
         </div>
     </div>
+    <div class="copyright">
+        <p>&copy; Copyright 2020-21 by <a href="https://www.cellotax.com">CelloTax</a> All rights reserved. &nbsp;&nbsp; Designed by Frazile.Inc</p>
+    </div>
 </body>
 
 </html>

@@ -2,6 +2,11 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo $_POST['contactemail'];
 }
+
+include('mysql.php');
+
+$query = "SELECT * FROM ";
+
 ?>
 
 <!DOCTYPE html>
@@ -18,12 +23,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js"></script>
@@ -79,9 +78,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="hero container">
                 <div class="content">
                     <h1>
-                        <Span class="content-color">File Your</Span> Tax Returns With as Quickly as Soon as Possible With Our Tax Experts Team With <span class="content-color">Low Price.</span>
+                        <Span class="content-color">File Your</Span> Tax Returns With us Quickly as Soon as Possible With Our Tax Experts Team With <span class="content-color">Low Price.</span>
                     </h1>
-                    <h3>Do Not Go Out In That Pandemic Without Any Reason Let Your Tax Filling Headache On Our Tax Experts.</h3>
+                    <h3>Do Not Go Out In That Pandemic Without Any Reason Let Your Tax Filing Headache On Our Tax Experts.</h3>
                     <hr class="line1 line">
                     <hr class="line2 line">
                     <hr class="line3 line">
@@ -95,13 +94,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </h3>
 
                     <div class="form">
-                        <!-- <form action="">
-                            <div class="form-content">
-                                <input type="text" name="" id="" placeholder="Enter Your Number">
-                            </div>
-                            <div class="form-content">
-                                <input type="text" name="" id="" placeholder="Enter Your Name">
-                            </div> -->
                         <form action="" method="POST">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your Number">
@@ -274,14 +266,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                        
                             <div class="testimonial">
                                 <div class="pic">
-                                    <img src="./assets/icons/Mohd_Amir.png" alt="">
+                                    <img src="./assets/icons/narola_sir.png" alt="">
                                 </div>
                                         <h1>01</h1>
                                         <div class="client-name">
-                                            <h3>Mohd Asim</h3>
+                                            <h3>Prem Singh Narula</h3>
                                         </div>
                                         <div class="client-text">
-                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                            <p>I gave them for my GST registration. They gave me my GST certificate in two days. I have first time see so fast service of a business site. </p>
                                         </div>
                                         <div class="read-more">
                                             <a href="client-review.php">Read More...</a>
@@ -293,14 +285,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             
                             <div class="testimonial">
                                 <div class="pic">
-                                    <img src="./assets/icons/Mohd_Amir.png" alt="">
+                                    <img src="./assets/icons/aaaaaa.png" alt="">
                                 </div>
                                         <h1>02</h1>
                                         <div class="client-name">
-                                            <h3>Mohd Asim</h3>
+                                            <h3>Vikesh Bharti</h3>
                                         </div>
                                         <div class="client-text">
-                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                            <p>The staff are really good, responsive and hassle free. They done my work</p>
                                         </div>
                                         <div class="read-more">
                                             <a href="client-review.php">Read More...</a>
@@ -367,6 +359,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
                 </div>
         </div>
+    </div></div>
+    <div class="app">
+        <div class="container">
+            <div class="app-row">
+                <p>Download our App Now to Install Click Here</p>
+                <img src="./assets/icons/App Store.png" alt="Appstore">
+                <img src="./assets/icons/Google play.png" alt="Playstore">
+            </div>
+        </div>
     </div>
 
     <div id="contact">
@@ -420,6 +421,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </form>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; Copyright 2020-21 by <a href="https://www.cellotax.com">CelloTax</a> All rights reserved. &nbsp;&nbsp; Designed by Frazile.Inc</p>
     </div>
 </body>
 

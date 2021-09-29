@@ -858,19 +858,28 @@ textarea:focus:-webkit-placeholder {
     content: "\f105";
 }
 
-@media only screen and (max-width: 479px) {
-    .testimonial {
-        padding: 70px 10px 30px;
-    }
-    .testimonial .description:before {
-        top: -20px
-    }
-    .testimonial .title {
-        font-size: 12px;
-    }
-    .testimonial .post {
-        font-size: 11px;
-    }
+
+/* **********APP******** */
+
+.app {
+    background-color: #221837;
+}
+
+.app .app-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app .app-row p {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.app .app-row img {
+    width: 210px;
+    padding: 20px;
 }
 
 
@@ -1626,4 +1635,13 @@ textarea:focus:-webkit-placeholder {
     font-weight: 500;
     border: 1px solid #023C6C;
     border-radius: 35px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    padding: 10px 0;
+    background: #ceecf9;
 }
