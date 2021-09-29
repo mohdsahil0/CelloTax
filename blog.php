@@ -191,7 +191,7 @@
                             <li><a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                             <li><a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
                             <li>
-                                <a href="#"><i class="fa fa-whatsapp" target="_blank"></i></a>
+                            <a href="https://wa.me/+919335747476" target="_blank"><i class="fa fa-whatsapp" target="_blank"></i></a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/CelloTax" target="_blank"><i class="fa fa-twitter"></i></a>
