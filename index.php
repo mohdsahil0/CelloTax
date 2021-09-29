@@ -301,8 +301,8 @@ mysqli_close($conn);
         <div class="container">
             <div class="app-row">
                 <p>Download our App Now to Install Click Here</p>
-                <img src="./assets/icons/App Store.png" alt="Appstore">
-                <img src="./assets/icons/Google play.png" alt="Playstore">
+                <a href="#"><img src="./assets/icons/App Store.png" alt="Appstore"></a>
+                <a href="#"><img src="./assets/icons/Google play.png" alt="Playstore"></a>
             </div>
         </div>
     </div>
