@@ -312,8 +312,8 @@
                 </div>
                 <div class="connect">
                     <div class="mail">
-                        <div class="mail1"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></div>
-                        <div class="mail2"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></div>
+                    <div class="mail1"><a href="mailto:cellotax@gmail.com"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
+                        <div class="mail2"><a href="mailto:support1@cellotax.com"><i class="fa fa-envelope"></i> <span>support1@cellotax.com</span></a></div>
                     </div>
                     <div class="social">
                         <p>FOLLOW US</p>
@@ -340,7 +340,7 @@
                         <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email">
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" id="exampleInputnumber1" placeholder="Enter Your Number">
@@ -354,7 +354,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>&copy; Copyright 2020-21 by <a href="https://www.cellotax.com">CelloTax</a> All rights reserved. &nbsp;&nbsp; Designed by Frazile.Inc</p>
+    <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com/">CelloTax</a> All rights reserved. &nbsp; Designed by <a href="https://frazile.com/">Frazile.Inc</a></p>
     </div>
 </body>
 
