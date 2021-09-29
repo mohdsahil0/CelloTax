@@ -5,8 +5,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 include('mysql.php');
 
-$query = "SELECT * FROM ";
+$query = "SELECT * FROM clientreviews";
+$result = @mysqli_query($conn, $query);
+while($row = mysqli_fetch_object($result)) $reviews[] = (object) $row;
 
+// Close the connection
+mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -263,98 +267,31 @@ $query = "SELECT * FROM ";
                 <div class="row" style="justify-content: center;">
                     <div class="col-md-offset-2 col-md-8">
                         <div id="testimonial-slider" class="owl-carousel">
-                       
-                            <div class="testimonial">
+
+                        <?php foreach($reviews as $key => $review) :?>
+
+                        <div class="testimonial">
                                 <div class="pic">
-                                    <img src="./assets/icons/narola_sir.png" alt="">
+                                    <img src="assets/icons/<?=$review->filename?>" alt="client">
                                 </div>
-                                        <h1>01</h1>
+                                        <h1><?=$review->count?></h1>
                                         <div class="client-name">
-                                            <h3>Prem Singh Narula</h3>
+                                            <h3><?=$review->name?></h3>
                                         </div>
                                         <div class="client-text">
-                                            <p>I gave them for my GST registration. They gave me my GST certificate in two days. I have first time see so fast service of a business site. </p>
+                                            <p><?=$review->review?></p>
                                         </div>
                                         <div class="read-more">
                                             <a href="client-review.php">Read More...</a>
                                         </div>
                                         <div class="rating">
-                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        <?php for($i = 1; $i <= $review->ratings; $i++) {
+                                            echo'<i class="fa fa-star"></i>';
+                                        }?>
                                         </div>
                             </div>
-            
-                            <div class="testimonial">
-                                <div class="pic">
-                                    <img src="./assets/icons/aaaaaa.png" alt="">
-                                </div>
-                                        <h1>02</h1>
-                                        <div class="client-name">
-                                            <h3>Vikesh Bharti</h3>
-                                        </div>
-                                        <div class="client-text">
-                                            <p>The staff are really good, responsive and hassle free. They done my work</p>
-                                        </div>
-                                        <div class="read-more">
-                                            <a href="client-review.php">Read More...</a>
-                                        </div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                        </div>
-                            </div>
-                            <div class="testimonial">
-                                <div class="pic">
-                                    <img src="./assets/icons/Mohd_Amir.png" alt="">
-                                </div>
-                                        <h1>03</h1>
-                                        <div class="client-name">
-                                            <h3>Mohd Asim</h3>
-                                        </div>
-                                        <div class="client-text">
-                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
-                                        </div>
-                                        <div class="read-more">
-                                            <a href="client-review.php">Read More...</a>
-                                        </div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                        </div>
-                            </div>
-                            <div class="testimonial">
-                                <div class="pic">
-                                    <img src="./assets/icons/Mohd_Amir.png" alt="">
-                                </div>
-                                        <h1>04</h1>
-                                        <div class="client-name">
-                                            <h3>Mohd Asim</h3>
-                                        </div>
-                                        <div class="client-text">
-                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
-                                        </div>
-                                        <div class="read-more">
-                                            <a href="client-review.php">Read More...</a>
-                                        </div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                        </div>
-                            </div>
-                            <div class="testimonial">
-                                <div class="pic">
-                                    <img src="./assets/icons/Mohd_Amir.png" alt="">
-                                </div>
-                                        <h1>05</h1>
-                                        <div class="client-name">
-                                            <h3>Mohd Asim</h3>
-                                        </div>
-                                        <div class="client-text">
-                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
-                                        </div>
-                                        <div class="read-more">
-                                            <a href="client-review.php">Read More...</a>
-                                        </div>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                        </div>
-                            </div>
+                            <?php endforeach ?>            
+
                         </div>
                     </div>
                 </div>
@@ -423,7 +360,7 @@ $query = "SELECT * FROM ";
         </div>
     </div>
     <div class="copyright">
-        <p>&copy; Copyright 2020-21 by <a href="https://www.cellotax.com">CelloTax</a> All rights reserved. &nbsp;&nbsp; Designed by Frazile.Inc</p>
+        <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com/">CelloTax</a> All rights reserved. &nbsp; Designed by Frazile.Inc</p>
     </div>
 </body>
 
