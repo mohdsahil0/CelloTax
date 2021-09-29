@@ -83,16 +83,16 @@
         <div class="register-social">
             <ul>
                 <li>
-                    <a href="#"><img src="./assets/icons/instagram.png" alt=""></a>
+                    <a href="https://www.instagram.com/taxcello/" target="_blank"><img src="./assets/icons/instagram.png" alt=""></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./assets/icons/facebook.png" alt=""></a>
+                    <a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><img src="./assets/icons/facebook.png" alt=""></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./assets/icons/twitter_1.png" alt=""></a>
+                    <a href="https://twitter.com/CelloTax" target="_blank"><img src="./assets/icons/twitter_1.png" alt=""></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./assets/icons/linkedin_1.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><img src="./assets/icons/linkedin_1.png" alt=""></a>
                 </li>
             </ul>
         </div>
@@ -111,19 +111,14 @@
                     <div class="social">
                         <p>FOLLOW US</p>
                         <ul>
+                        <li><a href="https://www.instagram.com/taxcello/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
                             <li>
-                                <a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-whatsapp" target="_blank"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-whatsapp"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="https://twitter.com/CelloTax" target="_blank"><i class="fa fa-twitter"></i></a>
                             </li>
                         </ul>
                     </div>
