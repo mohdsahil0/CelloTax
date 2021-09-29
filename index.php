@@ -27,6 +27,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/main.js">
@@ -262,9 +267,107 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="heading">
                 <h1>Our Clients Reviews</h1>
             </div>
-                   
+            <div class="container">
+                <div class="row" style="justify-content: center;">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div id="testimonial-slider" class="owl-carousel">
+                       
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="./assets/icons/Mohd_Amir.png" alt="">
+                                </div>
+                                        <h1>01</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                            </div>
+            
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="./assets/icons/Mohd_Amir.png" alt="">
+                                </div>
+                                        <h1>02</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="./assets/icons/Mohd_Amir.png" alt="">
+                                </div>
+                                        <h1>03</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="./assets/icons/Mohd_Amir.png" alt="">
+                                </div>
+                                        <h1>04</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="./assets/icons/Mohd_Amir.png" alt="">
+                                </div>
+                                        <h1>05</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="testimonials-carousel-wrap">
+            <!-- <div class="testimonials-carousel-wrap">
                 <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff;"></i></div>
                 <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff;"></i></div>
                 <div class="testimonials-carousel">
@@ -380,7 +483,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
                 </div>        
                  
-            </div>
+            </div> -->
            
         </div>
     </div>
@@ -403,7 +506,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <li><a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                             <li><a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
                             <li>
-                                <a href="https://wa.me/+918383043116" target="_blank"><i class="fa fa-whatsapp" target="_blank"></i></a>
+                                <a href="https://wa.me/+919335747476" target="_blank"><i class="fa fa-whatsapp" target="_blank"></i></a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/CelloTax" target="_blank"><i class="fa fa-twitter"></i></a>

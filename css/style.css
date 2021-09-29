@@ -710,299 +710,168 @@ textarea:focus:-webkit-placeholder {
     background: #ceecf9;
     text-align: center;
     position: relative;
+    text-align: center;
 }
-
-
-/* #client-review .client-wrapper {
-    width: 80%;
-    height: 350px;
-    margin: 0 auto;
-    background-color: #7e7e7e;
-}
-
-#client-review .client-wrapper .review {
-    background-color: #cccccc;
-    display: inline-block;
-    height: 250px;
-    width: 300px;
-} */
 
 #client-review .heading h1 {
     font-size: 45px;
     letter-spacing: 3px;
-    padding: 60px 0;
+    padding: 50px 0;
     font-weight: 900;
     text-align: center;
     color: black;
 }
 
-#client-review .swiper-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-#client-review .listing-carousel-button {
-    position: absolute;
-    top: 50%;
-    width: 80px;
-    height: 50px;
-    line-height: 50px;
-    margin-top: -15px;
-    z-index: 100;
-    cursor: pointer;
-    background: #66AC4C;
-    box-shadow: 0 9px 26px rgba(58, 57, 135, 0.45);
-    transition: all 200ms linear;
-    outline: none;
-}
-
-#client-review .listing-carousel-button.listing-carousel-button-next {
-    right: -30px;
-    padding-right: 20px;
-    border-radius: 60px 0 0 60px;
-}
-
-#client-review .listing-carousel-button.listing-carousel-button-prev {
-    left: -30px;
-    padding-left: 20px;
-    border-radius: 0px 60px 60px 0;
-}
-
-#client-review .listing-carousel-button.listing-carousel-button-next:hover {
-    right: -15px;
-    background: rgba(6, 27, 65, 0.4);
-}
-
-#client-review .listing-carousel-button.listing-carousel-button-prev:hover {
-    left: -15px;
-    background: rgba(6, 27, 65, 0.4);
-}
-
-#client-review .testi-item {
-    transition: all .3s ease-in-out;
-    transform: scale(0.9);
-    opacity: 0.9;
-}
-
-#client-review .testi-item .testi-avatar img {
-    height: 200px;
-}
-
-#client-review .testimonials-text {
-    padding: 15px 30px 60px;
-    overflow: hidden;
-    transition: all .3s ease-in-out;
-}
-
-#client-review .testimonials-text .rating i {
+#client-review .testimonial .rating i {
     padding: 15px 10px;
     color: #66AC4C;
     font-size: 30px;
 }
 
-#client-review .testimonials-text .count h1 {
+#client-review .testimonial h1 {
     color: #7e7e7e;
     font-size: 56px;
     font-family: 'Roboto', sans-serif;
     margin: 30px 0;
 }
 
-#client-review .testimonials-text .client-name h3 {
+#client-review .testimonial .client-name h3 {
     color: black;
     font-size: 35px;
     font-weight: 900;
-    margin: 30px 0;
+    margin: 0;
 }
 
-#client-review .testimonials-text .client-text p {
+#client-review .testimonial .client-text p {
     font-size: 24px;
     color: black;
 }
 
-#client-review .testimonials-text .read-more a {
+#client-review .testimonial .read-more a {
     font-size: 24px;
     margin: 20px 0;
 }
 
-#client-review .tc-pagination {
-    float: left;
-    margin-top: 10px;
-    width: 100%;
+.testimonial {
+    padding: 70px 30px 50px;
+    margin: 50px 30px 30px;
+    position: relative;
 }
 
-#client-review .tc-pagination_wrap {
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-    width: 100%;
-}
-
-#client-review .tc-pagination2 {
-    float: none;
-    display: inline-block;
-    padding: 14px 0;
-    background: #fff;
-    border-radius: 30px;
-    min-width: 250px;
-    border-bottom: 0;
-}
-
-#client-review .tc-paginatio .swiper-pagination-bullet,
-.tc-pagination2 .swiper-pagination-bullet {
-    opacity: 1;
-    background: #384f95;
-    margin: 0 2px;
-    width: 10px;
-    height: 10px;
-    transition: all 300ms ease-in-out;
-}
-
-
-/* #client-review .scroll img {
-    height: 150px;
+.testimonial .pic {
     width: 150px;
-}
-
-#client-review .client-details {
-    text-align: center;
-    max-width: 70%;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
     margin: 0 auto;
-    padding-bottom: 100px;
-}
-
-#client-review .item .count h1 {
-    color: #7e7e7e;
-    font-size: 56px;
-    font-family: 'Roboto', sans-serif;
-    margin: 30px 0;
-}
-
-#client-review .item .client-name h3 {
-    color: black;
-    font-size: 35px;
-    font-weight: 900;
-    margin: 30px 0;
-}
-
-#client-review .item .client-text p {
-    font-size: 26px;
-    color: black;
-}
-
-#client-review .item .read-more a {
-    font-size: 24px;
-    margin: 20px 0;
-}
-
-#client-review .item .rating i {
-    padding: 15px 10px;
-    color: #66AC4C;
-    font-size: 30px;
-}
-
-#client-review .yorum {
-    display: flex; */
-
-
-/* height: 100vh; */
-
-
-/* align-items: center;
-}
-
-.owl-theme .owl-dots {
-    padding-bottom: 25px;
-}
-
-#client-review .card {
-    border: none;
-    box-shadow: 0 0 3px #0000001a;
-}
-
-#client-review .owl-item {
-    padding: 10px;
-    text-align: center;
-    padding: 0 100px;
-}
-
-#client-review .card-yazı p {
-    padding: 30px 40px 50px 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-}
-
-#client-review .card-yazı p::after {
-    content: url("https://i.hizliresim.com/ODgyXA.png");
-    width: 40px;
-    height: 40px;
     position: absolute;
-    margin: 10px 0 0 20px;
+    top: -50px;
+    left: 0;
+    right: 0;
 }
 
-#client-review .card-yazı p::before {
-    content: url("https://i.hizliresim.com/zMXJz4.png");
-    width: 30px;
-    height: 30px;
-    position: relative; */
-
-
-/* top: -10px; */
-
-
-/* left: -18px;
-}
-
-#client-review .card-yazı {
-    background-image: linear-gradient(135deg, rgb(255, 247, 32) 10%, rgb(60, 213, 0) 100%);
-    position: relative;
-    min-height: 300px;
-    display: flex;
-    align-items: center;
-}
-
-.owl-carousel .owl-item img {
-    width: unset;
-    margin: 0 auto;
-    height: 200px;
-}
-
-#client-review .favicon {
+.testimonial .pic img {
     width: 100%;
     height: auto;
 }
 
-#client-review .favicon img {
-    height: 90px;
-    width: 90px !important;
-    position: absolute;
-    bottom: -45px;
-    left: 39%;
-    border-radius: 100px;
-    border: 8px solid white;
-}
-
-#client-review .puan {
-    margin-top: 20px;
-} */
-
-
-/* #client-review .puan img {
-    height: 20px;
-    width: 20px !important;
-    margin: 30px 5px 0 0;
-}
-
-#client-review .isim h1 {
+.testimonial .description {
     font-size: 15px;
-    font-weight: 700;
-    margin-top: 20px;
+    color: #5e595b;
+    line-height: 27px;
+    text-align: center;
+    margin: 0;
+    position: relative;
 }
 
-#client-review .isim p {
-    font-size: 12px;
-    font-weight: 400;
-} */
+.testimonial .description:before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 25px;
+    color: #d7d7d7;
+    position: absolute;
+    top: 0;
+    left: -2px;
+}
+
+.testimonial .title {
+    display: inline-table;
+    padding: 10px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ea816b;
+    font-size: 20px;
+    font-weight: 700;
+    color: #c7373c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    right: 0;
+}
+
+.testimonial .post {
+    font-size: 15px;
+    color: #671a36;
+}
+
+.owl-theme .owl-controls {
+    width: 100%;
+    height: 50px;
+    opacity: 1;
+    position: absolute;
+    top: 38%;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    line-height: 40px;
+    border-radius: 0;
+    background: transparent;
+}
+
+.owl-prev {
+    position: absolute;
+    left: -5%;
+    clip-path: polygon(100% 0, 25% 35%, 100% 70%);
+}
+
+.owl-next {
+    position: absolute;
+    right: -5%;
+    clip-path: polygon(0 0, 0 70%, 75% 35%);
+}
+
+.owl-prev:after,
+.owl-next:after {
+    content: "\f104";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #c7373c;
+    background-color: #221837;
+    opacity: 1;
+}
+
+.owl-next:after {
+    content: "\f105";
+}
+
+@media only screen and (max-width: 479px) {
+    .testimonial {
+        padding: 70px 10px 30px;
+    }
+    .testimonial .description:before {
+        top: -20px
+    }
+    .testimonial .title {
+        font-size: 12px;
+    }
+    .testimonial .post {
+        font-size: 11px;
+    }
+}
 
 
 /* *************Contact Page********* */
