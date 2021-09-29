@@ -4,7 +4,7 @@ CREATE TABLE `users` (
  `phone` varchar(20) NOT NULL,
  `name` varchar(100) NOT NULL,
  PRIMARY KEY (`id`)
-)
+);
 
 /* GST Plans */
 CREATE TABLE IF NOT EXISTS `gstPlans` (
@@ -25,4 +25,4 @@ CREATE TABLE IF NOT EXISTS `contactusers` (
     `phone` varchar(100) NOT NULL,
     `message` TEXT NOT NULL,
     PRIMARY KEY(`id`)
-)
+);
