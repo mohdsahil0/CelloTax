@@ -25,6 +25,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/main.js">
@@ -256,162 +258,131 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 
     <div id="client-review">
-        <div class="heading">
-            <h1>Our Clients Reviews</h1>
+        <div class="container">
+            <div class="heading">
+                <h1>Our Clients Reviews</h1>
+            </div>
+                   
+
+            <div class="testimonials-carousel-wrap">
+                <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff;"></i></div>
+                <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff;"></i></div>
+                <div class="testimonials-carousel">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="./assets/icons/Mohd_Amir.png" alt=""></div>
+                                    <div class="testimonials-text">
+                                        <h1>01</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="./assets/icons/Mohd_Amir.png" alt=""></div>
+                                    <div class="testimonials-text">
+                                        <h1>02</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="./assets/icons/Mohd_Amir.png" alt=""></div>
+                                    <div class="testimonials-text">
+                                        <h1>03</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="./assets/icons/Mohd_Amir.png" alt=""></div>
+                                    <div class="testimonials-text">
+                                        <h1>04</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="./assets/icons/Mohd_Amir.png" alt=""></div>
+                                    <div class="testimonials-text">
+                                        <h1>05</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tc-pagination"></div>  
+
+                        </div>
+                    </div>
+                </div>        
+                 
+            </div>
+           
         </div>
-        <!-- <div class="client-wrapper">
-            <div class="review">1</div>
-            <div class="review">2</div>
-            <div class="review">3</div>
-            <div class="review">4</div>
-            <div class="review">5</div>
-        </div> -->
-        <section class="yorum">
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-            <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-            <div class="count">
-                <h1>01</h1>
-            </div>
-            <div class="client-name">
-                <h3>Mohd Asim</h3>
-            </div>
-            <div class="client-text">
-                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
-            </div>
-            <div class="read-more">
-                <a href="client-review.php">Read More...</a>
-            </div>
-            <div class="rating">
-                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-        </div>
-        <div class="item"><a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-            <div class="count">
-                <h1>02</h1>
-            </div>
-            <div class="client-name">
-                <h3>Mohd Asim</h3>
-            </div>
-            <div class="client-text">
-                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
-            </div>
-            <div class="read-more">
-                <a href="client-review.php">Read More...</a>
-            </div>
-            <div class="rating">
-                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-        </div>
-        <div class="item"><a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-            <div class="count">
-                <h1>03</h1>
-            </div>
-            <div class="client-name">
-                <h3>Mohd Asim</h3>
-            </div>
-            <div class="client-text">
-                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
-            </div>
-            <div class="read-more">
-                <a href="client-review.php">Read More...</a>
-            </div>
-            <div class="rating">
-                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-        </div>
-        <div class="item"><a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-            <div class="count">
-                <h1>04</h1>
-            </div>
-            <div class="client-name">
-                <h3>Mohd Asim</h3>
-            </div>
-            <div class="client-text">
-                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
-            </div>
-            <div class="read-more">
-                <a href="client-review.php">Read More...</a>
-            </div>
-            <div class="rating">
-                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-        </div>
-        <div class="item"><a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-            <div class="count">
-                <h1>05</h1>
-            </div>
-            <div class="client-name">
-                <h3>Mohd Asim</h3>
-            </div>
-            <div class="client-text">
-                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
-            </div>
-            <div class="read-more">
-                <a href="client-review.php">Read More...</a>
-            </div>
-            <div class="rating">
-                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-        </div>
-        <div class="item"><a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-            <div class="count">
-                <h1>06</h1>
-            </div>
-            <div class="client-name">
-                <h3>Mohd Asim</h3>
-            </div>
-            <div class="client-text">
-                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
-            </div>
-            <div class="read-more">
-                <a href="client-review.php">Read More...</a>
-            </div>
-            <div class="rating">
-                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-        </div>
-        <!-- <div class="item"><h4>7</h4></div>
-        <div class="item"><h4>8</h4></div>
-        <div class="item"><h4>9</h4></div>
-        <div class="item"><h4>10</h4></div>
-        <div class="item"><h4>11</h4></div>
-        <div class="item"><h4>12</h4></div> -->
-      </div>
-    </section>
-        <!-- <div class="container horizontal-scrollable ">
-            <div class="row text-center scroll">
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="client-details">
-            <div class="count">
-                <h1>01</h1>
-            </div>
-            <div class="client-name">
-                <h3>Mohd Asim</h3>
-            </div>
-            <div class="client-text">
-                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
-            </div>
-            <div class="read-more">
-                <a href="client-review.php">Read More...</a>
-            </div>
-            <div class="rating">
-                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-        </div> -->
     </div>
 
     <div id="contact">
@@ -432,7 +403,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <li><a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                             <li><a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
                             <li>
-                                <a href="#"><i class="fa fa-whatsapp" target="_blank"></i></a>
+                                <a href="https://wa.me/+918383043116" target="_blank"><i class="fa fa-whatsapp" target="_blank"></i></a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/CelloTax" target="_blank"><i class="fa fa-twitter"></i></a>

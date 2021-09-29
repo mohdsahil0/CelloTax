@@ -108,6 +108,57 @@
             </div>
         </div>
     </div>
-
+    <div id="contact">
+        <div class="left">
+            <div class="left-item">
+                <div class="sub-logo">
+                    <img src="./assets/icons/Cellotax1.png" alt="CelloTax">
+                </div>
+                <div class="connect">
+                    <div class="mail">
+                        <div class="mail1"><a href="#"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
+                        <div class="mail2"><a href="#"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
+                    </div>
+                    <div class="social">
+                        <p>FOLLOW US</p>
+                        <ul>
+                            <li><a href="https://www.instagram.com/taxcello/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                            <li>
+                                <a href="wa.link/5i0hls"><i class="fa fa-whatsapp" target="_blank"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/CelloTax" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-form">
+                <h1>CONTACT US</h1>
+                <form action="/" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Enter Your name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="contactemail" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputnumber1" name="contactphone" placeholder="Enter Your Number">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="contactmsg" placeholder="Enter Your Message" rows="3"></textarea>
+                    </div>
+                    <!-- <a href="#" class="submit">SUBMIT</a> -->
+                    <div class="submit">
+                        <input type="submit" value="SUBMIT" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

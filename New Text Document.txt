@@ -21,4 +21,301 @@ To take advantage of NPS in new slab system, it is necessary that the employer d
 Discount will be available only up to Rs 7.50 lakh:
 
 
-                 If your employer deposits money in NPS account, then you will get a discount on it. The amount deposited in NPS account in a financial year should not exceed Rs.7.50 lakh. 
+                 If your employer deposits money in NPS account, then you will get a discount on it. The amount deposited in NPS account in a financial year should not exceed Rs.7.50 lakh.
+				 
+
+
+
+
+
+
+				 #client-review {
+    /* background: #ceecf9; */
+    background: yellow;
+    text-align: center;
+    position: relative;
+}
+
+
+/* #client-review .client-wrapper {
+    width: 80%;
+    height: 350px;
+    margin: 0 auto;
+    background-color: #7e7e7e;
+}
+
+#client-review .client-wrapper .review {
+    background-color: #cccccc;
+    display: inline-block;
+    height: 250px;
+    width: 300px;
+} */
+
+#client-review .heading h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
+    padding: 60px 0;
+    font-weight: 900;
+    text-align: center;
+    color: black;
+}
+
+#client-review .swiper-container {
+    width: 100%;
+    height: 100%;
+    background: chartreuse;
+    position: relative;
+}
+
+#client-review .listing-carousel-button {
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -25px;
+    z-index: 100;
+    cursor: pointer;
+    background: #007aff;
+    box-shadow: 0 9px 26px rgba(58, 57, 135, 0.45);
+    transition: all 200ms linear;
+    outline: none;
+}
+
+#client-review .listing-carousel-button.listing-carousel-button-next {
+    right: -30px;
+    padding-right: 20px;
+    border-radius: 60px 0 0 60px;
+}
+
+#client-review .listing-carousel-button.listing-carousel-button-prev {
+    left: -30px;
+    padding-left: 20px;
+    border-radius: 0px 60px 60px 0;
+}
+
+#client-review .listing-carousel-button.listing-carousel-button-next:hover {
+    right: -15px;
+    background: rgba(6, 27, 65, 0.4);
+}
+
+#client-review .listing-carousel-button.listing-carousel-button-prev:hover {
+    left: -15px;
+    background: rgba(6, 27, 65, 0.4);
+}
+
+#client-review .testi-item {
+    transition: all .3s ease-in-out;
+    transform: scale(0.9);
+    opacity: 0.9;
+}
+
+#client-review .testimonials-text {
+    padding: 75px 50px 75px;
+    overflow: hidden;
+    background: rgb(80, 219, 212);
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+#client-review .testimonials-text .rating i {
+    padding: 15px 10px;
+    color: #66AC4C;
+    font-size: 30px;
+}
+
+#client-review .testimonials-text .count h1 {
+    color: #7e7e7e;
+    font-size: 56px;
+    font-family: 'Roboto', sans-serif;
+    margin: 30px 0;
+}
+
+#client-review .testimonials-text .client-name h3 {
+    color: black;
+    font-size: 35px;
+    font-weight: 900;
+    margin: 30px 0;
+}
+
+#client-review .testimonials-text .client-text p {
+    font-size: 26px;
+    color: black;
+}
+
+#client-review .testimonials-text .read-more a {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#client-review .tc-pagination {
+    float: left;
+    margin-top: 10px;
+    width: 100% !important;
+}
+
+#client-review .tc-pagination_wrap {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+}
+
+#client-review .tc-pagination2 {
+    float: none;
+    display: inline-block;
+    padding: 14px 0;
+    background: #fff;
+    border-radius: 30px;
+    min-width: 250px;
+    border-bottom: 0;
+}
+
+#client-review .tc-paginatio .swiper-pagination-bullet,
+.tc-pagination2 .swiper-pagination-bullet {
+    opacity: 1;
+    background: #384f95;
+    margin: 0 2px;
+    width: 10px;
+    height: 10px;
+    transition: all 300ms ease-in-out;
+}
+
+
+
+
+
+
+<div id="client-review">
+        <div class="container">
+            <div class="heading">
+                <h1>Our Clients Reviews</h1>
+            </div>
+                   
+
+            <div class="testimonials-carousel-wrap">
+                <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff;"></i></div>
+                <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff;"></i></div>
+                <div class="testimonials-carousel">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="./assets/icons/Mohd_Amir.png" alt=""></div>
+                                    <div class="testimonials-text">
+                                        <h1>01</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="./assets/icons/Mohd_Amir.png" alt=""></div>
+                                    <div class="testimonials-text">
+                                        <h1>02</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="./assets/icons/Mohd_Amir.png" alt=""></div>
+                                    <div class="testimonials-text">
+                                        <h1>03</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="./assets/icons/Mohd_Amir.png" alt=""></div>
+                                    <div class="testimonials-text">
+                                        <h1>04</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="./assets/icons/Mohd_Amir.png" alt=""></div>
+                                    <div class="testimonials-text">
+                                        <h1>05</h1>
+                                        <div class="client-name">
+                                            <h3>Mohd Asim</h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div class="tc-pagination"></div>
+        </div>
+    </div>
+
+
+
+
+
+
