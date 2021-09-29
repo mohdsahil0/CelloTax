@@ -22,79 +22,79 @@
 <body>
     <div class="client-page">
     <div class="client-reviews">
-    <div class="main-home">
-            <div class="nav-bar" id="navbar">
-                <div class="container">
-                    <div class="row nav">
-                        <div class="menu col-md-8">
-                            <ul>
-                                <li class="item"><a href="index.php">HOME</a></li>
-                                <li class="item"><a href="it.php">INCOMETAX</a></li>
-                                <li class="item"><a href="gst.php">GST</a></li>
-                                <li class="item active"><a href="blog.php">BLOG</a></li>
-                                <li class="item"><a href="#contact">CONTACT US</a></li>
-                            </ul>
+            <div class="main-home">
+                            <div class="nav-bar" id="navbar">
+                                <div class="container">
+                                    <div class="row nav">
+                                        <div class="menu col-md-8">
+                                            <ul>
+                                                <li class="item"><a href="index.php">HOME</a></li>
+                                                <li class="item"><a href="it.php">INCOMETAX</a></li>
+                                                <li class="item"><a href="gst.php">GST</a></li>
+                                                <li class="item active"><a href="blog.php">BLOG</a></li>
+                                                <li class="item"><a href="#contact">CONTACT US</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="logo col-md-4">
+                                            <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mob-nav">
+                                <div class="hambar" id="hambar"><i class="fa fa-bars"></i></div>
+                                <div id="sidebar-menu">
+                                    <div class="cros" id="cros"><i class="fa fa-times"></i></div>
+                                    <div class="mob-logo">
+                                            <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
+                                    </div>
+                                    <ul>
+                                        <li class="item "><a href="index.php">HOME</a></li>
+                                        <li class="item"><a href="it.php">INCOMETAX</a></li>
+                                        <li class="item"><a href="gst.php">GST</a></li>
+                                        <li class="item active"><a href="blog.php">BLOG</a></li>
+                                        <li class="item"><a href="#contact">CONTACT US</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                </div>
+        <div class="container" >
+            <div class="client-hero">
+            <div class=" left" >
+            
+                    <div class="client-img">
+                        <img src="./assets/images/campaign-creators-pypeCEaJeZY-unsplash.png" alt="">
+                        <div class="client-name">
+                            <h2>Mohd Asim</h2>
                         </div>
-                        <div class="logo col-md-4">
-                            <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
-                        </div>
+                    </div>
+                    
+    
+            </div>
+                <div class=" right ">
+                    <div class="content">
+                        <p>Highly responsive ! my IT return has been done in 1 hour, so fast service. The staff also of good nature and helpful.</p>
+                        <ul>
+                            <li><a href="#"><img src="./assets/icons/instagram.png" alt=""></a></li>
+                            <li><a href="#"><img src="./assets/icons/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="./assets/icons/twitter_1.png" alt=""></a></li>
+                            <li><a href="#"><img src="./assets/icons/linkedin_1.png" alt=""></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="mob-nav">
-                <div class="hambar" id="hambar"><i class="fa fa-bars"></i></div>
-                <div id="sidebar-menu">
-                    <div class="cros" id="cros"><i class="fa fa-times"></i></div>
-                    <div class="mob-logo">
-                            <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
-                    </div>
-                    <ul>
-                        <li class="item "><a href="index.php">HOME</a></li>
-                        <li class="item"><a href="it.php">INCOMETAX</a></li>
-                        <li class="item"><a href="gst.php">GST</a></li>
-                        <li class="item active"><a href="blog.php">BLOG</a></li>
-                        <li class="item"><a href="#contact">CONTACT US</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-        <div class="row client-hero">
-           <div class=" left" >
-           
-                <div class="client-img">
-                    <img src="./assets/images/campaign-creators-pypeCEaJeZY-unsplash.png" alt="">
-                    <div class="client-name">
-                        <h2>Mohd Asim</h2>
-                    </div>
-                </div>
-                
-  
-           </div>
-            <div class=" right ">
-                <div class="content">
-                    <p>Highly responsive ! my IT return has been done in 1 hour, so fast service. The staff also of good nature and helpful.</p>
-                    <ul>
-                        <li><a href="#"><img src="./assets/icons/instagram.png" alt=""></a></li>
-                        <li><a href="#"><img src="./assets/icons/facebook.png" alt=""></a></li>
-                        <li><a href="#"><img src="./assets/icons/twitter_1.png" alt=""></a></li>
-                        <li><a href="#"><img src="./assets/icons/linkedin_1.png" alt=""></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         
         </div>
         
     </div>
     <div class="client-form">
-        <div class="container">
-        
+            <div class="container">
+                <div class="form-area">
                     <div class="heading">
                         <h2 class="text-center">Register For Plan</h2>
                     </div>
                     <form>
-                        <div class="row ">
+                        <div class="row combined-row">
                             <div class="col">
                                 <input type="text" class="form-control" placeholder="Enter Your Number">
                             </div>
@@ -105,6 +105,7 @@
                         <a href="#">SUBMIT</a>
                     </form>
                 </div>
+            </div>
         </div>
     </div>
 

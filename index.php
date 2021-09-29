@@ -217,7 +217,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <h3 class="">Income Tax exemption in new tax slab on NPS!</h3>
                             <p class="card-text">A system of new tax slab is being given for the taxpayers along with the old slab from 2020-21. This was peoposed by the Finance Minister of India in the Budget-2020</p>
                             <div class="text-right">
-                                <a href="blog-view.php" class="read-more-btn">Read More...</a>
+                                <a href="blog_view.php" class="read-more-btn">Read More...</a>
                             </div>
                         </div>
                     </div>

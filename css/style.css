@@ -1486,15 +1486,12 @@ textarea:focus:-webkit-placeholder {
 
 .client-reviews {
     background-color: #e6e6e6;
-    height: 100vh;
 }
 
 .client-reviews .client-hero {
     display: flex;
-    position: absolute;
-    top: 60%;
-    transform: translate(0, -50%);
     align-items: flex-end;
+    padding: 15% 0;
 }
 
 .client-reviews .client-hero .left .client-img img {
@@ -1531,7 +1528,7 @@ textarea:focus:-webkit-placeholder {
 }
 
 .client-reviews .client-hero .right .content p {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .client-reviews .client-hero .right .content ul {
@@ -1582,4 +1579,42 @@ textarea:focus:-webkit-placeholder {
     font-size: 40px;
     color: white;
     letter-spacing: 5px;
+}
+
+.client-page .client-form {
+    background: linear-gradient( 90deg, rgba(0, 208, 175, 1) 0%, rgba(142, 197, 252, 1) 48%, rgba(0, 208, 175, 1) 100%);
+    padding: 40px 0;
+}
+
+.client-page .client-form .form-area {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.client-page .client-form .heading h2 {
+    font-size: 34px;
+    color: black;
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-decoration-color: #7e7e7e;
+    text-decoration-style: 1px solid;
+    text-underline-offset: 10px;
+    margin-bottom: 40px;
+}
+
+.client-page .client-form .form-area form input {
+    border-radius: 0px;
+    height: 45px;
+    margin: 10px 0 50px;
+}
+
+.client-page .client-form .form-area form a {
+    color: #ffffff;
+    padding: 5px 35px;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 500;
+    border: 1px solid #023C6C;
+    border-radius: 35px;
 }

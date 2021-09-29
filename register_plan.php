@@ -67,7 +67,7 @@
                         <h2 class="text-center">Register For Plan</h2>
                     </div>
                     <form>
-                        <div class="row ">
+                        <div class="row combined-row">
                             <div class="col">
                                 <input type="text" class="form-control" placeholder="Enter Your Number">
                             </div>
