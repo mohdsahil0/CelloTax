@@ -1135,7 +1135,7 @@ textarea:focus:-webkit-placeholder {
     /* background: rgba(2, 60, 108, ); */
     backdrop-filter: blur(10px);
     padding: 10px 10px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 900;
     text-decoration: none;
     border-radius: 35px;
@@ -1244,6 +1244,10 @@ textarea:focus:-webkit-placeholder {
     text-align: center;
 }
 
+.gst .card .card-body img {
+    width: 7%;
+}
+
 .gst .card .card-body .amt h5 {
     color: #66ac4c;
     font-size: 30px;
@@ -1276,7 +1280,7 @@ textarea:focus:-webkit-placeholder {
     /* background: rgba(2, 60, 108, ); */
     backdrop-filter: blur(10px);
     padding: 10px 10px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 900;
     text-decoration: none;
     border-radius: 35px;

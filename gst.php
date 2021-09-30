@@ -114,7 +114,7 @@
                     <div class="col-sm-12 col-md-6 col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">GST Registration</h4>
+                                <h4 class="card-title"><span><img src="./assets/icons/Group 160.png" alt=""></span>GST Registration</h4>
                                 <div class="amt">
                                     <h5><i class="fa fa-rupee"></i> 399.<span class="paise">00</span></h5>
                                 </div>
@@ -133,9 +133,9 @@
                     <div class="col-sm-12 col-md-6 col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Registration Modification</h4>
+                                <h4 class="card-title"><span><img src="./assets/icons/dna (1).png" alt=""></span>Registration Modification</h4>
                                 <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i>199.<span class="paise">00</span></h5>
+                                    <h5><i class="fa fa-rupee"></i> 199.<span class="paise">00</span></h5>
                                 </div>
                                 <div class="content">
                                     <ol>
