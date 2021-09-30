@@ -187,8 +187,8 @@ mysqli_close($conn);
                 </div>
                 <div class="right">
                     <div class="tax-notice">
-                        <img src="/assets/icons/mail.png" alt="">
-                        <div class="tax-notice-content">
+                        <img src="/assets/icons/Group 321.png" alt="">
+                        <!-- <div class="tax-notice-content">
                             <h4>Received Tax Notice?</h4>
                             <p>Under Section:</p>
                             <ul>
@@ -199,7 +199,7 @@ mysqli_close($conn);
                                 <li>5 - 143 (3)</li>
                                 <li>6 - 154</li>
                             </ul>
-                        </div>
+                        </div> -->
                         <br>
                         <a class="learn-more-btn" href="/register_plan/">Learn More</a>
                     </div>
