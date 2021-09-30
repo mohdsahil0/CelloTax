@@ -115,9 +115,9 @@
                     <img src="./assets/icons/Cellotax1.png" alt="CelloTax">
                 </div>
                 <div class="connect">
-                    <div class="mail">
-                        <div class="mail1"><a href="#"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
-                        <div class="mail2"><a href="#"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
+                <div class="mail">
+                        <div class="mail1"><a href="mailto:cellotax@gmail.com"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
+                        <div class="mail2"><a href="mailto:support1@cellotax.com"><i class="fa fa-envelope"></i> <span>support1@cellotax.com</span></a></div>
                     </div>
                     <div class="social">
                         <p>FOLLOW US</p>
@@ -141,10 +141,10 @@
                 <h1>CONTACT US</h1>
                 <form action="/" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Enter Your name">
+                        <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Enter Your Name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" name="contactemail" placeholder="Enter email">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="contactemail" placeholder="Enter Your Email">
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" id="exampleInputnumber1" name="contactphone" placeholder="Enter Your Number">
@@ -161,7 +161,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>&copy; Copyright 2020-21 by <a href="https://www.cellotax.com">CelloTax</a> All rights reserved. &nbsp;&nbsp; Designed by Frazile.Inc</p>
+        <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com">CelloTax</a> All rights reserved. &nbsp;&nbsp; Designed by Frazile.Inc</p>
     </div>
 </body>
 </html>

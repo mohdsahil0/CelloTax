@@ -130,7 +130,7 @@
                 <h1>CONTACT US</h1>
                 <form action="" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your name">
+                        <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your Name">
                     </div>
                     <div class="form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email">
