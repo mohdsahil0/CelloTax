@@ -18,6 +18,7 @@
     <script src="js/main.js">
     </script>
     <title>Document</title>
+    <link rel="icon" href="./assets/icons/Cellotax1.png" type="image/icon">
 </head>
 <body>
     <div class="client-page">

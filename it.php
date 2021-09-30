@@ -20,6 +20,7 @@
     <script src="js/main.js">
     </script>
     <title>CelloTax - Income Tax</title>
+    <link rel="icon" href="./assets/icons/Cellotax1.png" type="image/icon">
 </head>
 
 <body>

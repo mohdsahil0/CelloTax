@@ -20,6 +20,7 @@
     <script src="js/main.js">
     </script>
     <title>CelloTax - GST</title>
+    <link rel="icon" href="./assets/icons/Cellotax1.png" type="image/icon">
 </head>
 
 <body>

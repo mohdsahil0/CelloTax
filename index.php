@@ -39,7 +39,8 @@ mysqli_close($conn);
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/main.js">
     </script>
-    <title>CelloTax.com</title>
+    <title>CelloTax</title>
+    <link rel="icon" href="./assets/icons/Cellotax1.png" type="image/icon">
 </head>
 
 <body>
