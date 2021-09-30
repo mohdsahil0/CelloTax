@@ -40,7 +40,7 @@ mysqli_close($conn);
     <script src="js/main.js">
     </script>
     <title>CelloTax</title>
-    <link rel="icon" href="./assets/icons/Cellotax1.png" type="image/icon">
+    <link rel="icon" href="./assets/icons/fevicon.png" type="image/icon">
 </head>
 
 <body>

@@ -20,7 +20,7 @@
     <script src="js/main.js">
     </script>
     <title>CelloTax - GST</title>
-    <link rel="icon" href="./assets/icons/Cellotax1.png" type="image/icon">
+    <link rel="icon" href="./assets/icons/fevicon.png" type="image/icon">
 </head>
 
 <body>
@@ -277,7 +277,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">GSTR-9</h4>
                                 <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 4499.<span class="paise">00</span><span class="per-annum">&nbsp(Annual Return)</span></h5>
+                                    <h5><i class="fa fa-rupee"></i> 2499.<span class="paise">00</span><span class="per-annum">&nbsp(Annual Return)</span></h5>
                                 </div>
                                 <div class="who">
                                     <a href="#" class="">Who can Purchase this Plan?</a>
