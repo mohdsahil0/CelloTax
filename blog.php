@@ -223,7 +223,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com">CelloTax</a> All rights reserved. &nbsp;&nbsp; Designed by Frazile.Inc</p>
+        <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com">CelloTax</a> All rights reserved. &nbsp;&nbsp; Designed by <a href="https://frazile.com/" target="_blank">Frazile Inc.</a></p>
     </div>
 </body>
 

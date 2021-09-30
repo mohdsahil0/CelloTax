@@ -360,7 +360,7 @@ mysqli_close($conn);
         </div>
     </div>
     <div class="copyright">
-        <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com/">CelloTax</a> All rights reserved. &nbsp; Designed by <a href="https://frazile.com/">Frazile.Inc</a></p>
+        <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com/">CelloTax</a> All rights reserved. &nbsp; Designed by <a href="https://frazile.com/" target="_blank">Frazile Inc.</a></p>
     </div>
 </body>
 
