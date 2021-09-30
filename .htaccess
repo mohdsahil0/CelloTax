@@ -1,5 +1,7 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^cellotax.com
-RewriteRule (.*) https://www.cellotax.com/ [R=301,L]
 
-ErrorDocument 404 https://www.cellotax.com/
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

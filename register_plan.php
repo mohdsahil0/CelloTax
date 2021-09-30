@@ -15,12 +15,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/main.js">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="/js/main.js">
     </script>
     <title>Document</title>
-    <link rel="icon" href="./assets/icons/fevicon.png" type="image/icon">
+    <link rel="icon" href="/assets/icons/fevicon.png" type="image/icon">
 </head>
 
 <body>
@@ -31,15 +31,15 @@
                     <div class="row nav">
                         <div class="menu col-md-8">
                             <ul>
-                                <li class="item"><a href="index.php">HOME</a></li>
-                                <li class="item"><a href="it.php">INCOMETAX</a></li>
-                                <li class="item"><a href="gst.php">GST</a></li>
-                                <li class="item"><a href="blog.php">BLOG</a></li>
+                                <li class="item"><a href="/">HOME</a></li>
+                                <li class="item"><a href="/it">INCOMETAX</a></li>
+                                <li class="item"><a href="/gst">GST</a></li>
+                                <li class="item"><a href="/blog">BLOG</a></li>
                                 <li class="item"><a href="#contact">CONTACT US</a></li>
                             </ul>
                         </div>
                         <div class="logo col-md-4">
-                            <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
+                            <img src="/assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
                         </div>
                     </div>
                 </div>
@@ -49,13 +49,13 @@
                 <div id="sidebar-menu">
                     <div class="cros" id="cros"><i class="fa fa-times"></i></div>
                     <div class="mob-logo">
-                            <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
+                            <img src="/assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
                     </div>
                     <ul>
-                        <li class="item"><a href="index.php">HOME</a></li>
-                        <li class="item"><a href="it.php">INCOMETAX</a></li>
-                        <li class="item"><a href="gst.php">GST</a></li>
-                        <li class="item"><a href="blog.php">BLOG</a></li>
+                        <li class="item"><a href="/">HOME</a></li>
+                        <li class="item"><a href="/it">INCOMETAX</a></li>
+                        <li class="item"><a href="/gst">GST</a></li>
+                        <li class="item"><a href="/blog">BLOG</a></li>
                         <li class="item"><a href="#contact">CONTACT US</a></li>
                     </ul>
                 </div>
@@ -84,16 +84,16 @@
         <div class="register-social">
             <ul>
                 <li>
-                    <a href="https://www.instagram.com/taxcello/" target="_blank"><img src="./assets/icons/instagram.png" alt=""></a>
+                    <a href="https://www.instagram.com/taxcello/" target="_blank"><img src="/assets/icons/instagram.png" alt=""></a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><img src="./assets/icons/facebook.png" alt=""></a>
+                    <a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><img src="/assets/icons/facebook.png" alt=""></a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/CelloTax" target="_blank"><img src="./assets/icons/twitter_1.png" alt=""></a>
+                    <a href="https://twitter.com/CelloTax" target="_blank"><img src="/assets/icons/twitter_1.png" alt=""></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><img src="./assets/icons/linkedin_1.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><img src="/assets/icons/linkedin_1.png" alt=""></a>
                 </li>
             </ul>
         </div>
@@ -102,7 +102,7 @@
         <div class="left">
             <div class="left-item">
                 <div class="sub-logo">
-                    <img src="./assets/icons/Cellotax1.png" alt="CelloTax">
+                    <img src="/assets/icons/Cellotax1.png" alt="CelloTax">
                 </div>
                 <div class="connect">
                     <div class="mail">

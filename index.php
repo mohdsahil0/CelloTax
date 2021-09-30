@@ -35,12 +35,12 @@ mysqli_close($conn);
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/main.js">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="/js/main.js">
     </script>
     <title>CelloTax</title>
-    <link rel="icon" href="./assets/icons/fevicon.png" type="image/icon">
+    <link rel="icon" href="/assets/icons/fevicon.png" type="image/icon">
 </head>
 
 <body>
@@ -51,15 +51,15 @@ mysqli_close($conn);
                     <div class="row nav">
                         <div class="menu col-md-8">
                             <ul>
-                                <li class="item active"><a href="#home">HOME</a></li>
-                                <li class="item"><a href="it.php">INCOMETAX</a></li>
-                                <li class="item"><a href="gst.php">GST</a></li>
-                                <li class="item"><a href="blog.php">BLOG</a></li>
+                                <li class="item active"><a href="#">HOME</a></li>
+                                <li class="item"><a href="/it">INCOMETAX</a></li>
+                                <li class="item"><a href="/gst">GST</a></li>
+                                <li class="item"><a href="/blog">BLOG</a></li>
                                 <li class="item"><a href="#contact">CONTACT US</a></li>
                             </ul>
                         </div>
                         <div class="logo col-md-4">
-                            <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
+                            <img src="/assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
                         </div>
                     </div>
                 </div>
@@ -69,13 +69,13 @@ mysqli_close($conn);
                 <div id="sidebar-menu">
                     <div class="cros" id="cros"><i class="fa fa-times"></i></div>
                     <div class="mob-logo">
-                            <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
+                            <img src="/assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
                     </div>
                     <ul>
                         <li class="item active"><a href="#home">HOME</a></li>
-                        <li class="item"><a href="it.php">INCOMETAX</a></li>
-                        <li class="item"><a href="gst.php">GST</a></li>
-                        <li class="item"><a href="blog.php">BLOG</a></li>
+                        <li class="item"><a href="/it">INCOMETAX</a></li>
+                        <li class="item"><a href="/gst">GST</a></li>
+                        <li class="item"><a href="/blog">BLOG</a></li>
                         <li class="item"><a href="#contact">CONTACT US</a></li>
                     </ul>
                 </div>
@@ -90,7 +90,7 @@ mysqli_close($conn);
                     <hr class="line2 line">
                     <hr class="line3 line">
                     <div class="lable">
-                        <img src="./assets/icons/staysafe.png" alt="" class="staysafe">
+                        <img src="/assets/icons/staysafe.png" alt="" class="staysafe">
                     </div>
                 </div>
                 <div class="form-area">
@@ -106,7 +106,7 @@ mysqli_close($conn);
                             <div class="form-group">
                                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Name">
                             </div>
-                            <a class="btn" href="thankyou.php">Submit</a>
+                            <a class="btn" href="/thankyou/">Submit</a>
                         </form>
                     </div>
                 </div>
@@ -115,21 +115,21 @@ mysqli_close($conn);
             <div class="social">
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/taxcello/" target="_blank"><img src="./assets/icons/instagram.png" alt=""></a>
+                        <a href="https://www.instagram.com/taxcello/" target="_blank"><img src="/assets/icons/instagram.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><img src="./assets/icons/facebook.png" alt=""></a>
+                        <a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><img src="/assets/icons/facebook.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/CelloTax" target="_blank"><img src="./assets/icons/twitter_1.png" alt=""></a>
+                        <a href="https://twitter.com/CelloTax" target="_blank"><img src="/assets/icons/twitter_1.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><img src="./assets/icons/linkedin_1.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><img src="/assets/icons/linkedin_1.png" alt=""></a>
                     </li>
                 </ul>
             </div>
             <div class="connect">
-                <a href="#" onclick="toggle()"><img src="./assets/icons/chat.png" alt=""></a>
+                <a href="#" onclick="toggle()"><img src="/assets/icons/chat.png" alt=""></a>
             </div>
         </div>
         
@@ -167,9 +167,9 @@ mysqli_close($conn);
                                 <li>ITR Filing</li>
                                 <li>Tax Refund</li>
                             </ul>
-                            <img src="./assets/icons/incometax.png" alt="">
+                            <img src="/assets/icons/incometax.png" alt="">
                         </div>
-                        <a class="learn-more-btn" href="it.php">Learn More</a>
+                        <a class="learn-more-btn" href="/it">Learn More</a>
                     </div>
                     <div class="gst">
                         <h2>GST <span class="gst-sub">(Goods and Services Tax)</span></h2>
@@ -180,14 +180,14 @@ mysqli_close($conn);
                                 <li>GST Return Filing</li>
                                 <li>GST Compliance</li>
                             </ul>
-                            <img src="./assets/icons/gst.png" alt="">
+                            <img src="/assets/icons/gst.png" alt="">
                         </div>
-                        <a class="learn-more-btn" href="gst.php">Learn More</a>
+                        <a class="learn-more-btn" href="/gst">Learn More</a>
                     </div>
                 </div>
                 <div class="right">
                     <div class="tax-notice">
-                        <img src="./assets/icons/mail.png" alt="">
+                        <img src="/assets/icons/mail.png" alt="">
                         <div class="tax-notice-content">
                             <h4>Received Tax Notice?</h4>
                             <p>Under Section:</p>
@@ -201,7 +201,7 @@ mysqli_close($conn);
                             </ul>
                         </div>
                         <br>
-                        <a class="learn-more-btn" href="register_plan.php">Learn More</a>
+                        <a class="learn-more-btn" href="/register_plan/">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -216,7 +216,7 @@ mysqli_close($conn);
             <div class="row">
                 <div class="col-lg-4 col-md-12 mb-3">
                     <div class="card" style="width: 19rem;">
-                        <img class="card-img-top" src="./assets/icons/blog3.png" alt="Card image cap">
+                        <img class="card-img-top" src="/assets/icons/blog3.png" alt="Card image cap">
                         <div class="card-body">
                             <h3 class="">Income Tax exemption in new tax slab on NPS!</h3>
                             <p class="card-text">A system of new tax slab is being given for the taxpayers along with the old slab from 2020-21. This was peoposed by the Finance Minister of India in the Budget-2020</p>
@@ -228,7 +228,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-lg-4 col-md-12 mb-3">
                     <div class="card" style="width: 19rem;">
-                        <img class="card-img-top" src="./assets/icons/blog2.png" alt="Card image cap">
+                        <img class="card-img-top" src="/assets/icons/blog2.png" alt="Card image cap">
                         <div class="card-body">
                             <h3 class="">Section 194H: TDS on income from commission & brokerage:</h3>
                             <h5>Introduction of Section 194H:</h5>
@@ -241,7 +241,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="card" style="width: 19rem;">
-                        <img class="card-img-top" src="./assets/icons/blog3.png" alt="Card image cap">
+                        <img class="card-img-top" src="/assets/icons/blog3.png" alt="Card image cap">
                         <div class="card-body">
                             <h3 class="">Section 194C: TDS on payment to contractors</h3>
                             <h5>Introduction of Section 194C:</h5>
@@ -254,7 +254,7 @@ mysqli_close($conn);
                 </div>
             </div>
             <div class="view-all text-right mb-3 mt-3">
-                <a href="blog.php">View All <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="/blog">View All <i class="fa fa-arrow-circle-right"></i></a>
             </div>
         </div>
     </div>
@@ -273,7 +273,7 @@ mysqli_close($conn);
 
                         <div class="testimonial">
                                 <div class="pic">
-                                    <img src="assets/icons/<?=$review->filename?>" alt="client">
+                                    <img src="/assets/icons/<?=$review->filename?>" alt="client">
                                 </div>
                                         <h1><?=$review->count?></h1>
                                         <div class="client-name">
@@ -283,7 +283,7 @@ mysqli_close($conn);
                                             <p><?=$review->review?></p>
                                         </div>
                                         <div class="read-more">
-                                            <a href="client-review.php">Read More...</a>
+                                            <a href="/client-review">Read More...</a>
                                         </div>
                                         <div class="rating">
                                         <?php for($i = 1; $i <= $review->ratings; $i++) {
@@ -302,8 +302,8 @@ mysqli_close($conn);
         <div class="container">
             <div class="app-row">
                 <p>Download our App Now to Install Click Here</p>
-                <a target="_blank" href="https://www.apple.com/"><img src="./assets/icons/App Store.png" alt="Appstore"></a>
-                <a target="_blank" href="https://www.google.com/"><img src="./assets/icons/Google play.png" alt="Playstore"></a>
+                <a target="_blank" href="https://www.apple.com/"><img src="/assets/icons/App Store.png" alt="Appstore"></a>
+                <a target="_blank" href="https://www.google.com/"><img src="/assets/icons/Google play.png" alt="Playstore"></a>
             </div>
         </div>
     </div>
@@ -312,7 +312,7 @@ mysqli_close($conn);
         <div class="left">
             <div class="left-item">
                 <div class="sub-logo">
-                    <img src="./assets/icons/Cellotax1.png" alt="CelloTax">
+                    <img src="/assets/icons/Cellotax1.png" alt="CelloTax">
                 </div>
                 <div class="connect">
                     <div class="mail">

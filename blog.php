@@ -15,12 +15,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/main.js">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="/js/main.js">
     </script>
     <title>CelloTax - Blog</title>
-    <link rel="icon" href="./assets/icons/fevicon.png" type="image/icon">
+    <link rel="icon" href="/assets/icons/fevicon.png" type="image/icon">
 </head>
 
 <body>
@@ -31,15 +31,15 @@
                     <div class="row nav">
                         <div class="menu col-md-8">
                             <ul>
-                                <li class="item"><a href="index.php">HOME</a></li>
-                                <li class="item"><a href="it.php">INCOMETAX</a></li>
-                                <li class="item"><a href="gst.php">GST</a></li>
-                                <li class="item active"><a href="blog.php">BLOG</a></li>
+                                <li class="item"><a href="/">HOME</a></li>
+                                <li class="item"><a href="/it">INCOMETAX</a></li>
+                                <li class="item"><a href="/gst">GST</a></li>
+                                <li class="item active"><a href="#">BLOG</a></li>
                                 <li class="item"><a href="#contact">CONTACT US</a></li>
                             </ul>
                         </div>
                         <div class="logo col-md-4">
-                            <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
+                            <img src="/assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
                         </div>
                     </div>
                 </div>
@@ -49,13 +49,13 @@
                 <div id="sidebar-menu">
                     <div class="cros" id="cros"><i class="fa fa-times"></i></div>
                     <div class="mob-logo">
-                            <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
+                            <img src="/assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
                     </div>
                     <ul>
-                        <li class="item "><a href="index.php">HOME</a></li>
-                        <li class="item"><a href="it.php">INCOMETAX</a></li>
-                        <li class="item"><a href="gst.php">GST</a></li>
-                        <li class="item active"><a href="blog.php">BLOG</a></li>
+                        <li class="item "><a href="/">HOME</a></li>
+                        <li class="item"><a href="/it">INCOMETAX</a></li>
+                        <li class="item"><a href="/gst">GST</a></li>
+                        <li class="item active"><a href="/blog">BLOG</a></li>
                         <li class="item"><a href="#contact">CONTACT US</a></li>
                     </ul>
                 </div>
@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="./assets/icons/blog3.png" alt="Card image cap">
+                            <img class="card-img-top" src="/assets/icons/blog3.png" alt="Card image cap">
                             <div class="card-body">
                                 <h3 class="">Income Tax exemption in new tax slab on NPS!</h3>
                                 <p class="card-text">A system of new tax slab is being given for the taxpayers along with the old slab from 2020-21. This was peoposed by the Finance Minister of India in the Budget-2020</p>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="./assets/icons/blog2.png" alt="Card image cap">
+                            <img class="card-img-top" src="/assets/icons/blog2.png" alt="Card image cap">
                             <div class="card-body">
                                 <h3 class="">Section 194H: TDS on income from commission & brokerage:</h3>
                                 <h5>Introduction of Section 194H:</h5>
@@ -111,7 +111,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="./assets/icons/blog3.png" alt="Card image cap">
+                            <img class="card-img-top" src="/assets/icons/blog3.png" alt="Card image cap">
                             <div class="card-body">
                                 <h3 class="">Section 194C: TDS on payment to contractors</h3>
                                 <h5>Introduction of Section 194C:</h5>
@@ -126,7 +126,7 @@
                 <div class="row"> -->
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="./assets/icons/blog3.png" alt="Card image cap">
+                            <img class="card-img-top" src="/assets/icons/blog3.png" alt="Card image cap">
                             <div class="card-body">
                                 <h3 class="">Income Tax exemption in new tax slab on NPS!</h3>
                                 <p class="card-text">A system of new tax slab is being given for the taxpayers along with the old slab from 2020-21. This was peoposed by the Finance Minister of India in the Budget-2020</p>
@@ -138,7 +138,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="./assets/icons/blog2.png" alt="Card image cap">
+                            <img class="card-img-top" src="/assets/icons/blog2.png" alt="Card image cap">
                             <div class="card-body">
                                 <h3 class="">Section 194H: TDS on income from commission & brokerage:</h3>
                                 <h5>Introduction of Section 194H:</h5>
@@ -151,7 +151,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="./assets/icons/blog3.png" alt="Card image cap">
+                            <img class="card-img-top" src="/assets/icons/blog3.png" alt="Card image cap">
                             <div class="card-body">
                                 <h3 class="">Section 194C: TDS on payment to contractors</h3>
                                 <h5>Introduction of Section 194C:</h5>
@@ -178,7 +178,7 @@
         <div class="left">
             <div class="left-item">
                 <div class="sub-logo">
-                    <img src="./assets/icons/Cellotax1.png" alt="CelloTax">
+                    <img src="/assets/icons/Cellotax1.png" alt="CelloTax">
                 </div>
                 <div class="connect">
                 <div class="mail">
