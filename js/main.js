@@ -16,6 +16,8 @@ $(document).ready(function() {
             'display': 'block'
         });
     });
+
+
 });
 
 $(document).on('click', 'ul li', function() {
@@ -28,3 +30,24 @@ function toggle() {
     var popup = document.getElementById('popup');
     popup.classList.toggle('active');
 }
+
+
+
+window.addEventListener('scroll', function() {
+    let header = document.querySelector('.nav-bar');
+    header.classList.toggle('scrolling-active', window.scrollY > 0);
+})
+
+
+$(document).ready(function() {
+    $("#testimonial-slider").owlCarousel({
+        items: 1,
+        itemsDesktop: [1000, 1],
+        itemsDesktopSmall: [979, 1],
+        itemsTablet: [768, 1],
+        pagination: false,
+        navigation: true,
+        navigationText: ["", ""],
+        autoPlay: true
+    });
+});

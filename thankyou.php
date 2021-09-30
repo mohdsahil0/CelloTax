@@ -4,7 +4,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,11 +21,10 @@
     <title>Document</title>
     <link rel="icon" href="./assets/icons/fevicon.png" type="image/icon">
 </head>
-
 <body>
-    <div class="register-plan">
+    <div class="thankyou">
         <div class="main-home">
-            <div class="nav-bar" id="navbar">
+            <div class="nav-bar" id="navbar" style="background-color: #fff; opacity:75%;">
                 <div class="container">
                     <div class="row nav">
                         <div class="menu col-md-8">
@@ -52,7 +50,7 @@
                             <img src="assets/icons/CelloTax2@2x.png" alt="CelloTAX.COM">
                     </div>
                     <ul>
-                        <li class="item"><a href="index.php">HOME</a></li>
+                        <li class="item "><a href="index.php">HOME</a></li>
                         <li class="item"><a href="it.php">INCOMETAX</a></li>
                         <li class="item"><a href="gst.php">GST</a></li>
                         <li class="item"><a href="blog.php">BLOG</a></li>
@@ -60,43 +58,14 @@
                     </ul>
                 </div>
             </div>
+       
         </div>
-        <div class="blog-form">
-            <div class="container">
-                <div class="form-area">
-                    <div class="heading">
-                        <h2 class="text-center">Register For Plan</h2>
-                    </div>
-                    <form>
-                        <div class="row combined-row">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Enter Your Number">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Enter Your Name">
-                            </div>
-                        </div>
-                        <a href="#">SUBMIT</a>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="register-social">
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/taxcello/" target="_blank"><img src="./assets/icons/instagram.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><img src="./assets/icons/facebook.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/CelloTax" target="_blank"><img src="./assets/icons/twitter_1.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><img src="./assets/icons/linkedin_1.png" alt=""></a>
-                </li>
-            </ul>
-        </div>
+        
+           <div class="thanks">
+           <img src="./assets/images/Path 291.png" alt="">
+            <h1>Thank you !</h1>
+            <p>Our Representative Contact You Soon.</p>
+           </div>
     </div>
     <div id="contact">
         <div class="left">
@@ -106,8 +75,8 @@
                 </div>
                 <div class="connect">
                     <div class="mail">
-                        <div class="mail1"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></div>
-                        <div class="mail2"><i class="fa fa-envelope"></i> <span>support1@cellotax.com</span></div>
+                    <div class="mail1"><a href="mailto:cellotax@gmail.com"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
+                        <div class="mail2"><a href="mailto:support1@cellotax.com"><i class="fa fa-envelope"></i> <span>support1@cellotax.com</span></a></div>
                     </div>
                     <div class="social">
                         <p>FOLLOW US</p>
@@ -151,5 +120,4 @@
     <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com/">CelloTax</a> All rights reserved. &nbsp; Designed by <a href="https://frazile.com/">Frazile Inc.</a></p>
     </div>
 </body>
-
 </html>

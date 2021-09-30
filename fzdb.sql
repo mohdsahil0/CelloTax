@@ -4,7 +4,7 @@ CREATE TABLE `users` (
  `phone` varchar(20) NOT NULL,
  `name` varchar(100) NOT NULL,
  PRIMARY KEY (`id`)
-)
+);
 
 /* GST Plans */
 CREATE TABLE IF NOT EXISTS `gstPlans` (
@@ -19,10 +19,21 @@ CREATE TABLE IF NOT EXISTS `gstPlans` (
 
 /* Contact Users */
 CREATE TABLE IF NOT EXISTS `contactusers` (
-    `id` bigint(10) NOT NULL,
+    `id` bigint(10) NOT NULL AUTO_INCREMENT,
     `name` varchar(100) NOT NULL,
     `email` varchar(100) NOT NULL,
     `phone` varchar(100) NOT NULL,
     `message` TEXT NOT NULL,
     PRIMARY KEY(`id`)
-)
+);
+
+/* Client Reviews */
+CREATE TABLE IF NOT EXISTS `clientreviews` (
+    `id` bigint(10) NOT NULL AUTO_INCREMENT,
+    `filename` varchar(255) NOT NULL,
+    `count` varchar(10) NOT NULL,
+    `name` varchar(200) NOT NULL,
+    `review` varchar(200) NOT NULL,
+    `ratings` varchar(10) NOT NULL,
+    PRIMARY KEY(`id`)
+);

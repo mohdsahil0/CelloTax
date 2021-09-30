@@ -20,6 +20,7 @@
     <script src="js/main.js">
     </script>
     <title>CelloTax - Income Tax</title>
+    <link rel="icon" href="./assets/icons/fevicon.png" type="image/icon">
 </head>
 
 <body>
@@ -72,10 +73,10 @@
                     <div class="form">
                         <form action="" method="POST">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your name">
+                                <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your Number">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Name">
                             </div>
                             <a class="btn" href="#">Submit</a>
                         </form>
@@ -86,16 +87,16 @@
             <div class="social">
                 <ul>
                     <li>
-                        <a href="#"><img src="./assets/icons/instagram.png" alt=""></a>
+                        <a href="https://www.instagram.com/taxcello/" target="_blank"><img src="./assets/icons/instagram.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./assets/icons/facebook.png" alt=""></a>
+                        <a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><img src="./assets/icons/facebook.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./assets/icons/twitter_1.png" alt=""></a>
+                        <a href="https://twitter.com/CelloTax" target="_blank"><img src="./assets/icons/twitter_1.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./assets/icons/linkedin_1.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><img src="./assets/icons/linkedin_1.png" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -109,7 +110,7 @@
         <div class="tax-card-back">
             <div class="container">
                 <div class="row pb-4 pt-5">
-                    <div class="col-sm-6 col-md-4 col-12">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Plan - A</h4>
@@ -140,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-12">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Plan - B</h4>
@@ -172,7 +173,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-12">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Plan - C</h4>
@@ -205,7 +206,7 @@
                     <!-- </div>
 
                 <div class="row pb-5 pt-4"> -->
-                    <div class="col-sm-6 col-md-4 col-12">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Plan - D</h4>
@@ -237,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-12">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Plan - E</h4>
@@ -268,7 +269,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-12">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Plan - F</h4>
@@ -311,25 +312,20 @@
                 </div>
                 <div class="connect">
                     <div class="mail">
-                        <div class="mail1"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></div>
-                        <div class="mail2"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></div>
+                        <div class="mail1"><a href="mailto:cellotax@gmail.com"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
+                        <div class="mail2"><a href="mailto:support1@cellotax.com"><i class="fa fa-envelope"></i> <span>support1@cellotax.com</span></a></div>
                     </div>
                     <div class="social">
                         <p>FOLLOW US</p>
                         <ul>
+                        <li><a href="https://www.instagram.com/taxcello/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
                             <li>
-                                <a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://wa.me/+919335747476" target="_blank"><i class="fa fa-whatsapp" target="_blank"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-whatsapp"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="https://twitter.com/CelloTax" target="_blank"><i class="fa fa-twitter"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -341,10 +337,10 @@
                 <h1>CONTACT US</h1>
                 <form action="" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your name">
+                        <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your Name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email">
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" id="exampleInputnumber1" placeholder="Enter Your Number">
@@ -356,6 +352,9 @@
                 </form>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+    <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com/">CelloTax</a> All rights reserved. &nbsp; Designed by <a href="https://frazile.com/">Frazile Inc.</a></p>
     </div>
 </body>
 

@@ -2,6 +2,15 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo $_POST['contactemail'];
 }
+
+include('mysql.php');
+
+$query = "SELECT * FROM clientreviews";
+$result = @mysqli_query($conn, $query);
+while($row = mysqli_fetch_object($result)) $reviews[] = (object) $row;
+
+// Close the connection
+mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -17,11 +26,21 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/main.js">
     </script>
-    <title>CelloTax.com</title>
+    <title>CelloTax</title>
+    <link rel="icon" href="./assets/icons/fevicon.png" type="image/icon">
 </head>
 
 <body>
@@ -36,7 +55,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <li class="item"><a href="it.php">INCOMETAX</a></li>
                                 <li class="item"><a href="gst.php">GST</a></li>
                                 <li class="item"><a href="blog.php">BLOG</a></li>
-                            7    <li class="item"><a href="#contact">CONTACT US</a></li>
+                                <li class="item"><a href="#contact">CONTACT US</a></li>
                             </ul>
                         </div>
                         <div class="logo col-md-4">
@@ -64,9 +83,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="hero container">
                 <div class="content">
                     <h1>
-                        <Span class="content-color">File Your</Span> Tax Returns With as Quickly as Soon as Possible With Our Tax Experts Team With <span class="content-color">Low Price.</span>
+                        <Span class="content-color">File Your</Span> Tax Returns With us Quickly as Soon as Possible With Our Tax Experts Team With <span class="content-color">Low Price.</span>
                     </h1>
-                    <h3>Do Not Go Out In That Pandemic Without Any Reason Let Your Tax Filling Headache On Our Tax Experts.</h3>
+                    <h3>Do Not Go Out In That Pandemic Without Any Reason Let Your Tax Filing Headache On Our Tax Experts.</h3>
                     <hr class="line1 line">
                     <hr class="line2 line">
                     <hr class="line3 line">
@@ -80,21 +99,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </h3>
 
                     <div class="form">
-                        <!-- <form action="">
-                            <div class="form-content">
-                                <input type="text" name="" id="" placeholder="Enter Your Number">
-                            </div>
-                            <div class="form-content">
-                                <input type="text" name="" id="" placeholder="Enter Your Name">
-                            </div> -->
                         <form action="" method="POST">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your name">
+                                <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your Number">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Name">
                             </div>
-                            <a class="btn" href="#">Submit</a>
+                            <a class="btn" href="thankyou.php">Submit</a>
                         </form>
                     </div>
                 </div>
@@ -103,16 +115,16 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="social">
                 <ul>
                     <li>
-                        <a href="#"><img src="./assets/icons/instagram.png" alt=""></a>
+                        <a href="https://www.instagram.com/taxcello/" target="_blank"><img src="./assets/icons/instagram.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./assets/icons/facebook.png" alt=""></a>
+                        <a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><img src="./assets/icons/facebook.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./assets/icons/twitter_1.png" alt=""></a>
+                        <a href="https://twitter.com/CelloTax" target="_blank"><img src="./assets/icons/twitter_1.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./assets/icons/linkedin_1.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><img src="./assets/icons/linkedin_1.png" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -209,7 +221,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <h3 class="">Income Tax exemption in new tax slab on NPS!</h3>
                             <p class="card-text">A system of new tax slab is being given for the taxpayers along with the old slab from 2020-21. This was peoposed by the Finance Minister of India in the Budget-2020</p>
                             <div class="text-right">
-                                <a href="blog-view.php" class="read-more-btn">Read More...</a>
+                                <a href="blog_view.php" class="read-more-btn">Read More...</a>
                             </div>
                         </div>
                     </div>
@@ -242,46 +254,56 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
             </div>
             <div class="view-all text-right mb-3 mt-3">
-                <a href="#">View All <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="blog.php">View All <i class="fa fa-arrow-circle-right"></i></a>
             </div>
         </div>
     </div>
 
     <div id="client-review">
-        <div class="heading">
-            <h1>Our Clients Reviews</h1>
+        <div class="container">
+            <div class="heading">
+                <h1>Our Clients Reviews</h1>
+            </div>
+            <div class="container">
+                <div class="row" style="justify-content: center;">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div id="testimonial-slider" class="owl-carousel">
+
+                        <?php foreach($reviews as $key => $review) :?>
+
+                        <div class="testimonial">
+                                <div class="pic">
+                                    <img src="assets/icons/<?=$review->filename?>" alt="client">
+                                </div>
+                                        <h1><?=$review->count?></h1>
+                                        <div class="client-name">
+                                            <h3><?=$review->name?></h3>
+                                        </div>
+                                        <div class="client-text">
+                                            <p><?=$review->review?></p>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="client-review.php">Read More...</a>
+                                        </div>
+                                        <div class="rating">
+                                        <?php for($i = 1; $i <= $review->ratings; $i++) {
+                                            echo'<i class="fa fa-star"></i>';
+                                        }?>
+                                        </div>
+                            </div>
+                            <?php endforeach ?>            
+
+                        </div>
+                    </div>
+                </div>
         </div>
-        <div class="container horizontal-scrollable ">
-            <div class="row text-center scroll">
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                    <a href="#"><img src="./assets/icons/Mohd_Amir.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-        <div class="client-details">
-            <div class="count">
-                <h1>01</h1>
-            </div>
-            <div class="client-name">
-                <h3>Mohd Asim</h3>
-            </div>
-            <div class="client-text">
-                <p>Highly Responsive! my IT return has been done in 1 hour, so fast service. The staff is also of good nature and helphul</p>
-            </div>
-            <div class="read-more">
-                <a href="client-review.php">Read More...</a>
-            </div>
-            <div class="rating">
-                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+    </div></div>
+    <div class="app">
+        <div class="container">
+            <div class="app-row">
+                <p>Download our App Now to Install Click Here</p>
+                <a target="_blank" href="https://www.apple.com/"><img src="./assets/icons/App Store.png" alt="Appstore"></a>
+                <a target="_blank" href="https://www.google.com/"><img src="./assets/icons/Google play.png" alt="Playstore"></a>
             </div>
         </div>
     </div>
@@ -294,20 +316,20 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <div class="connect">
                     <div class="mail">
-                        <div class="mail1"><a href="#"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
-                        <div class="mail2"><a href="#"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
+                        <div class="mail1"><a href="mailto:cellotax@gmail.com"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
+                        <div class="mail2"><a href="mailto:support1@cellotax.com"><i class="fa fa-envelope"></i> <span>support1@cellotax.com</span></a></div>
                     </div>
                     <div class="social">
                         <p>FOLLOW US</p>
                         <ul>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/taxcello/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
                             <li>
-                                <a href="#"><i class="fa fa-whatsapp"></i></a>
+                                <a href="https://wa.me/+919335747476" target="_blank"><i class="fa fa-whatsapp" target="_blank"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="https://twitter.com/CelloTax" target="_blank"><i class="fa fa-twitter"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -319,10 +341,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h1>CONTACT US</h1>
                 <form action="/" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Enter Your name">
+                        <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Enter Your Name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" name="contactemail" placeholder="Enter email">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="contactemail" placeholder="Enter Your Email">
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" id="exampleInputnumber1" name="contactphone" placeholder="Enter Your Number">
@@ -332,11 +354,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
                     <!-- <a href="#" class="submit">SUBMIT</a> -->
                     <div class="submit">
-                        <input type="submit" />
+                        <input type="submit" value="SUBMIT" />
                     </div>
                 </form>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com/">CelloTax</a> All rights reserved. &nbsp; Designed by <a href="https://frazile.com/" target="_blank">Frazile Inc.</a></p>
     </div>
 </body>
 

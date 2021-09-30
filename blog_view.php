@@ -20,6 +20,7 @@
     <script src="js/main.js">
     </script>
     <title>Document</title>
+    <link rel="icon" href="./assets/icons/fevicon.png" type="image/icon">
 </head>
 
 <body>
@@ -99,26 +100,21 @@
                     <img src="./assets/icons/Cellotax1.png" alt="CelloTax">
                 </div>
                 <div class="connect">
-                    <div class="mail">
-                        <div class="mail1"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></div>
-                        <div class="mail2"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></div>
+                <div class="mail">
+                        <div class="mail1"><a href="mailto:cellotax@gmail.com"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
+                        <div class="mail2"><a href="mailto:support1@cellotax.com"><i class="fa fa-envelope"></i> <span>support1@cellotax.com</span></a></div>
                     </div>
                     <div class="social">
                         <p>FOLLOW US</p>
                         <ul>
+                        <li><a href="https://www.instagram.com/taxcello/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/cello-tax-b18580218/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/CelloTaxCom-108610298188184" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
                             <li>
-                                <a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://wa.me/+919335747476" target="_blank"><i class="fa fa-whatsapp" target="_blank"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-whatsapp"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="https://twitter.com/CelloTax" target="_blank"><i class="fa fa-twitter"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -130,10 +126,10 @@
                 <h1>CONTACT US</h1>
                 <form action="" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your name">
+                        <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your Name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email">
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" id="exampleInputnumber1" placeholder="Enter Your Number">
@@ -145,6 +141,9 @@
                 </form>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com">CelloTax</a> All rights reserved. &nbsp;&nbsp; Designed by <a href="https://frazile.com/" target="_blank">Frazile Inc.</a></p>
     </div>
 </body>
 

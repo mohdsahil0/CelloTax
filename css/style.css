@@ -2,7 +2,12 @@
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    height: 100%;
 }
 
 
@@ -17,14 +22,19 @@
 }
 
 .nav-bar {
-    background-color: #ffffff;
-    opacity: 75%;
+    /* background-color: #ffffff;
+    opacity: 75%; */
     /* height: 155px; */
     position: fixed;
     width: 100%;
     z-index: 9999;
     /* display: none; */
     margin: auto 0px;
+}
+
+.scrolling-active {
+    background-color: #fff;
+    opacity: 75%;
 }
 
 .nav-bar .menu {
@@ -42,16 +52,16 @@
 }
 
 .nav-bar .menu ul li.active a {
-    color: #66AC4C;
+    color: #66ac4c;
 }
 
 .mob-nav ul li.active a {
-    color: #66AC4C;
+    color: #66ac4c;
 }
 
 .nav-bar .menu ul li:not(:last-child)::after {
     content: "/";
-    color: #023C6C;
+    color: #023c6c;
     padding: 0 30px;
     font-weight: bold;
     justify-content: center;
@@ -59,14 +69,14 @@
 
 .nav-bar .menu ul li a {
     text-decoration: none;
-    color: #023C6C;
-    font-size: .9rem;
+    color: #023c6c;
+    font-size: 0.9rem;
     font-weight: bold;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .nav-bar .menu ul li a:hover {
-    color: #66AC4C;
+    color: #66ac4c;
 }
 
 .nav-bar .logo img {
@@ -108,13 +118,13 @@
 
 #sidebar-menu ul li a {
     text-decoration: none;
-    color: #023C6C;
-    font-size: .9rem;
+    color: #023c6c;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 
 #sidebar-menu ul li a:hover {
-    color: #66AC4C;
+    color: #66ac4c;
 }
 
 .hambar i {
@@ -128,7 +138,7 @@
 }
 
 .cros i {
-    color: #66AC4C;
+    color: #66ac4c;
     font-size: 24px;
     position: absolute;
     right: 20px;
@@ -151,9 +161,9 @@
     margin: auto;
     align-items: center;
     position: absolute;
-    top: 80%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, -50%);
 }
 
 .hero .content {
@@ -171,7 +181,7 @@
 }
 
 .hero .content .content-color {
-    color: #66AC4C;
+    color: #66ac4c;
 }
 
 .hero .content .line {
@@ -188,7 +198,7 @@
 }
 
 .hero .content .line3 {
-    width: 80px
+    width: 80px;
 }
 
 .hero .form-area {
@@ -240,15 +250,15 @@ outline: none;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    border: 2px solid #66AC4C;
+    border: 2px solid #66ac4c;
     padding: 8px 40px;
     border-radius: 35px;
-    transition: .4s ease-in-out;
+    transition: 0.4s ease-in-out;
     margin: 40px 0 0 150px;
 }
 
 .hero .form-area .form a:hover {
-    background-color: #66AC4C;
+    background-color: #66ac4c;
 }
 
 #home .lable {
@@ -309,7 +319,7 @@ outline: none;
     width: 50px;
     background-color: #f2f2f2;
     border-radius: 25px;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, .3);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     visibility: hidden;
     opacity: 0;
     transition: 0.6s;
@@ -327,7 +337,7 @@ outline: none;
 }
 
 #popup .close i {
-    color: #66AC4C;
+    color: #66ac4c;
     position: absolute;
     top: 20px;
     right: 25px;
@@ -359,12 +369,12 @@ outline: none;
 }
 
 #popup .chat-bubble.left {
-    background-color: #00FF88;
+    background-color: #00ff88;
     float: left;
 }
 
 #popup .chat-bubble.left:before {
-    background-color: #00FF88;
+    background-color: #00ff88;
     left: 10px;
     transform: rotate(70deg) skew(6deg);
 }
@@ -404,7 +414,7 @@ outline: none;
 .message-box .message-input {
     background: none;
     border: none;
-    outline: none!important;
+    outline: none !important;
     resize: none;
     /* color: rgba(255, 255, 255, .8);*/
     font-size: 15px;
@@ -424,7 +434,7 @@ textarea:focus:-webkit-placeholder {
     z-index: 1;
     top: 9px;
     right: 10px;
-    color: #4A90E2;
+    color: #4a90e2;
     border: none;
     /* background: #c29d5f;*/
     background: #fff;
@@ -433,7 +443,7 @@ textarea:focus:-webkit-placeholder {
     line-height: 1;
     padding: 6px 10px;
     border-radius: 5px;
-    outline: none!important;
+    outline: none !important;
     /* transition: background .2s ease; */
     cursor: pointer;
 }
@@ -551,15 +561,15 @@ textarea:focus:-webkit-placeholder {
     font-weight: 600;
     padding: 10px 25px;
     border-radius: 20px;
-    background-color: #66AC4C;
+    background-color: #66ac4c;
     text-decoration: none;
-    transition: .4s ease-in-out;
-    border: 1px solid #66AC4C;
+    transition: 0.4s ease-in-out;
+    border: 1px solid #66ac4c;
 }
 
 #services .content .learn-more-btn:hover {
-    border: 1px solid #66AC4C;
-    color: #66AC4C;
+    border: 1px solid #66ac4c;
+    color: #66ac4c;
     background-color: #ffffff;
 }
 
@@ -607,6 +617,10 @@ textarea:focus:-webkit-placeholder {
 
 #services .content .right .tax-notice-content ul li {
     line-height: 2;
+}
+
+#services .content .right .tax-notice-content ul li:last-child {
+    margin-left: -22px;
 }
 
 
@@ -673,9 +687,9 @@ textarea:focus:-webkit-placeholder {
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 12px;
-    background-color: #66AC4C;
+    background-color: #66ac4c;
     text-decoration: none;
-    transition: .4s ease-in-out;
+    transition: 0.4s ease-in-out;
     border: 1px solid #7e7e7e;
     text-align: center;
     position: absolute;
@@ -684,8 +698,8 @@ textarea:focus:-webkit-placeholder {
 }
 
 #blog .card .read-more-btn:hover {
-    border: 1px solid #66AC4C;
-    color: #66AC4C;
+    border: 1px solid #66ac4c;
+    color: #66ac4c;
     background-color: #ffffff;
 }
 
@@ -694,57 +708,178 @@ textarea:focus:-webkit-placeholder {
 
 #client-review {
     background: #ceecf9;
+    text-align: center;
+    position: relative;
+    text-align: center;
 }
 
 #client-review .heading h1 {
     font-size: 45px;
     letter-spacing: 3px;
-    padding: 60px 0;
+    padding: 50px 0;
     font-weight: 900;
     text-align: center;
     color: black;
 }
 
-#client-review .scroll img {
-    height: 200px;
-    width: 200px;
+#client-review .testimonial .rating i {
+    padding: 15px 10px;
+    color: #66ac4c;
+    font-size: 30px;
 }
 
-#client-review .client-details {
-    text-align: center;
-    max-width: 70%;
-    margin: 0 auto;
-    padding-bottom: 100px;
-}
-
-#client-review .client-details .count h1 {
+#client-review .testimonial h1 {
     color: #7e7e7e;
     font-size: 56px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 30px 0;
 }
 
-#client-review .client-details .client-name h3 {
+#client-review .testimonial .client-name h3 {
     color: black;
     font-size: 35px;
     font-weight: 900;
-    margin: 30px 0;
+    margin: 0;
 }
 
-#client-review .client-details .client-text p {
-    font-size: 26px;
+#client-review .testimonial .client-text p {
+    font-size: 24px;
     color: black;
 }
 
-#client-review .client-details .read-more a {
+#client-review .testimonial .read-more a {
     font-size: 24px;
     margin: 20px 0;
 }
 
-#client-review .client-details .rating i {
-    padding: 15px 10px;
-    color: #66AC4C;
+.testimonial {
+    padding: 70px 30px 50px;
+    margin: 50px 30px 30px;
+    position: relative;
+}
+
+.testimonial .pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+}
+
+.testimonial .pic img {
+    width: 100%;
+    height: auto;
+}
+
+.testimonial .description {
+    font-size: 15px;
+    color: #5e595b;
+    line-height: 27px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+
+.testimonial .description:before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 25px;
+    color: #d7d7d7;
+    position: absolute;
+    top: 0;
+    left: -2px;
+}
+
+.testimonial .title {
+    display: inline-table;
+    padding: 10px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ea816b;
+    font-size: 20px;
+    font-weight: 700;
+    color: #c7373c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    right: 0;
+}
+
+.testimonial .post {
+    font-size: 15px;
+    color: #671a36;
+}
+
+.owl-theme .owl-controls {
+    width: 100%;
+    height: 50px;
+    opacity: 1;
+    position: absolute;
+    top: 38%;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    line-height: 40px;
+    border-radius: 0;
+    background: transparent;
+}
+
+.owl-prev {
+    position: absolute;
+    left: -5%;
+    clip-path: polygon(100% 0, 25% 35%, 100% 70%);
+}
+
+.owl-next {
+    position: absolute;
+    right: -5%;
+    clip-path: polygon(0 0, 0 70%, 75% 35%);
+}
+
+.owl-prev:after,
+.owl-next:after {
+    content: "\f104";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     font-size: 30px;
+    color: #c7373c;
+    background-color: #221837;
+    opacity: 1;
+}
+
+.owl-next:after {
+    content: "\f105";
+}
+
+
+/* **********APP******** */
+
+.app {
+    background-color: #023c6c;
+}
+
+.app .app-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app .app-row p {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.app .app-row img {
+    width: 210px;
+    padding: 20px;
 }
 
 
@@ -765,6 +900,10 @@ textarea:focus:-webkit-placeholder {
     max-width: 65%;
 }
 
+#contact .left .sub-logo {
+    text-align: center;
+}
+
 #contact .left .sub-logo img {
     width: 50%;
     margin: 40px 0;
@@ -780,7 +919,7 @@ textarea:focus:-webkit-placeholder {
 }
 
 #contact .connect .mail .mail1 i {
-    background-color: #66AC4C;
+    background-color: #66ac4c;
     color: black;
     padding: 8px;
     font-size: 20px;
@@ -789,7 +928,7 @@ textarea:focus:-webkit-placeholder {
 
 #contact .connect .mail .mail2 i {
     background-color: black;
-    color: #66AC4C;
+    color: #66ac4c;
     padding: 8px;
     font-size: 20px;
     margin: 8px 10px 0 0;
@@ -821,11 +960,11 @@ textarea:focus:-webkit-placeholder {
     position: relative;
     height: 40px;
     width: 40px;
-    transition: .4s;
+    transition: 0.4s;
     /* font-weight: 30px; */
-    background-color: #66AC4C;
+    background-color: #66ac4c;
     border-radius: 50%;
-    margin: 0 5px;
+    margin: 0 5px 0 0px;
 }
 
 #contact .connect .social ul li a {
@@ -847,12 +986,12 @@ textarea:focus:-webkit-placeholder {
 }
 
 #contact .connect .social ul li:hover a {
-    color: #66AC4C;
+    color: #66ac4c;
 }
 
 #contact .right {
     width: 62%;
-    background-color: #66AC4C;
+    background-color: #66ac4c;
 }
 
 #contact .right .right-form {
@@ -877,19 +1016,23 @@ textarea:focus:-webkit-placeholder {
     font-size: 24px;
 }
 
-#contact .right .right-form a {
+#contact .right .right-form a,
+#contact .right .right-form .submit input {
     color: white;
-    padding: 15px 30px;
+    padding: 12px 30px;
     text-decoration: none;
+    background-color: #66ac4c;
+    margin-bottom: 0px;
     font-size: 14px;
     border: 1px solid white;
     border-radius: 35px;
     font-weight: 600;
-    transition: .4s;
+    transition: 0.4s;
 }
 
-#contact .right .right-form a:hover {
-    color: #66AC4C;
+#contact .right .right-form a:hover,
+#contact .right .right-form .submit input:hover {
+    color: #66ac4c;
     box-shadow: 2px 3px 5px #7e7e7e;
     background-color: white;
 }
@@ -903,7 +1046,7 @@ textarea:focus:-webkit-placeholder {
 
 .tax-home {
     background: rgb(114, 131, 191);
-    background: linear-gradient(180deg, rgba(114, 131, 191, 1) 0%, rgba(40, 60, 134, 1) 0%, rgba(143, 143, 143, 1) 100%);
+    background: linear-gradient( 180deg, rgba(114, 131, 191, 1) 0%, rgba(40, 60, 134, 1) 0%, rgba(143, 143, 143, 1) 100%);
     height: 100vh;
 }
 
@@ -941,7 +1084,7 @@ textarea:focus:-webkit-placeholder {
 
 .income-tax .tax-card-back {
     background: rgb(114, 131, 191);
-    background: linear-gradient(180deg, rgba(114, 131, 191, 1) 0%, rgba(101, 121, 111, 1) 0%, rgba(202, 241, 222, 1) 100%);
+    background: linear-gradient( 180deg, rgba(114, 131, 191, 1) 0%, rgba(101, 121, 111, 1) 0%, rgba(202, 241, 222, 1) 100%);
 }
 
 .income-tax .card {
@@ -966,7 +1109,7 @@ textarea:focus:-webkit-placeholder {
 }
 
 .income-tax .card .card-body .amt h5 {
-    color: #66AC4C;
+    color: #66ac4c;
     font-size: 30px;
     font-weight: 900;
     margin-bottom: 0;
@@ -988,7 +1131,7 @@ textarea:focus:-webkit-placeholder {
 
 .income-tax .card .card-body .who a {
     color: white;
-    background: #023C6C;
+    background: #023c6c;
     /* background: rgba(2, 60, 108, ); */
     backdrop-filter: blur(10px);
     padding: 10px 10px;
@@ -1014,18 +1157,18 @@ textarea:focus:-webkit-placeholder {
     font-weight: 900;
     text-transform: uppercase;
     padding: 5px 30px;
-    background-color: #66AC4C;
-    border: 1px solid #66AC4C;
+    background-color: #66ac4c;
+    border: 1px solid #66ac4c;
     border-radius: 35px;
     position: absolute;
     bottom: 20px;
     right: 30px;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 .income-tax .card .card-body .buy-btn:hover {
-    border: 1px solid #66AC4C;
-    color: #66AC4C;
+    border: 1px solid #66ac4c;
+    color: #66ac4c;
     background-color: #ffffff;
 }
 
@@ -1038,7 +1181,7 @@ textarea:focus:-webkit-placeholder {
 
 .gst-home {
     background: rgb(114, 131, 191);
-    background: linear-gradient(180deg, rgba(114, 131, 191, 1) 0%, rgba(142, 197, 252, 1) 0%, rgba(224, 195, 252, 1) 100%);
+    background: linear-gradient( 180deg, rgba(114, 131, 191, 1) 0%, rgba(142, 197, 252, 1) 0%, rgba(224, 195, 252, 1) 100%);
     height: 100vh;
 }
 
@@ -1102,7 +1245,7 @@ textarea:focus:-webkit-placeholder {
 }
 
 .gst .card .card-body .amt h5 {
-    color: #66AC4C;
+    color: #66ac4c;
     font-size: 30px;
     font-weight: 900;
     margin-bottom: 0;
@@ -1129,7 +1272,7 @@ textarea:focus:-webkit-placeholder {
 
 .gst .card .card-body .who a {
     color: white;
-    background: #023C6C;
+    background: #023c6c;
     /* background: rgba(2, 60, 108, ); */
     backdrop-filter: blur(10px);
     padding: 10px 10px;
@@ -1162,18 +1305,18 @@ textarea:focus:-webkit-placeholder {
     font-weight: 900;
     text-transform: uppercase;
     padding: 5px 30px;
-    background-color: #66AC4C;
-    border: 1px solid #66AC4C;
+    background-color: #66ac4c;
+    border: 1px solid #66ac4c;
     border-radius: 35px;
     position: absolute;
     bottom: 20px;
     right: 30px;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 .gst .card .card-body .buy-btn:hover {
-    border: 1px solid #66AC4C;
-    color: #66AC4C;
+    border: 1px solid #66ac4c;
+    color: #66ac4c;
     background-color: #ffffff;
 }
 
@@ -1208,7 +1351,7 @@ textarea:focus:-webkit-placeholder {
 
 .blog-form {
     background: rgb(0, 208, 175);
-    background: linear-gradient(90deg, rgba(0, 208, 175, 1) 0%, rgba(142, 197, 252, 1) 48%, rgba(0, 208, 175, 1) 100%);
+    background: linear-gradient( 90deg, rgba(0, 208, 175, 1) 0%, rgba(142, 197, 252, 1) 48%, rgba(0, 208, 175, 1) 100%);
     height: 75vh;
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
@@ -1218,8 +1361,10 @@ textarea:focus:-webkit-placeholder {
     text-align: center;
     position: absolute;
     width: 80%;
-    padding: 0 80px;
+    left: 50%;
     top: 30%;
+    margin: auto;
+    transform: translateX(-50%);
 }
 
 .blog-form .heading h2 {
@@ -1245,7 +1390,7 @@ textarea:focus:-webkit-placeholder {
     text-decoration: none;
     font-size: 26px;
     font-weight: 500;
-    border: 1px solid #023C6C;
+    border: 1px solid #023c6c;
     border-radius: 35px;
 }
 
@@ -1257,7 +1402,7 @@ textarea:focus:-webkit-placeholder {
     height: 40vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/newblogbg.png);
-    position: relative
+    position: relative;
 }
 
 .blog .add-blog .new-blog {
@@ -1271,16 +1416,16 @@ textarea:focus:-webkit-placeholder {
     color: black;
     text-decoration: none;
     padding: 30px 140px;
-    background: #66AC4C;
+    background: #66ac4c;
     font-size: 22px;
     font-weight: 900;
     border-radius: 40px;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 .blog .add-blog .new-blog a:hover {
     background: white;
-    color: #66AC4C;
+    color: #66ac4c;
 }
 
 
@@ -1357,6 +1502,152 @@ textarea:focus:-webkit-placeholder {
     font-weight: 900;
 }
 
-.client-review {
+.client-reviews {
     background-color: #e6e6e6;
+}
+
+.client-reviews .client-hero {
+    display: flex;
+    align-items: flex-end;
+    padding: 15% 0;
+}
+
+.client-reviews .client-hero .left .client-img img {
+    height: 350px;
+    width: 550px;
+}
+
+.client-reviews .client-hero .left .client-img {
+    position: relative;
+}
+
+.client-reviews .client-hero .left .client-img .client-name {
+    position: absolute;
+    top: 20px;
+    right: -200px;
+}
+
+.client-reviews .client-hero .left .client-img .client-name h2 {
+    color: black;
+    font-size: 35px;
+    background-color: #cccccc;
+    padding: 15px 60px;
+    font-weight: 900;
+}
+
+.client-reviews .client-hero .right {
+    padding: 0px;
+}
+
+.client-reviews .client-hero .right .content {
+    align-items: center;
+    margin: 5px 10px;
+    align-items: center;
+}
+
+.client-reviews .client-hero .right .content p {
+    font-size: 24px;
+}
+
+.client-reviews .client-hero .right .content ul {
+    display: flex;
+    list-style: none;
+    text-align: left;
+    padding: 30px 0 0;
+}
+
+.client-reviews .client-hero .right .content ul li {
+    padding-right: 10px;
+}
+
+.client-reviews .client-hero .right .content ul img {
+    height: 70%;
+}
+
+.thankyou {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/thankyou.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.thankyou .thanks {
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.thankyou .thanks img {
+    height: 80px;
+}
+
+.thankyou .thanks h1 {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    color: black;
+    margin-top: 10px;
+}
+
+.thankyou .thanks p {
+    font-size: 40px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.client-page .client-form {
+    background: linear-gradient( 90deg, rgba(0, 208, 175, 1) 0%, rgba(142, 197, 252, 1) 48%, rgba(0, 208, 175, 1) 100%);
+    padding: 40px 0;
+}
+
+.client-page .client-form .form-area {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.client-page .client-form .heading h2 {
+    font-size: 34px;
+    color: black;
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-decoration-color: #7e7e7e;
+    text-decoration-style: 1px solid;
+    text-underline-offset: 10px;
+    margin-bottom: 40px;
+}
+
+.client-page .client-form .form-area form input {
+    border-radius: 0px;
+    height: 45px;
+    margin: 10px 0 50px;
+}
+
+.client-page .client-form .form-area form a {
+    color: #ffffff;
+    padding: 5px 35px;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 500;
+    border: 1px solid #023c6c;
+    border-radius: 35px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    padding: 10px 0;
+    background: #ceecf9;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
 }
