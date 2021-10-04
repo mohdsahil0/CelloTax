@@ -1,5 +1,18 @@
 <?php
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $phone = $_POST['regnumber']; 
+    $name = $_POST['regname'];
+}
 
+include('mysql.php');
+
+$query = "INSERT INTO users SET phone = '".$phone."', name = '".$name."' ";
+$result = @mysqli_query($conn, $query);
+
+include_once('mail.php');
+
+// Close the connection
+mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +31,7 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <script src="/js/main.js">
     </script>
-    <title>Document</title>
+    <title>Thank You</title>
     <link rel="icon" href="/assets/icons/fevicon.png" type="image/icon">
 </head>
 <body>

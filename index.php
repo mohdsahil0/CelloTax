@@ -99,14 +99,17 @@ mysqli_close($conn);
                     </h3>
 
                     <div class="form">
-                        <form action="" method="POST">
+                        <form action="/thankyou" method="POST">
                             <div class="form-group">
-                                <input type="text" class="form-control"  id="exampleInputname1" placeholder="Enter Your Number" required>
+                                <input type="text" class="form-control"  id="regnumber" name="regnumber" placeholder="Enter Your Number" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Name" required>
+                                <input type="text" class="form-control" id="regname" name="regname" placeholder="Enter Your Name" required>
                             </div>
-                            <a class="btn" href="/thankyou">Submit</a>
+                            <!-- <a class="btn" href="/thankyou">Submit</a> -->
+                            <div class="submit">
+                                <input type="submit" value="Submit" />
+                            </div>
                         </form>
                     </div>
                 </div>

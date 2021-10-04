@@ -1,19 +1,18 @@
 <?php
-$to = "aliakhanna1212@gmail.com, sahilstack@gmail.com";
+$to = "
+aliakhanna1212@gmail.com, 
+sahilstack@gmail.com
+support1@cellotax.com
+";
 $subject = "Cellotax";
 
 $message = '
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>Document</title>
 
     <Style>
         * {
@@ -44,6 +43,7 @@ $message = '
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin: 0 50px;
         }
         
         .mail-body {
@@ -61,6 +61,10 @@ $message = '
             max-width: 500px;
         }
         
+        .mail-body .card .card-body {
+            padding: 25px;
+        }
+        
         .mail-body .card .card-body h4 {
             text-align: center;
             color: black;
@@ -70,7 +74,6 @@ $message = '
         
         .mail-body .card .card-body .amt {
             padding: 0 30px;
-            line-height: 0.7;
         }
         
         .mail-body .card .card-body .amt h5 {
@@ -119,6 +122,10 @@ $message = '
             border: 1px solid #66ac4c;
             color: #66ac4c;
             background-color: #ffffff;
+        }
+        
+        .client-details {
+            padding: 20px 30px;
         }
         
         @media (max-width:1200px) {
@@ -218,12 +225,12 @@ $message = '
                     <table class="table">
                         <tbody>
                             <tr>
-                                <td>Name</td>
-                                <td>xyz</td>
+                                <td>Name:</td>
+                                <td>'.$name.'</td>
                             </tr>
                             <tr>
-                                <td>Number</td>
-                                <td>+91 0000000000</td>
+                                <td>Contact No.:</td>
+                                <td>'.$phone.'</td>
                             </tr>
                         </tbody>
                     </table>
@@ -245,10 +252,12 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= 'From: <admin@cellotax.com>' . "\r\n";
 // $headers .= 'Cc: myboss@example.com' . "\r\n";
 
-if(mail($to,$subject,$message,$headers)) {
-    echo 'MAIL SENT!';
-} else {
-    echo 'MAIL NOT SENT!';
-}
+$mailconfirm = @mail($to,$subject,$message,$headers);
+
+// if($mailconfirm) {
+//     echo 'MAIL SENT!';
+// } else {
+//     echo 'MAIL NOT SENT!';
+// }
 
 ?>
