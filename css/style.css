@@ -99,7 +99,6 @@ html {
     top: 0;
     width: 250px;
     background-color: #ffffff;
-    opacity: 75%;
     z-index: 99;
     transform: translateX(-250px);
     transition: 250ms ease-in-out;

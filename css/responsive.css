@@ -204,7 +204,7 @@
             .gst-home .hero {
                 margin: 0px;
                 padding: 0px;
-                transform: translate(-50%, -50%) !important;
+                transform: translate(-50%, -55%) !important;
                 /* position: unset !important;
         top: 50%;
         left: 50%;
@@ -301,6 +301,12 @@
             }
             .client-reviews .client-hero .right .content ul {
                 padding: 0px;
+            }
+            .tax-home {
+                height: 85vh;
+            }
+            .gst-home {
+                height: 85vh;
             }
         }
         
