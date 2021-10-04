@@ -100,16 +100,16 @@
                 <h1>CONTACT US</h1>
                 <form action="" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your Name">
+                        <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputnumber1" placeholder="Enter Your Number">
+                        <input type="text" class="form-control" id="exampleInputnumber1" placeholder="Enter Your Number" required>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Your Message" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Your Message" rows="3" required></textarea>
                     </div>
                     <a href="#" class="submit">SUBMIT</a>
                 </form>

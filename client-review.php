@@ -97,10 +97,10 @@
                     <form>
                         <div class="row combined-row">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Enter Your Number">
+                                <input type="text" class="form-control" placeholder="Enter Your Number" required>
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Enter Your Name">
+                                <input type="text" class="form-control" placeholder="Enter Your Name" required>
                             </div>
                         </div>
                         <a href="#">SUBMIT</a>
@@ -142,16 +142,16 @@
                 <h1>CONTACT US</h1>
                 <form action="/" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Enter Your Name">
+                        <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Enter Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" name="contactemail" placeholder="Enter Your Email">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="contactemail" placeholder="Enter Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputnumber1" name="contactphone" placeholder="Enter Your Number">
+                        <input type="text" class="form-control" id="exampleInputnumber1" name="contactphone" placeholder="Enter Your Number" required>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" name="contactmsg" placeholder="Enter Your Message" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="contactmsg" placeholder="Enter Your Message" rows="3" required></textarea>
                     </div>
                     <!-- <a href="#" class="submit">SUBMIT</a> -->
                     <div class="submit">
