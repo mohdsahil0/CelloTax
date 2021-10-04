@@ -106,7 +106,7 @@ mysqli_close($conn);
                             <div class="form-group">
                                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Name">
                             </div>
-                            <a class="btn" href="/thankyou/">Submit</a>
+                            <a class="btn" href="/thankyou">Submit</a>
                         </form>
                     </div>
                 </div>
