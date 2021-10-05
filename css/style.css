@@ -240,11 +240,13 @@ outline: none;
 } */
 
 
-/* .hero .form-area input {
+/*  */
+
+.hero .form-area input {
     border-radius: 0px;
     margin-bottom: 30px;
     border: none;
-} */
+}
 
 .hero .form-area .form a,
 .hero .form-area .submit input {
