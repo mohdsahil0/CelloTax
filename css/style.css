@@ -258,9 +258,11 @@ outline: none;
     border-radius: 35px;
     transition: 0.4s ease-in-out;
     margin: 40px 0 0 150px;
+    background-color: transparent;
 }
 
-.hero .form-area .form a:hover {
+.hero .form-area .form a:hover,
+.hero .form-area .submit input:hover {
     background-color: #66ac4c;
 }
 
