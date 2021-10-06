@@ -1,918 +1,910 @@
-            @media (min-width:1320px) {
-                .hero {
-                    color: white;
-                    display: flex;
-                    align-items: center;
-                    position: absolute;
-                    top: 60%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-            
-            @media (max-width:1320px) {
-                #home .connect {
-                    right: -10px;
-                }
-                .hero .form-area {
-                    padding: 20px 30px;
-                    margin-right: 20px;
-                }
-                .hero .form-area .form a {
-                    margin: 30px 0 0 150px;
-                }
-                .hero {
-                    color: white;
-                    display: flex;
-                    margin: auto;
-                    align-items: center;
-                    position: absolute;
-                    top: 60%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-            
-            @media (max-width:1200px) {
-                .hero .content h1 {
-                    font-size: 30px;
-                }
-                .hero .content h3 {
-                    font-size: 20px;
-                }
-                #home .lable img {
-                    width: 55%;
-                }
-                .hero .form-area .form a {
-                    margin: 30px 0 0 120px;
-                }
-                #services .main {
-                    width: 85%;
-                }
-                .income-tax .card .card-body .who a {
-                    font-size: 16px;
-                }
-                .income-tax .card .card-body .content {
-                    padding: 10px 0px 10px 20px;
-                }
-                .gst .card .card-body .who a {
-                    font-size: 16px;
-                }
-            }
-            
-            @media (max-width:991px) {
-                .nav-bar {
-                    display: none;
-                }
-                .mob-nav {
-                    display: block;
-                }
-                #home {
-                    height: 170vh;
-                }
-                .hero {
-                    flex-direction: column;
-                    position: absolute !important;
-                    top: 50% !important;
-                    left: 50% !important;
-                    transform: translate(-50%, -10%) !important;
-                }
-                .hero .form-area {
-                    margin: 200px 0;
-                }
-                .hero .form-area .form a {
-                    margin: 30px 0 0 170px;
-                }
-                .hero .form-area .line {
-                    margin: 2px 21%;
-                }
-                #services .heading .box-4 h1 {
-                    font-size: 28px;
-                }
-                #services .heading p {
-                    font-size: 16px;
-                }
-                #services .heading .box-4 {
-                    max-width: 300px;
-                }
-                #services .content .left h2 {
-                    font-size: 24px;
-                }
-                #services .content .left h3 {
-                    font-size: 18px;
-                }
-                #services .content .left .content-item ul {
-                    font-size: 16px;
-                }
-                #services .content .left .content-item ul li {
-                    line-height: 1.5;
-                }
-                #services .content .left .content-item img {
-                    height: 50px;
-                    width: 50px;
-                    margin: 10px 30px 0px 0;
-                }
-                #services .content .learn-more-btn {
-                    padding: 5px 15px;
-                    font-weight: normal;
-                }
-                #services .content .right img {
-                    width: 80%;
-                }
-                #services .content .right .tax-notice-content h4 {
-                    font-size: 18px;
-                    margin-bottom: unset;
-                }
-                #services .content .right .tax-notice-content p {
-                    font-size: 14px;
-                }
-                #services .content .right .tax-notice-content ul li {
-                    font-size: 14px;
-                }
-                #services .content .right .tax-notice-content ul li:last-child {
-                    margin-left: -18px;
-                }
-                #blog .card {
-                    margin: 20px auto;
-                }
-                #blog .heading h1 {
-                    font-size: 28px;
-                    margin: 60px auto;
-                    max-width: 300px;
-                }
-                #client-review .heading h1 {
-                    font-size: 28px;
-                    padding: 50px 0;
-                }
-                #client-review .testimonial h1 {
-                    font-size: 35px;
-                }
-                #client-review .testimonial .client-name h3 {
-                    font-size: 26px;
-                    margin: 10px;
-                }
-                #client-review .testimonial .client-text p {
-                    font-size: 22px;
-                }
-                #client-review .testimonial .read-more a {
-                    font-size: 20px;
-                    margin: 10px 0;
-                }
-                #client-review .testimonial .rating i {
-                    font-size: 24px;
-                }
-                #contact .connect .social ul li {
-                    height: 35px;
-                    width: 35px;
-                }
-                #contact .right .right-form {
-                    padding: 50px 90px;
-                }
-                #contact .right .right-form h1 {
-                    margin: 25px 0;
-                    font-size: 28px;
-                }
-                #contact .right .right-form input {
-                    height: 45px;
-                    margin-bottom: 20px;
-                    font-size: 20px;
-                }
-                #contact .left .left-item {
-                    max-width: 75%;
-                }
-                #contact .connect .social p {
-                    font-size: 22px;
-                    margin: 20px 0;
-                }
-                #contact .right .right-form textarea {
-                    font-size: 20px;
-                }
-                .thankyou .thanks img {
-                    height: 60px;
-                }
-                .thankyou .thanks h1 {
-                    font-size: 50px;
-                }
-                .thankyou .thanks p {
-                    font-size: 34px;
-                }
-                .tax-home .hero .tax-img img,
-                .gst-home .hero .gst-img img {
-                    display: none;
-                }
-                .tax-home .hero,
-                .gst-home .hero {
-                    margin: 0px;
-                    padding: 0px;
-                    transform: translate(-50%, -55%) !important;
-                }
-                .register-page .hero {
-                    position: unset !important;
-                    transform: translate(0%, -15%) !important;
-                }
-                .income-tax .heading h1 {
-                    font-size: 28px;
-                    max-width: 375px;
-                }
-                .right .right-form .submit input {
-                    padding: 10px 30px;
-                }
-                .gst .heading h1 {
-                    font-size: 28px;
-                    max-width: 250px;
-                }
-                .gst .heading h3 {
-                    font-size: 22px;
-                }
-                .gst .card .card-body h4 {
-                    font-size: 22px;
-                }
-                .gst .top-card .card {
-                    margin: 20px 0;
-                    height: 265px;
-                }
-                .gst .top-card .card .card-body .content {
-                    padding: 7px 30px 10px 60px;
-                }
-                .blog-form .heading h2 {
-                    font-size: 28px;
-                }
-                .blog-form .form-area form input {
-                    height: 35px;
-                    margin: 5px 0 30px;
-                }
-                .blog-form .form-area form a {
-                    padding: 5px 35px;
-                    font-size: 22px;
-                }
-                .client-page .client-form .heading h2 {
-                    font-size: 28px;
-                }
-                .client-page .client-form .form-area form input {
-                    height: 35px;
-                    margin: 5px 0 30px;
-                }
-                .client-page .client-form .form-area form a {
-                    padding: 5px 35px;
-                    font-size: 22px;
-                }
-                .blogpanel .blog-width {
-                    padding: 70px 0 40px 70px;
-                }
-                .blogpanel .blog-width .blog-head h1 {
-                    font-size: 20px;
-                }
-                .blogpanel .blog-width .blog-img img {
-                    height: 350px;
-                }
-                .blogpanel .blog-width .blog-data p {
-                    font-size: 16px;
-                }
-                .blogpanel .blog-width .blog-data h2 {
-                    font-size: 20px;
-                }
-                .client-reviews .client-hero {
-                    flex-direction: column;
-                    align-items: center;
-                }
-                .client-reviews .client-hero .left .client-img .client-name {
-                    bottom: 0;
-                    width: 100%;
-                    text-align: center;
-                    right: unset;
-                    top: unset;
-                    /* right: -200px; */
-                }
-                .client-reviews .client-hero .left .client-img img {
-                    height: 300px;
-                    width: 500px;
-                }
-                .client-reviews .client-hero .left .client-img .client-name h2 {
-                    font-size: 28px !important;
-                }
-                .client-reviews .client-hero .right .content p {
-                    font-size: 20px;
-                }
-                .client-reviews .client-hero .right .content ul {
-                    padding: 0px;
-                }
-                .tax-home {
-                    height: 85vh;
-                }
-                .gst-home {
-                    height: 85vh;
-                }
-                .register-page .hero {
-                    color: white;
-                    display: flex;
-                    margin: auto;
-                    align-items: center;
-                    position: absolute !important;
-                    top: 25% !important;
-                    left: 45% !important;
-                    transform: translate(-50%, 0%) !important;
-                }
-            }
-            
-            @media (max-width:767px) {
-                .hero .content h1 {
-                    font-size: 26px;
-                }
-                .hero .content h3 {
-                    font-size: 18px;
-                }
-                #home .lable img {
-                    width: 70%;
-                }
-                .hero .form-area {
-                    margin: 150px 0;
-                }
-                .hero .form-area h3 {
-                    font-size: 20px;
-                }
-                .hero .form-area .line {
-                    margin: 2px 25%;
-                }
-                #home .connect img {
-                    width: 50%;
-                }
-                .main-home .social ul li img {
-                    width: 50%;
-                }
-                .main-home .social ul li {
-                    padding: 10px 0px;
-                }
-                #services .content {
-                    flex-direction: column;
-                }
-                #services .content .left {
-                    width: 80%;
-                    margin: 0 auto;
-                    border-bottom: 1px dashed #7e7e7e;
-                    border-right: none;
-                }
-                #services .content .right {
-                    width: 80%;
-                }
-                #services .content .right .tax-notice-content h4 {
-                    font-weight: 900;
-                    font-size: 22px;
-                    margin-top: 30px;
-                }
-                #services .content .right .tax-notice-content p {
-                    font-weight: 600;
-                    font-size: 18px;
-                }
-                #services .content .right .tax-notice-content ul li {
-                    font-size: 16px;
-                }
-                #services .content .right .tax-notice img {
-                    margin: 20px;
-                }
-                /* #client-review .owl-item {
+@media (min-width: 1320px) {
+  .hero {
+    color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 1320px) {
+  #home .connect {
+    right: -10px;
+  }
+  .hero .form-area {
+    padding: 20px 30px;
+    margin-right: 20px;
+  }
+  .hero .form-area .form a {
+    margin: 30px 0 0 150px;
+  }
+  .hero {
+    color: white;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero .content h1 {
+    font-size: 30px;
+  }
+  .hero .content h3 {
+    font-size: 20px;
+  }
+  #home .lable img {
+    width: 55%;
+  }
+  .hero .form-area .form a {
+    margin: 30px 0 0 120px;
+  }
+  #services .main {
+    width: 85%;
+  }
+  .income-tax .card .card-body .who a {
+    font-size: 16px;
+  }
+  .income-tax .card .card-body .content {
+    padding: 10px 0px 10px 20px;
+  }
+  .gst .card .card-body .who a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-bar {
+    display: none;
+  }
+  .mob-nav {
+    display: block;
+  }
+  #home {
+    height: 170vh;
+  }
+  .hero {
+    flex-direction: column;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -10%) !important;
+  }
+  .hero .form-area {
+    margin: 200px 0;
+  }
+  .hero .form-area .form a {
+    margin: 30px 0 0 170px;
+  }
+  .hero .form-area .line {
+    margin: 2px 21%;
+  }
+  #services .heading .box-4 h1 {
+    font-size: 28px;
+  }
+  #services .heading p {
+    font-size: 16px;
+  }
+  #services .heading .box-4 {
+    max-width: 300px;
+  }
+  #services .content .left h2 {
+    font-size: 24px;
+  }
+  #services .content .left h3 {
+    font-size: 18px;
+  }
+  #services .content .left .content-item ul {
+    font-size: 16px;
+  }
+  #services .content .left .content-item ul li {
+    line-height: 1.5;
+  }
+  #services .content .left .content-item img {
+    height: 50px;
+    width: 50px;
+    margin: 10px 30px 0px 0;
+  }
+  #services .content .learn-more-btn {
+    padding: 5px 15px;
+    font-weight: normal;
+  }
+  #services .content .right img {
+    width: 80%;
+  }
+  #services .content .right .tax-notice-content h4 {
+    font-size: 18px;
+    margin-bottom: unset;
+  }
+  #services .content .right .tax-notice-content p {
+    font-size: 14px;
+  }
+  #services .content .right .tax-notice-content ul li {
+    font-size: 14px;
+  }
+  #services .content .right .tax-notice-content ul li:last-child {
+    margin-left: -18px;
+  }
+  #blog .card {
+    margin: 20px auto;
+  }
+  #blog .heading h1 {
+    font-size: 28px;
+    margin: 60px auto;
+    max-width: 300px;
+  }
+  #client-review .heading h1 {
+    font-size: 28px;
+    padding: 50px 0;
+  }
+  #client-review .testimonial h1 {
+    font-size: 35px;
+  }
+  #client-review .testimonial .client-name h3 {
+    font-size: 26px;
+    margin: 10px;
+  }
+  #client-review .testimonial .client-text p {
+    font-size: 22px;
+  }
+  #client-review .testimonial .read-more a {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  #client-review .testimonial .rating i {
+    font-size: 24px;
+  }
+  #contact .connect .social ul li {
+    height: 35px;
+    width: 35px;
+  }
+  #contact .right .right-form {
+    padding: 50px 90px;
+  }
+  #contact .right .right-form h1 {
+    margin: 25px 0;
+    font-size: 28px;
+  }
+  #contact .right .right-form input {
+    height: 45px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  #contact .left .left-item {
+    max-width: 75%;
+  }
+  #contact .connect .social p {
+    font-size: 22px;
+    margin: 20px 0;
+  }
+  #contact .right .right-form textarea {
+    font-size: 20px;
+  }
+  .thankyou .thanks img {
+    height: 60px;
+  }
+  .thankyou .thanks h1 {
+    font-size: 50px;
+  }
+  .thankyou .thanks p {
+    font-size: 34px;
+  }
+  .tax-home .hero .tax-img img,
+  .gst-home .hero .gst-img img {
+    display: none;
+  }
+  .tax-home .hero,
+  .gst-home .hero {
+    margin: 0px;
+    padding: 0px;
+    transform: translate(-50%, -55%) !important;
+  }
+  .register-page .hero {
+    position: unset !important;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%) !important;
+  }
+  .income-tax .heading h1 {
+    font-size: 28px;
+    max-width: 375px;
+  }
+  .right .right-form .submit input {
+    padding: 10px 30px;
+  }
+  .gst .heading h1 {
+    font-size: 28px;
+    max-width: 250px;
+  }
+  .gst .heading h3 {
+    font-size: 22px;
+  }
+  .gst .card .card-body h4 {
+    font-size: 22px;
+  }
+  .gst .top-card .card {
+    margin: 20px 0;
+    height: 265px;
+  }
+  .gst .top-card .card .card-body .content {
+    padding: 7px 30px 10px 60px;
+  }
+  .blog-form .heading h2 {
+    font-size: 28px;
+  }
+  .blog-form .form-area form input {
+    height: 35px;
+    margin: 5px 0 30px;
+  }
+  .blog-form .form-area form a {
+    padding: 5px 35px;
+    font-size: 22px;
+  }
+  .client-page .client-form .heading h2 {
+    font-size: 28px;
+  }
+  .client-page .client-form .form-area form input {
+    height: 35px;
+    margin: 5px 0 30px;
+  }
+  .client-page .client-form .form-area form a {
+    padding: 5px 35px;
+    font-size: 22px;
+  }
+  .blogpanel .blog-width {
+    padding: 70px 0 40px 70px;
+  }
+  .blogpanel .blog-width .blog-head h1 {
+    font-size: 20px;
+  }
+  .blogpanel .blog-width .blog-img img {
+    height: 350px;
+  }
+  .blogpanel .blog-width .blog-data p {
+    font-size: 16px;
+  }
+  .blogpanel .blog-width .blog-data h2 {
+    font-size: 20px;
+  }
+  .client-reviews .client-hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .client-reviews .client-hero .left .client-img .client-name {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    right: unset;
+    top: unset;
+    /* right: -200px; */
+  }
+  .client-reviews .client-hero .left .client-img img {
+    height: 300px;
+    width: 500px;
+  }
+  .client-reviews .client-hero .left .client-img .client-name h2 {
+    font-size: 28px !important;
+  }
+  .client-reviews .client-hero .right .content p {
+    font-size: 20px;
+  }
+  .client-reviews .client-hero .right .content ul {
+    padding: 0px;
+  }
+  .tax-home {
+    height: 85vh;
+  }
+  .gst-home {
+    height: 85vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .content h1 {
+    font-size: 26px;
+  }
+  .hero .content h3 {
+    font-size: 18px;
+  }
+  #home .lable img {
+    width: 70%;
+  }
+  .hero .form-area {
+    margin: 150px 0;
+  }
+  .hero .form-area h3 {
+    font-size: 20px;
+  }
+  .hero .form-area .line {
+    margin: 2px 25%;
+  }
+  #home .connect img {
+    width: 50%;
+  }
+  .main-home .social ul li img {
+    width: 50%;
+  }
+  .main-home .social ul li {
+    padding: 10px 0px;
+  }
+  #services .content {
+    flex-direction: column;
+  }
+  #services .content .left {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px dashed #7e7e7e;
+    border-right: none;
+  }
+  #services .content .right {
+    width: 80%;
+  }
+  #services .content .right .tax-notice-content h4 {
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  #services .content .right .tax-notice-content p {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #services .content .right .tax-notice-content ul li {
+    font-size: 16px;
+  }
+  #services .content .right .tax-notice img {
+    margin: 20px;
+  }
+  /* #client-review .owl-item {
                 padding: 10px;
                 text-align: center;
                 padding: 0px 30px;} */
-                /* width: 400px!important; */
-                /* #client-review .item {
+  /* width: 400px!important; */
+  /* #client-review .item {
 width: 400px;
 } */
-                #client-review .testimonial .client-text p {
-                    font-size: 18px;
-                }
-                #client-review .testimonial .read-more a {
-                    font-size: 18px;
-                }
-                #contact {
-                    display: flex;
-                    flex-direction: column;
-                }
-                #contact .left .sub-logo img {
-                    width: 30%;
-                    margin: 10px 0;
-                }
-                #contact .connect .mail .mail1,
-                .mail2 {
-                    text-align: center;
-                }
-                #contact .connect .social p {
-                    font-size: 20px;
-                    margin: 15px 0;
-                    text-align: center;
-                }
-                #contact .left {
-                    width: 100%;
-                }
-                #contact .connect .social ul {
-                    text-align: center;
-                }
-                #contact .right {
-                    width: 100%;
-                }
-                #contact .connect .mail {
-                    padding: 5px 0;
-                }
-                .thankyou .thanks img {
-                    height: 50px;
-                }
-                .thankyou .thanks h1 {
-                    font-size: 45px;
-                }
-                .thankyou .thanks p {
-                    font-size: 24px;
-                }
-                .income-tax .card {
-                    max-width: 400px;
-                    margin: 20px auto;
-                }
-                .gst .card,
-                .gst .top-card .card {
-                    width: 400px;
-                    margin: 20px auto;
-                }
-                .blog .add-blog .new-blog a {
-                    padding: 25px 100px;
-                    font-size: 18px;
-                }
-                .blogpanel .blog-width {
-                    padding: 70px 40px 40px;
-                    width: 100%;
-                }
-                .client-reviews .client-hero .left .client-img .client-name h2 {
-                    font-size: 26px !important;
-                }
-                .app .app-row p {
-                    font-size: 16px;
-                }
-                .app .app-row img {
-                    width: 170px;
-                }
-            }
-            
-            @media (max-width:580px) {
-                .hero {
-                    padding: 5% 20px;
-                }
-                .hero .content h1 {
-                    font-size: 20px;
-                }
-                .hero .content h3 {
-                    font-size: 16px;
-                }
-                .hero .form-area .form a {
-                    margin: 30px 0 0 120px;
-                }
-                .hero .form-area .line {
-                    margin: 2px 21%;
-                }
-                #services .content .right .tax-notice-content h4 {
-                    font-size: 18px;
-                }
-                #services .content .right .tax-notice-content p {
-                    font-size: 14px;
-                    margin-bottom: 0px;
-                }
-                #services .content .right .tax-notice-content ul li {
-                    font-size: 14px;
-                }
-                #services .content .left {
-                    width: 90%;
-                }
-                #services .content .right {
-                    width: 90%;
-                }
-                #services .content .left h2 {
-                    font-size: 20px;
-                }
-                #services .content .left h3 {
-                    font-size: 16px;
-                }
-                #services .content .left .content-item ul {
-                    font-size: 14px;
-                }
-                #services .content .left .gst .gst-sub {
-                    font-size: 16px;
-                }
-                #services .heading .box-4 h1 {
-                    font-size: 24px;
-                    letter-spacing: 0px;
-                }
-                #services .heading p {
-                    font-size: 14px;
-                }
-                #services .heading .box-4 {
-                    max-width: 215px;
-                }
-                .hero .form-area .form a {
-                    font-size: 14px;
-                    padding: 5px 35px;
-                }
-                #services .content .learn-more-btn {
-                    font-size: 14px;
-                }
-                #blog .heading h1 {
-                    font-size: 24px;
-                    margin: 40px auto;
-                    max-width: 250px;
-                }
-                #client-review .heading h1 {
-                    font-size: 24px;
-                    padding: 40px 0;
-                    letter-spacing: 0px;
-                }
-                #client-review .testimonial .client-name h3 {
-                    font-size: 22px;
-                }
-                #client-review .testimonial .client-text p {
-                    font-size: 16px;
-                }
-                #client-review .testimonial .read-more a {
-                    font-size: 16px;
-                }
-                #client-review .testimonial .rating i {
-                    font-size: 20px;
-                    padding: 10px 5px;
-                }
-                #contact .left .sub-logo img {
-                    width: 30%;
-                }
-                #contact .connect .mail span {
-                    font-size: 16px;
-                }
-                #contact .right .right-form h1 {
-                    margin: 15px 0;
-                    font-size: 24px;
-                }
-                #contact .right .right-form input {
-                    height: 35px;
-                    margin-bottom: 15px;
-                    font-size: 16px;
-                }
-                #contact .right .right-form textarea {
-                    border-radius: 0;
-                    margin-bottom: 30px;
-                    font-size: 16px;
-                }
-                #contact .right .right-form a {
-                    padding: 8px 20px;
-                }
-                #contact .right .right-form {
-                    padding: 10px 60px;
-                }
-                .thankyou .thanks img {
-                    height: 40px;
-                }
-                .thankyou .thanks h1 {
-                    font-size: 34px;
-                    letter-spacing: 0px;
-                }
-                .thankyou .thanks p {
-                    font-size: 18px;
-                    letter-spacing: 0px;
-                }
-                #home .lable {
-                    position: unset;
-                    text-align: center;
-                }
-                #blog .card h3,
-                #blog .card h5 {
-                    font-size: 14px;
-                }
-                #blog .card {
-                    width: 17rem !important;
-                    height: 425px;
-                }
-                .income-tax .card .card-body h4 {
-                    font-size: 24px;
-                }
-                .income-tax .card .card-body .amt h5 {
-                    font-size: 22px;
-                }
-                .income-tax .card .card-body .buy-btn {
-                    font-size: 14px;
-                    padding: 2px 20px;
-                }
-                .income-tax .card {
-                    max-width: 350px;
-                }
-                .income-tax .card {
-                    height: 500px;
-                }
-                .income-tax .card .card-body .who a {
-                    font-size: 14px;
-                }
-                #contact .right .right-form a,
-                #contact .right .right-form .submit input {
-                    padding: 7px 30px;
-                }
-                .gst .card .card-body .amt h5 {
-                    font-size: 26px;
-                }
-                .gst .card .card-body .amt h5 .per-annum {
-                    font-size: 18px;
-                }
-                .gst .card .card-body .buy-btn {
-                    font-size: 16px;
-                    padding: 3px 25px
-                }
-                .gst .card,
-                .gst .top-card .card {
-                    width: 375px;
-                }
-                .gst .card .card-body .who a {
-                    font-size: 14px;
-                }
-                .income-tax .heading h1 {
-                    font-size: 24px;
-                }
-                .gst .heading h1 {
-                    font-size: 24px;
-                }
-                .gst .heading h3 {
-                    font-size: 18px;
-                }
-                .income-tax .heading h1 {
-                    max-width: 350px;
-                }
-                #popup.active {
-                    height: 420px;
-                    width: 300px;
-                }
-                #popup .chat-bubble {
-                    font-size: 14px;
-                }
-                #popup .chat-box {
-                    max-height: 315px;
-                }
-                #popup.active {
-                    right: 55px;
-                }
-                .blog-form .heading h2 {
-                    font-size: 26px;
-                }
-                .client-page .client-form .heading h2 {
-                    font-size: 26px;
-                }
-                .blog .add-blog .new-blog a {
-                    padding: 15px 70px;
-                    font-size: 16px;
-                }
-                .register-plan .register-social ul {
-                    padding: 65px 0;
-                }
-                .register-plan .register-social ul li {
-                    padding: 0 25px;
-                }
-                .register-plan .register-social ul li img {
-                    height: 80%;
-                }
-                .blogpanel .blog-width .blog-head h1 {
-                    font-size: 18px;
-                }
-                .blogpanel .blog-width .blog-data p {
-                    font-size: 14px;
-                }
-                .blogpanel .blog-width .blog-data h2 {
-                    font-size: 18px;
-                }
-                .client-reviews .client-hero .left .client-img img {
-                    height: 275px;
-                    width: 450px;
-                }
-                .client-reviews .client-hero .right .content p {
-                    font-size: 16px;
-                }
-                .client-reviews .client-hero .left .client-img .client-name h2 {
-                    font-size: 22px !important;
-                    padding: 10px;
-                }
-                .client-reviews .client-hero .right .content ul img {
-                    height: 50%;
-                }
-                .client-reviews .client-hero .right .content ul li {
-                    padding-right: 5px;
-                }
-                .combined-row {
-                    flex-direction: column;
-                }
-                .blog-form .form-area {
-                    top: 25%;
-                }
-                .testimonial .pic {
-                    width: 100px;
-                    height: 100px;
-                }
-                .copyright p {
-                    font-size: 14px;
-                }
-                .app .app-row img {
-                    width: 140px;
-                    padding: 20px 5px;
-                }
-            }
-            
-            @media (max-width:480px) {
-                .hero .content h1 {
-                    font-size: 16px;
-                }
-                .hero .content h3 {
-                    font-size: 14px;
-                }
-                .hero {
-                    padding: 10% 20px;
-                }
-                #services .content .left {
-                    width: 100%;
-                }
-                #services .content .right {
-                    width: 100%;
-                }
-                #services .content .left .content-item img {
-                    margin: 10px 1px 0px 0;
-                }
-                .hero .form-area .form a {
-                    margin: 20px 0 0 100px;
-                }
-                #services .content .right .tax-notice-content h4 {
-                    font-size: 16px;
-                }
-                #services .content .right .tax-notice-content p {
-                    font-size: 12px;
-                }
-                #services .content .right .tax-notice-content ul li {
-                    font-size: 12px;
-                    line-height: 20px;
-                }
-                #client-review .testimonial .client-name h3 {
-                    font-size: 20px;
-                    margin: 5px;
-                }
-                #client-review .testimonial .client-text p {
-                    font-size: 16px;
-                }
-                #client-review .testimonial .read-more a {
-                    font-size: 16px;
-                }
-                #client-review .testimonial h1 {
-                    font-size: 25px;
-                    margin: 15px 0;
-                }
-                #client-review .testimonial .client-name h3 {
-                    font-size: 20px;
-                    margin: 5px;
-                }
-                #client-review .testimonial .client-text p {
-                    font-size: 14px;
-                }
-                #client-review .testimonial .read-more a {
-                    font-size: 14px;
-                }
-                #client-review .testimonial .rating i {
-                    font-size: 18px;
-                    padding: 5px 2px;
-                }
-                .income-tax .card {
-                    max-width: 320px;
-                }
-                .gst .card .card-body h4 {
-                    font-size: 18px;
-                }
-                .gst .card .card-body .amt h5 {
-                    font-size: 22px;
-                }
-                .gst .card .card-body .amt h5 .paise {
-                    font-size: 18px;
-                }
-                .gst .card .card-body .amt h5 .per-annum {
-                    font-size: 16px;
-                }
-                .gst .card .card-body .content ol li {
-                    line-height: 18px;
-                }
-                .gst .card {
-                    height: 475px;
-                }
-                #services .heading .box-4 h1 {
-                    font-size: 22px;
-                }
-                .income-tax .heading h1 {
-                    font-size: 22px;
-                }
-                .gst .heading h1 {
-                    font-size: 22px;
-                }
-                .gst .heading h3 {
-                    font-size: 16px;
-                }
-                #popup.active {
-                    right: 35px;
-                }
-                .blog-form .heading h2 {
-                    font-size: 20px;
-                }
-                .blog-form .form-area form input {
-                    height: 33px;
-                    font-size: 14px;
-                    margin: 0px 0 25px;
-                }
-                .blog-form .form-area form a {
-                    padding: 5px 30px;
-                    font-size: 18px;
-                }
-                .client-page .client-form .heading h2 {
-                    font-size: 20px;
-                }
-                .client-page .client-form .form-area form input {
-                    height: 33px;
-                    font-size: 14px;
-                    margin: 0px 0 25px;
-                }
-                .client-page .client-form .form-area form a {
-                    padding: 5px 30px;
-                    font-size: 18px;
-                }
-                .blog .add-blog .new-blog a {
-                    padding: 10px 40px;
-                    font-size: 16px;
-                }
-                #popup.active {
-                    width: 265px;
-                }
-                .register-plan .register-social ul {
-                    padding: 40px 0;
-                }
-                .register-plan .register-social ul li {
-                    padding: 0 10px;
-                }
-                .register-plan .register-social ul li img {
-                    height: 70%;
-                }
-                .blogpanel .blog-width {
-                    padding: 70px 20px 40px;
-                }
-                .blogpanel .blog-width .blog-img img {
-                    height: 270px;
-                }
-                .client-reviews .client-hero .right .content p {
-                    font-size: 14px;
-                }
-                .client-reviews .client-hero .left .client-img img {
-                    height: 250px;
-                    width: 380px;
-                }
-                .client-reviews .client-hero .left .client-img .client-name h2 {
-                    font-size: 18px !important;
-                    padding: 7px;
-                }
-                .client-reviews .client-hero .right .content ul li {
-                    padding-right: 3px;
-                }
-                .app .app-row p {
-                    font-size: 14px;
-                }
-                .app .app-row img {
-                    width: 100px;
-                }
-                .app .app-row p {
-                    font-size: 12px;
-                }
-            }
-            
-            @media (max-width:400px) {
-                .hero {
-                    padding: 10% 20px;
-                }
-                #services .content .right .tax-notice-content h4 {
-                    margin-top: 20px;
-                    margin-bottom: 0px;
-                }
-                #services .content .right .tax-notice-content h4 {
-                    font-size: 14px;
-                }
-                .gst .card,
-                .gst .top-card .card {
-                    width: 300px;
-                }
-                .client-reviews .client-hero .left .client-img img {
-                    height: 200px;
-                    width: 300px;
-                }
-                .app .app-row p {
-                    font-size: 12px;
-                }
-            }
-            
-            @media only screen and (max-width: 479px) {
-                .testimonial {
-                    padding: 70px 10px 30px;
-                }
-                .testimonial .description:before {
-                    top: -20px
-                }
-                .testimonial .title {
-                    font-size: 12px;
-                }
-                .testimonial .post {
-                    font-size: 11px;
-                }
-            }
+  #client-review .testimonial .client-text p {
+    font-size: 18px;
+  }
+  #client-review .testimonial .read-more a {
+    font-size: 18px;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .left .sub-logo img {
+    width: 30%;
+    margin: 10px 0;
+  }
+  #contact .connect .mail .mail1,
+  .mail2 {
+    text-align: center;
+  }
+  #contact .connect .social p {
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: center;
+  }
+  #contact .left {
+    width: 100%;
+  }
+  #contact .connect .social ul {
+    text-align: center;
+  }
+  #contact .right {
+    width: 100%;
+  }
+  #contact .connect .mail {
+    padding: 5px 0;
+  }
+  .thankyou .thanks img {
+    height: 50px;
+  }
+  .thankyou .thanks h1 {
+    font-size: 45px;
+  }
+  .thankyou .thanks p {
+    font-size: 24px;
+  }
+  .income-tax .card {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  .gst .card,
+  .gst .top-card .card {
+    width: 400px;
+    margin: 20px auto;
+  }
+  .blog .add-blog .new-blog a {
+    padding: 25px 100px;
+    font-size: 18px;
+  }
+  .blogpanel .blog-width {
+    padding: 70px 40px 40px;
+    width: 100%;
+  }
+  .client-reviews .client-hero .left .client-img .client-name h2 {
+    font-size: 26px !important;
+  }
+  .app .app-row p {
+    font-size: 16px;
+  }
+  .app .app-row img {
+    width: 170px;
+  }
+}
+
+@media (max-width: 580px) {
+  .hero {
+    padding: 5% 20px;
+  }
+  .hero .content h1 {
+    font-size: 20px;
+  }
+  .hero .content h3 {
+    font-size: 16px;
+  }
+  .hero .form-area .form a {
+    margin: 30px 0 0 120px;
+  }
+  .hero .form-area .line {
+    margin: 2px 21%;
+  }
+  #services .content .right .tax-notice-content h4 {
+    font-size: 18px;
+  }
+  #services .content .right .tax-notice-content p {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  #services .content .right .tax-notice-content ul li {
+    font-size: 14px;
+  }
+  #services .content .left {
+    width: 90%;
+  }
+  #services .content .right {
+    width: 90%;
+  }
+  #services .content .left h2 {
+    font-size: 20px;
+  }
+  #services .content .left h3 {
+    font-size: 16px;
+  }
+  #services .content .left .content-item ul {
+    font-size: 14px;
+  }
+  #services .content .left .gst .gst-sub {
+    font-size: 16px;
+  }
+  #services .heading .box-4 h1 {
+    font-size: 24px;
+    letter-spacing: 0px;
+  }
+  #services .heading p {
+    font-size: 14px;
+  }
+  #services .heading .box-4 {
+    max-width: 215px;
+  }
+  .hero .form-area .form a {
+    font-size: 14px;
+    padding: 5px 35px;
+  }
+  #services .content .learn-more-btn {
+    font-size: 14px;
+  }
+  #blog .heading h1 {
+    font-size: 24px;
+    margin: 40px auto;
+    max-width: 250px;
+  }
+  #client-review .heading h1 {
+    font-size: 24px;
+    padding: 40px 0;
+    letter-spacing: 0px;
+  }
+  #client-review .testimonial .client-name h3 {
+    font-size: 22px;
+  }
+  #client-review .testimonial .client-text p {
+    font-size: 16px;
+  }
+  #client-review .testimonial .read-more a {
+    font-size: 16px;
+  }
+  #client-review .testimonial .rating i {
+    font-size: 20px;
+    padding: 10px 5px;
+  }
+  #contact .left .sub-logo img {
+    width: 30%;
+  }
+  #contact .connect .mail span {
+    font-size: 16px;
+  }
+  #contact .right .right-form h1 {
+    margin: 15px 0;
+    font-size: 24px;
+  }
+  #contact .right .right-form input {
+    height: 35px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  #contact .right .right-form textarea {
+    border-radius: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  #contact .right .right-form a {
+    padding: 8px 20px;
+  }
+  #contact .right .right-form {
+    padding: 10px 60px;
+  }
+  .thankyou .thanks img {
+    height: 40px;
+  }
+  .thankyou .thanks h1 {
+    font-size: 34px;
+    letter-spacing: 0px;
+  }
+  .thankyou .thanks p {
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+  #home .lable {
+    position: unset;
+    text-align: center;
+  }
+  #blog .card h3,
+  #blog .card h5 {
+    font-size: 14px;
+  }
+  #blog .card {
+    width: 17rem !important;
+    height: 425px;
+  }
+  .income-tax .card .card-body h4 {
+    font-size: 24px;
+  }
+  .income-tax .card .card-body .amt h5 {
+    font-size: 22px;
+  }
+  .income-tax .card .card-body .buy-btn {
+    font-size: 14px;
+    padding: 2px 20px;
+  }
+  .income-tax .card {
+    max-width: 350px;
+  }
+  .income-tax .card {
+    height: 500px;
+  }
+  .income-tax .card .card-body .who a {
+    font-size: 14px;
+  }
+  #contact .right .right-form a,
+  #contact .right .right-form .submit input {
+    padding: 7px 30px;
+  }
+  .gst .card .card-body .amt h5 {
+    font-size: 26px;
+  }
+  .gst .card .card-body .amt h5 .per-annum {
+    font-size: 18px;
+  }
+  .gst .card .card-body .buy-btn {
+    font-size: 16px;
+    padding: 3px 25px;
+  }
+  .gst .card,
+  .gst .top-card .card {
+    width: 375px;
+  }
+  .gst .card .card-body .who a {
+    font-size: 14px;
+  }
+  .income-tax .heading h1 {
+    font-size: 24px;
+  }
+  .gst .heading h1 {
+    font-size: 24px;
+  }
+  .gst .heading h3 {
+    font-size: 18px;
+  }
+  .income-tax .heading h1 {
+    max-width: 350px;
+  }
+  #popup.active {
+    height: 420px;
+    width: 300px;
+  }
+  #popup .chat-bubble {
+    font-size: 14px;
+  }
+  #popup .chat-box {
+    max-height: 315px;
+  }
+  #popup.active {
+    right: 55px;
+  }
+  .blog-form .heading h2 {
+    font-size: 26px;
+  }
+  .client-page .client-form .heading h2 {
+    font-size: 26px;
+  }
+  .blog .add-blog .new-blog a {
+    padding: 15px 70px;
+    font-size: 16px;
+  }
+  .register-plan .register-social ul {
+    padding: 65px 0;
+  }
+  .register-plan .register-social ul li {
+    padding: 0 25px;
+  }
+  .register-plan .register-social ul li img {
+    height: 80%;
+  }
+  .blogpanel .blog-width .blog-head h1 {
+    font-size: 18px;
+  }
+  .blogpanel .blog-width .blog-data p {
+    font-size: 14px;
+  }
+  .blogpanel .blog-width .blog-data h2 {
+    font-size: 18px;
+  }
+  .client-reviews .client-hero .left .client-img img {
+    height: 275px;
+    width: 450px;
+  }
+  .client-reviews .client-hero .right .content p {
+    font-size: 16px;
+  }
+  .client-reviews .client-hero .left .client-img .client-name h2 {
+    font-size: 22px !important;
+    padding: 10px;
+  }
+  .client-reviews .client-hero .right .content ul img {
+    height: 50%;
+  }
+  .client-reviews .client-hero .right .content ul li {
+    padding-right: 5px;
+  }
+  .combined-row {
+    flex-direction: column;
+  }
+  .blog-form .form-area {
+    top: 25%;
+  }
+  .testimonial .pic {
+    width: 100px;
+    height: 100px;
+  }
+  .copyright p {
+    font-size: 14px;
+  }
+  .app .app-row img {
+    width: 140px;
+    padding: 20px 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .content h1 {
+    font-size: 16px;
+  }
+  .hero .content h3 {
+    font-size: 14px;
+  }
+  .hero {
+    padding: 10% 20px;
+  }
+  #services .content .left {
+    width: 100%;
+  }
+  #services .content .right {
+    width: 100%;
+  }
+  #services .content .left .content-item img {
+    margin: 10px 1px 0px 0;
+  }
+  .hero .form-area .form a {
+    margin: 20px 0 0 100px;
+  }
+  #services .content .right .tax-notice-content h4 {
+    font-size: 16px;
+  }
+  #services .content .right .tax-notice-content p {
+    font-size: 12px;
+  }
+  #services .content .right .tax-notice-content ul li {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  #client-review .testimonial .client-name h3 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  #client-review .testimonial .client-text p {
+    font-size: 16px;
+  }
+  #client-review .testimonial .read-more a {
+    font-size: 16px;
+  }
+  #client-review .testimonial h1 {
+    font-size: 25px;
+    margin: 15px 0;
+  }
+  #client-review .testimonial .client-name h3 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  #client-review .testimonial .client-text p {
+    font-size: 14px;
+  }
+  #client-review .testimonial .read-more a {
+    font-size: 14px;
+  }
+  #client-review .testimonial .rating i {
+    font-size: 18px;
+    padding: 5px 2px;
+  }
+  .income-tax .card {
+    max-width: 320px;
+  }
+  .gst .card .card-body h4 {
+    font-size: 18px;
+  }
+  .gst .card .card-body .amt h5 {
+    font-size: 22px;
+  }
+  .gst .card .card-body .amt h5 .paise {
+    font-size: 18px;
+  }
+  .gst .card .card-body .amt h5 .per-annum {
+    font-size: 16px;
+  }
+  .gst .card .card-body .content ol li {
+    line-height: 18px;
+  }
+  .gst .card {
+    height: 475px;
+  }
+  #services .heading .box-4 h1 {
+    font-size: 22px;
+  }
+  .income-tax .heading h1 {
+    font-size: 22px;
+  }
+  .gst .heading h1 {
+    font-size: 22px;
+  }
+  .gst .heading h3 {
+    font-size: 16px;
+  }
+  #popup.active {
+    right: 35px;
+  }
+  .blog-form .heading h2 {
+    font-size: 20px;
+  }
+  .blog-form .form-area form input {
+    height: 33px;
+    font-size: 14px;
+    margin: 0px 0 25px;
+  }
+  .blog-form .form-area form a {
+    padding: 5px 30px;
+    font-size: 18px;
+  }
+  .client-page .client-form .heading h2 {
+    font-size: 20px;
+  }
+  .client-page .client-form .form-area form input {
+    height: 33px;
+    font-size: 14px;
+    margin: 0px 0 25px;
+  }
+  .client-page .client-form .form-area form a {
+    padding: 5px 30px;
+    font-size: 18px;
+  }
+  .blog .add-blog .new-blog a {
+    padding: 10px 40px;
+    font-size: 16px;
+  }
+  #popup.active {
+    width: 265px;
+  }
+  .register-plan .register-social ul {
+    padding: 40px 0;
+  }
+  .register-plan .register-social ul li {
+    padding: 0 10px;
+  }
+  .register-plan .register-social ul li img {
+    height: 70%;
+  }
+  .blogpanel .blog-width {
+    padding: 70px 20px 40px;
+  }
+  .blogpanel .blog-width .blog-img img {
+    height: 270px;
+  }
+  .client-reviews .client-hero .right .content p {
+    font-size: 14px;
+  }
+  .client-reviews .client-hero .left .client-img img {
+    height: 250px;
+    width: 380px;
+  }
+  .client-reviews .client-hero .left .client-img .client-name h2 {
+    font-size: 18px !important;
+    padding: 7px;
+  }
+  .client-reviews .client-hero .right .content ul li {
+    padding-right: 3px;
+  }
+  .app .app-row p {
+    font-size: 14px;
+  }
+  .app .app-row img {
+    width: 100px;
+  }
+  .app .app-row p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    padding: 10% 20px;
+  }
+  #services .content .right .tax-notice-content h4 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  #services .content .right .tax-notice-content h4 {
+    font-size: 14px;
+  }
+  .gst .card,
+  .gst .top-card .card {
+    width: 300px;
+  }
+  .client-reviews .client-hero .left .client-img img {
+    height: 200px;
+    width: 300px;
+  }
+  .app .app-row p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .testimonial {
+    padding: 70px 10px 30px;
+  }
+  .testimonial .description:before {
+    top: -20px;
+  }
+  .testimonial .title {
+    font-size: 12px;
+  }
+  .testimonial .post {
+    font-size: 11px;
+  }
+}

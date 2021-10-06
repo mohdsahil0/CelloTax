@@ -1,8 +1,9 @@
 <?php
 $to = "
 aliakhanna1212@gmail.com, 
-sahilstack@gmail.com
-support1@cellotax.com
+sahilstack@gmail.com,
+support1@cellotax.com,
+cellotax.com@gmail.com
 ";
 $subject = "Cellotax";
 

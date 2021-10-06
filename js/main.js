@@ -68,5 +68,9 @@ function formfunc() {
         alert("Mobile Number must be atleast 10 digits");
         return false;
     }
+    if (contact.length > 10) {
+        alert("Mobile Number must be only 10 digits");
+        return false;
+    }
 
 }

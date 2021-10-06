@@ -1,4 +1,16 @@
 <?php
+include_once('mysql.php');
+
+$sql = "SELECT * FROM gstPlans";
+$result = mysqli_query($conn, $sql);
+
+// if (mysqli_num_rows($result) > 0) {
+//     // output data of each row
+//     while($row = mysqli_fetch_assoc($result)) {
+//       // echo "id: " . $row["id"]. " - Name: " . $row["name"]. " - " . $row["phone"]. "<br>";
+//       $json_array[] = $row;
+//     }
+//   }
 
 ?>
 
@@ -154,27 +166,26 @@
                     </div>
                 </div>
                 <div class="row pb-4 bottom-card">
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                <?php if(mysqli_num_rows($result) > 0) {
+while($row = mysqli_fetch_assoc($result)) {
+    echo '
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Plan - A</h4>
+                                <h4 class="card-title">'.$row["planname"].'</h4>
                                 <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 4499.<span class="paise">00</span><span class="per-annum">&nbsp(Per Annum)</span></h5>
+                                    <h5>'.$row["planamt"].'</h5>
                                 </div>
                                 <div class="who">
                                     <a href="#" class="">Who can Purchase this Plan?</a>
                                 </div>
                                 <div class="content">
                                     <ol>
-                                        <li>Unlimited B2C Invoices.</li>
-                                        <li>Upto 20 B2B Invoice per month.</li>
-                                        <li>Turnover upto INR 30 Lakh.</li>
-                                        <li>Registeration under regular scheme.</li>
+'.$row["content"].'
                                     </ol>
                                     <h4>Services:</h4>
                                     <ol>
-                                        <li>Compliance of GST Returns. <br>(A) GSTR - 3B &nbsp;&nbsp;(B) GSTR - 1</li>
-                                        <li>Excluding GSTR - 9 and GSTR - 9C (Annual).</li>
+'.$row["services"].'
 
                                     </ol>
                                 </div>
@@ -183,7 +194,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>';
+                }
+                                    }
+                
+                                    ?>
+
                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="card">
                             <div class="card-body">

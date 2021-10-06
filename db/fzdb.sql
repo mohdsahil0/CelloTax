@@ -6,14 +6,13 @@ CREATE TABLE `users` (
  PRIMARY KEY (`id`)
 );
 
-/* GST Plans */
+/* GST Plans Web */
 CREATE TABLE IF NOT EXISTS `gstPlans` (
     `id` bigint(10) NOT NULL AUTO_INCREMENT,
     `planname` varchar(200) NOT NULL,
-    `currency` varchar(50) NOT NULL,
-    `amount` varchar(50) NOT NULL,
-    `decimalamt` varchar(50) NOT NULL,
-    `timeperiod` varchar(100) NOT NULL,
+    `planamt` varchar(200) NOT NULL,
+    `content` varchar(200) NOT NULL,
+    `services` varchar(200) NOT NULL,
     PRIMARY KEY (`id`)
 );
 
