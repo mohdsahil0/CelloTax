@@ -22,13 +22,9 @@ html {
 }
 
 .nav-bar {
-    /* background-color: #ffffff;
-    opacity: 75%; */
-    /* height: 155px; */
     position: fixed;
     width: 100%;
     z-index: 9999;
-    /* display: none; */
     margin: auto 0px;
 }
 
@@ -1644,6 +1640,23 @@ textarea:focus:-webkit-placeholder {
     font-weight: 500;
     border: 1px solid #023c6c;
     border-radius: 35px;
+}
+
+.register-page {
+    background: rgb(114, 131, 191);
+    background: linear-gradient( 180deg, rgba(114, 131, 191, 1) 0%, rgba(142, 197, 252, 1) 0%, rgba(224, 195, 252, 1) 100%);
+    height: 100vh;
+}
+
+.register-page .hero {
+    color: white;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-20%, -50%);
 }
 
 .copyright {
