@@ -128,7 +128,9 @@ html {
     z-index: 999999;
     position: fixed;
     right: 20px;
-    top: 15px;
+    top: 15px !important;
+    background: #66ac4c;
+    padding: 2px 5px;
     cursor: pointer;
 }
 
