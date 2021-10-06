@@ -71,7 +71,7 @@
                     </h3>
 
                     <div class="form">
-                        <form action="/thankyou" method="POST">
+                        <form action="/thankyou" method="POST" onsubmit="return formfunc()">
                             <div class="form-group">
                                 <input type="text" class="form-control"  id="regnumber" name="regnumber" placeholder="Enter Your Number" required>
                             </div>

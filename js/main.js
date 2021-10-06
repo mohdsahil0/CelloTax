@@ -51,3 +51,22 @@ $(document).ready(function() {
         autoPlay: true
     });
 });
+
+// ------- Form Validation-------
+
+function formfunc() {
+    var contact = document.getElementById("regnumber").value;
+    if (contact == "") {
+        alert("Please fill Mobile Number!");
+        return false;
+    }
+    if (isNaN(contact)) {
+        alert("Only Numbers are Allowed");
+        return false;
+    }
+    if (contact.length < 10) {
+        alert("Mobile Number must be atleast 10 digits");
+        return false;
+    }
+
+}
