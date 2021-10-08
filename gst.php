@@ -4,6 +4,9 @@ include_once('mysql.php');
 $sql = "SELECT * FROM gstPlans";
 $result = mysqli_query($conn, $sql);
 
+$sql2 = "SELECT * FROM gstImpPlans";
+$result2 = mysqli_query($conn, $sql2);
+
 // if (mysqli_num_rows($result) > 0) {
 //     // output data of each row
 //     while($row = mysqli_fetch_assoc($result)) {
@@ -126,44 +129,31 @@ $result = mysqli_query($conn, $sql);
         <div class="tax-card-back">
             <div class="container">
                 <div class="row top-card">
-                    <div class="col-sm-12 col-md-6 col-12">
+
+                <?php if(mysqli_num_rows($result2) > 0) {
+while($row2 = mysqli_fetch_assoc($result2)) {
+    echo '
+                <div class="col-sm-12 col-md-6 col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title"><span><img src="/assets/icons/Group 160.png" alt=""></span>GST Registration</h4>
+                                <h4 class="card-title"><span><img src="/assets/icons/'.$row2["planimg"].'" alt=""></span>'.$row2["planname"].'</h4>
                                 <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 399.<span class="paise">00</span></h5>
+                                    <h5>'.$row2["planamt"].'</h5>
                                 </div>
                                 <div class="content">
                                     <ol>
-                                        <li>&#9679;&nbsp; Application For GST Registration.</li>
-                                        <li>&#9679;&nbsp; Submit Clarification.</li>
-                                        <li>&#9679;&nbsp; Generating of Registration Certificate.</li>
-                                </div>
+<li>&#9679;&nbsp; Application For GST Registration.</li><li>&#9679;&nbsp; Submit Clarification.</li><li>&#9679;&nbsp; Generating of Registration Certificate.</li>                                </div>
                                 <div class="text-right">
                                     <a href="#" class="buy-btn">Buy</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title"><span><img src="/assets/icons/dna (1).png" alt=""></span>Registration Modification</h4>
-                                <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 199.<span class="paise">00</span></h5>
-                                </div>
-                                <div class="content">
-                                    <ol>
-                                        <li>&#9679;&nbsp; Application For Modification in Registration.</li>
-                                        <li>&#9679;&nbsp; Submit Clarification.</li>
-                                    </ol>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    ';
+                }
+                                    }
+                
+                                    ?>
                 </div>
                 <div class="row pb-4 bottom-card">
                 <?php if(mysqli_num_rows($result) > 0) {
@@ -199,127 +189,6 @@ while($row = mysqli_fetch_assoc($result)) {
                                     }
                 
                                     ?>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Plan - B</h4>
-                                <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 8899.<span class="paise">00</span><span class="per-annum">&nbsp(Per Annum)</span></h5>
-                                </div>
-                                <div class="who">
-                                    <a href="#" class="">Who can Purchase this Plan?</a>
-                                </div>
-                                <div class="content">
-                                    <ol>
-                                        <li>Unlimited B2C Invoices.</li>
-                                        <li>Upto 40 B2B Invoice per month.</li>
-                                        <li>Turnover upto INR 70 Lakh.</li>
-                                        <li>Registeration under regular scheme.</li>
-                                    </ol>
-                                    <h4>Services:</h4>
-                                    <ol>
-                                        <li>Compliance of GST Returns. <br>(A) GSTR - 3B &nbsp;&nbsp;(B) GSTR - 1</li>
-                                        <li>Accounting.</li>
-                                        <li>Excluding GSTR - 9 and GSTR - 9C (Annual).</li>
-                                    </ol>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Plan - C</h4>
-                                <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 11199.<span class="paise">00</span><span class="per-annum">&nbsp(Per Annum)</span></h5>
-                                </div>
-                                <div class="who">
-                                    <a href="#" class="">Who can Purchase this Plan?</a>
-                                </div>
-                                <div class="content">
-                                    <ol>
-                                        <li>Unlimited B2C Invoices.</li>
-                                        <li>Upto 60 B2B Invoice per month.</li>
-                                        <li>Turnover upto INR 1.5 Crore.</li>
-                                        <li>Registeration under regular scheme.</li>
-                                    </ol>
-                                    <h4>Services:</h4>
-                                    <ol>
-                                        <li>Compliance of GST Returns. <br>(A) GSTR - 3B &nbsp;&nbsp;(B) GSTR - 1</li>
-                                        <li>Accounting.</li>
-                                        <li>Excluding GSTR - 9 and GSTR - 9C (Annual).</li>
-                                    </ol>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- </div>
-
-                <div class="row pb-5 pt-4"> -->
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Plan - D</h4>
-                                <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 3399.<span class="paise">00</span><span class="per-annum">&nbsp(Per Annum)</span></h5>
-                                </div>
-                                <div class="who">
-                                    <a href="#" class="">Who can Purchase this Plan?</a>
-                                </div>
-                                <div class="content">
-                                    <ol>
-                                        <li>Unlimited Invoices</li>
-                                        <li>Turnover upto 1.5 Crore.</li>
-                                        <li>Registeration under Composition Scheme.</li>
-                                    </ol>
-                                    <h4>Services:</h4>
-                                    <ol>
-                                        <li>Filing of Quarterly Challan CMP-08.</li>
-                                        <li>Filing of GSTR - 4 (Annual).</li>
-                                    </ol>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">GSTR-9</h4>
-                                <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 2499.<span class="paise">00</span><span class="per-annum">&nbsp(Annual Return)</span></h5>
-                                </div>
-                                <div class="who">
-                                    <a href="#" class="">Who can Purchase this Plan?</a>
-                                </div>
-                                <div class="content">
-                                    <ol>
-                                        <li>Turnover upto 1.5 Crore.</li>
-                                        <li>Registeration under regular scheme.</li>
-                                        <li>Compiled of All Monthly and Quarterly GST Returns.</li>
-                                    </ol>
-                                    <h4>Services:</h4>
-                                    <ol>
-                                        <li>Collection of data of that Financial Year.</li>
-                                        <li>Analyzing of data of that Financial Year.</li>
-                                        <li>Filing of GSTR-9</li>
-                                    </ol>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -16,6 +16,16 @@ CREATE TABLE IF NOT EXISTS `gstPlans` (
     PRIMARY KEY (`id`)
 );
 
+/* GST Imp. Plans */
+CREATE TABLE IF NOT EXISTS `gstImpPlans` (
+    `id` bigint(10) NOT NULL AUTO_INCREMENT,
+    `planname` varchar(200) NOT NULL,
+    `planamt` varchar(200)  NOT NULL,
+    `planimg` varchar(100) NOT NULL,
+    `content` varchar(200) NOT NULL,
+    PRIMARY KEY (`id`)
+);
+
 /* Contact Users */
 CREATE TABLE IF NOT EXISTS `contactusers` (
     `id` bigint(10) NOT NULL AUTO_INCREMENT,
