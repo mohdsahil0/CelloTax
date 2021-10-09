@@ -180,7 +180,7 @@ while($row = mysqli_fetch_assoc($result)) {
                                     </ol>
                                 </div>
                                 <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
+                                    <a href="/register?cat=GST&planname='.$row["planname"].'&planamt='.$row["uid"].'" class="buy-btn">Buy</a>
                                 </div>
                             </div>
                         </div>

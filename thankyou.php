@@ -2,6 +2,9 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $phone = $_POST['regnumber']; 
     $name = $_POST['regname'];
+    $cat = $_POST['cat'];
+    $planname = $_POST['planname'];
+    $planamt = $_POST['planamt'];
 }
 
 include('mysql.php');
@@ -9,7 +12,7 @@ include('mysql.php');
 $query = "INSERT INTO users SET phone = '".$phone."', name = '".$name."' ";
 $result = @mysqli_query($conn, $query);
 
-include_once('mail.php');
+include_once('mail2.php');
 
 // Close the connection
 mysqli_close($conn);

@@ -1,3 +1,19 @@
+<?php
+if($_GET['cat'] != '') {
+    // echo $_GET['cat'].'=======> '.$_GET['planname'].'========> '.$_GET['planamt'];
+
+    $cat = $_GET['cat'];
+    $planname = $_GET['planname'];
+    $planamt = $_GET['planamt'];
+
+} else {
+    header('location: /');
+}
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,6 +79,9 @@
 
                     <div class="form">
                         <form action="/thankyou" method="POST">
+                            <input type="hidden" id="cat" name="cat" value="<?=$cat?>">
+                            <input type="hidden" id="planname" name="planname" value="<?=$planname?>">
+                            <input type="hidden" id="planamt" name="planamt" value="<?=$planamt?>">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="regnumber" name="regnumber" placeholder="Enter Your Number" required>
                             </div>
