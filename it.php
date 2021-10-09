@@ -1,5 +1,11 @@
 <?php
+include_once('mysql.php');
 
+$sql = "SELECT * FROM itPlans";
+$result = mysqli_query($conn, $sql);
+
+// Close the connection
+mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -113,108 +119,18 @@
         <div class="tax-card-back">
             <div class="container">
                 <div class="row pb-4 pt-5">
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Plan - A</h4>
-                                <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 349.<span class="paise">00</span></h5>
-                                    <p>You can pay after your work has done.</p>
-                                </div>
-                                <div class="who">
-                                    <a href="#" class="">Who can Purchase this Plan?</a>
-                                </div>
-                                <div class="content">
-                                    <ol>
-                                        <li>Having Salary Income.</li>
-                                        <li>Having Income up to INR 50 Lakh.</li>
-                                        <li>Having One House Property.</li>
-                                        <li>Having Exempt Income.</li>
-                                    </ol>
-                                    <h4>Services:</h4>
-                                    <ol>
-                                        <li>Compute of Total Income.</li>
-                                        <li>ITR Filing.</li>
-                                        <li>Having One House Property.</li>
-                                    </ol>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Plan - B</h4>
-                                <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 799.<span class="paise">00</span></h5>
-                                    <p>You can pay after your work has done.</p>
-                                </div>
-                                <div class="who">
-                                    <a href="#" class="">Who can Purchase this Plan?</a>
-                                </div>
-                                <div class="content">
-                                    <ol>
-                                        <li>All in Plan-A.</li>
-                                        <li>Having Income up to INR 50 lakh.</li>
-                                        <li>Having Income from Profession.</li>
-                                        <li>Having Income from Freelancer.</li>
-                                    </ol>
-                                    <h4>Services:</h4>
-                                    <ol>
-                                        <li>Compute of Total Income.</li>
-                                        <li>ITR Filing.</li>
-                                        <li>Making of Computation of Income.</li>
-                                        <li>Having One House Property.</li>
-                                    </ol>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Plan - C</h4>
-                                <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 1799.<span class="paise">00</span></h5>
-                                    <p>You can pay after your work has done.</p>
-                                </div>
-                                <div class="who">
-                                    <a href="#" class="">Who can Purchase this Plan?</a>
-                                </div>
-                                <div class="content">
-                                    <ol>
-                                        <li>All in Plan-B.</li>
-                                        <li>Having Capital Gain Income.</li>
-                                        <li>Having Income from more than One House Property.</li>
-                                    </ol>
-                                    <h4>Services:</h4>
-                                    <ol>
-                                        <li>Compute of Total Income.</li>
-                                        <li>ITR Filing.</li>
-                                        <li>Making of Computationof Income.</li>
-                                    </ol>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- </div>
 
-                <div class="row pb-5 pt-4"> -->
+                <?php if(mysqli_num_rows($result) > 0) {
+while($row = mysqli_fetch_assoc($result)) {
+
+    echo '
+
                     <div class="col-sm-12 col-md-6 col-lg-4 col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Plan - D</h4>
+                                <h4 class="card-title">'.$row["planname"].'</h4>
                                 <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 2999.<span class="paise">00</span></h5>
+                                    <h5>'.$row["planamt"].'</h5>
                                     <p>You can pay after your work has done.</p>
                                 </div>
                                 <div class="who">
@@ -222,86 +138,24 @@
                                 </div>
                                 <div class="content">
                                     <ol>
-                                        <li>All in Plan-C</li>
-                                        <li>Having Turnover fro Business not more than INR 2 Crore.</li>
-                                        <li>Having Turnover from from Professionnot more than INR 50 Lakh.</li>
-                                        <li>Having Income Non-Audited.</li>
-                                    </ol>
+                                    '.$row["content"].'                                    </ol>
                                     <h4>Services:</h4>
                                     <ol>
-                                        <li>Compute of Total Income.</li>
-                                        <li>Making of Balance (Non-Audited).</li>
-                                        <li>ITR Filing.</li>
-                                        <li>Making of Computation of Income.</li>
-                                    </ol>
+                                    '.$row["services"].'                                    </ol>
                                 </div>
                                 <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
+                                    <a href="/register?cat=Income Tax&planname='.$row["planname"].'&planamt='.$row["amt"].'" class="buy-btn">Buy</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Plan - E</h4>
-                                <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 1399.<span class="paise">00</span></h5>
-                                    <p>You can pay after your work has done.</p>
-                                </div>
-                                <div class="who">
-                                    <a href="#" class="">Who can Purchase this Plan?</a>
-                                </div>
-                                <div class="content">
-                                    <ol>
-                                        <li>Person Non-Resident in previous year.</li>
-                                        <li>Having Foreign Income.</li>
-                                        <li>Having Income from Other Sources.</li>
-                                        <li>Having Exempt Income.</li>
-                                    </ol>
-                                    <h4>Services:</h4>
-                                    <ol>
-                                        <li>Compute of Total Income.</li>
-                                        <li>ITR Filing.</li>
-                                        <li>Making of Computation of Income.</li>
-                                    </ol>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Plan - F</h4>
-                                <div class="amt">
-                                    <h5><i class="fa fa-rupee"></i> 599.<span class="paise">00</span></h5>
-                                    <p>You can pay after your work has done.</p>
-                                </div>
-                                <div class="who">
-                                    <a href="#" class="">Who can Purchase this Plan?</a>
-                                </div>
-                                <div class="content">
-                                    <ol>
-                                        <li>Small Commission Agent.</li>
-                                        <li>Income from Commission up to INR 10 Lakh.</li>
-                                    </ol>
-                                    <h4>Services:</h4>
-                                    <ol>
-                                        <li>Compute of Total Income.</li>
-                                        <li>ITR Filing.</li>
-                                        <li>Making of Computation of Income.</li>
-                                        <li>Maximum Refund Claim.</li>
-                                    </ol>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                    ';
+                }
+                                    }
+                
+                                    ?>
+
                 </div>
             </div>
         </div>

@@ -15,6 +15,8 @@ $result2 = mysqli_query($conn, $sql2);
 //     }
 //   }
 
+// Close the connection
+mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -144,7 +146,7 @@ while($row2 = mysqli_fetch_assoc($result2)) {
                                     <ol>
 <li>&#9679;&nbsp; Application For GST Registration.</li><li>&#9679;&nbsp; Submit Clarification.</li><li>&#9679;&nbsp; Generating of Registration Certificate.</li>                                </div>
                                 <div class="text-right">
-                                    <a href="#" class="buy-btn">Buy</a>
+                                    <a href="/register?cat=GST&planname='.$row2["planname"].'&planamt='.$row2["amt"].'" class="buy-btn">Buy</a>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +182,7 @@ while($row = mysqli_fetch_assoc($result)) {
                                     </ol>
                                 </div>
                                 <div class="text-right">
-                                    <a href="/register?cat=GST&planname='.$row["planname"].'&planamt='.$row["uid"].'" class="buy-btn">Buy</a>
+                                    <a href="/register?cat=GST&planname='.$row["planname"].'&planamt='.$row["amt"].'" class="buy-btn">Buy</a>
                                 </div>
                             </div>
                         </div>

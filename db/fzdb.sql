@@ -9,6 +9,7 @@ CREATE TABLE `users` (
 /* GST Plans Web */
 CREATE TABLE IF NOT EXISTS `gstPlans` (
     `id` bigint(10) NOT NULL AUTO_INCREMENT,
+    `amt` varchar(100) NOT NULL,
     `planname` varchar(200) NOT NULL,
     `planamt` varchar(200) NOT NULL,
     `content` varchar(200) NOT NULL,
@@ -19,10 +20,22 @@ CREATE TABLE IF NOT EXISTS `gstPlans` (
 /* GST Imp. Plans */
 CREATE TABLE IF NOT EXISTS `gstImpPlans` (
     `id` bigint(10) NOT NULL AUTO_INCREMENT,
+    `amt` varchar(100) NOT NULL,
     `planname` varchar(200) NOT NULL,
     `planamt` varchar(200)  NOT NULL,
     `planimg` varchar(100) NOT NULL,
     `content` varchar(200) NOT NULL,
+    PRIMARY KEY (`id`)
+);
+
+/* Income Tax Plans Web */
+CREATE TABLE IF NOT EXISTS `itPlans` (
+    `id` bigint(10) NOT NULL AUTO_INCREMENT,
+    `amt` varchar(100) NOT NULL,
+    `planname` varchar(200) NOT NULL,
+    `planamt` varchar(200) NOT NULL,
+    `content` varchar(200) NOT NULL,
+    `services` varchar(200) NOT NULL,
     PRIMARY KEY (`id`)
 );
 
