@@ -65,15 +65,17 @@ $message = '
 </head>
 <body>
     <div class="mail">
-        <div class="header"><h3>User Registered</h3></div>
+        <div class="header"><h3>Contacted User</h3></div>
         <div class="content">
             <div class="inner">
                 <div class="cellotax">
                     <p>Hi CelloTax,</p>
                 </div>
                 <div class="plan">
-                    <p>Name: <strong>'.$name.'</strong></p>
-                    <p>Phone: <strong>'.$phone.'</strong></p>
+                    <p>Name: <strong>'.$cname.'</strong></p>
+                    <p>Email: <strong>'.$cphone.'</strong></p>
+                    <p>Phone: <strong>'.$cemail.'</strong></p>
+                    <p>Message: <strong>'.$cmsg.'</strong></p>
                 </div>
                 <div class="footer">
                     <p>Thanks & Regards</p>

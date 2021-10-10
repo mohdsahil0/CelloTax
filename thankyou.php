@@ -1,21 +1,37 @@
 <?php
+include('mysql.php');
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $phone = $_POST['regnumber']; 
-    $name = $_POST['regname'];
-    $cat = $_POST['cat'];
-    $planname = $_POST['planname'];
-    $planamt = $_POST['planamt'];
+    if(isset($_POST['cat'])) {
+        $phone = $_POST['regnumber']; 
+        $name = $_POST['regname'];
+        $cat = $_POST['cat'];
+        $planname = $_POST['planname'];
+        $planamt = $_POST['planamt'];
+        $query = "INSERT INTO users SET phone = '".$phone."', name = '".$name."' ";
+        $result = @mysqli_query($conn, $query);
+        include_once('mail2.php');
+    } 
+    else if (isset($_POST['contactname'])) {
+        $cname = $_POST['contactname'];
+        $cemail = $_POST['contactemail'];
+        $cphone =  $_POST['contactphone'];
+        $cmsg = $_POST['contactmsg'];
+        include_once('mail3.php');
+    }
+    else {
+        $phone = $_POST['regnumber']; 
+        $name = $_POST['regname'];
+        $query = "INSERT INTO users SET phone = '".$phone."', name = '".$name."' ";
+        $result = @mysqli_query($conn, $query);
+        include_once('mail.php');
+    }
+
+    
+    // Close the connection
+    mysqli_close($conn);
 }
 
-include('mysql.php');
 
-$query = "INSERT INTO users SET phone = '".$phone."', name = '".$name."' ";
-$result = @mysqli_query($conn, $query);
-
-include_once('mail2.php');
-
-// Close the connection
-mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
