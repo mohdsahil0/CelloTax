@@ -59,3 +59,12 @@ CREATE TABLE IF NOT EXISTS `clientreviews` (
     `ratings` varchar(10) NOT NULL,
     PRIMARY KEY(`id`)
 );
+
+/* Admin */
+CREATE TABLE IF NOT EXISTS `admin` (
+    `id` bigint(10) NOT NULL AUTO_INCREMENT,
+    `uid` varchar(50) NOT NULL,
+    `username` varchar(100)  NOT NULL,
+    `password` varchar(200) NOT NULL,
+    PRIMARY KEY(`id`)
+);
