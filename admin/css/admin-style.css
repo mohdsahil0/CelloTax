@@ -654,4 +654,5 @@
 .log-in #pass_error{
     color: red;
     font-size: 12px;
+    display: none;
 }
