@@ -61,6 +61,9 @@
 }
 
 @media (max-width: 991px) {
+  #home {
+    background: #366357;
+  }
   .nav-bar {
     display: none;
   }
@@ -307,6 +310,7 @@
 }
 
 @media (max-width: 767px) {
+  
   .hero .content h1 {
     font-size: 26px;
   }
@@ -361,14 +365,6 @@
   #services .content .right .tax-notice img {
     margin: 20px;
   }
-  /* #client-review .owl-item {
-                padding: 10px;
-                text-align: center;
-                padding: 0px 30px;} */
-  /* width: 400px!important; */
-  /* #client-review .item {
-width: 400px;
-} */
   #client-review .testimonial .client-text p {
     font-size: 18px;
   }

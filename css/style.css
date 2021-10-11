@@ -852,7 +852,7 @@ textarea:focus:-webkit-placeholder {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 30px;
-    color: #c7373c;
+    color: transparent;
     background-color: #221837;
     opacity: 1;
 }
