@@ -650,3 +650,8 @@
     width: 40%;
     padding: 30px 0;
 }
+.log-in #user_error,
+.log-in #pass_error{
+    color: red;
+    font-size: 12px;
+}

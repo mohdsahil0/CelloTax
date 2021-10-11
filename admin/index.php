@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/admin-style.css">
+    <script src="js/admin.js"></script>
     <title>Admin Login</title>
 </head>
 <body>
@@ -30,9 +31,11 @@
                     </div>
 
                     <!-- Login Form -->
-                    <form>
-                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="Username">
-                    <input type="password" id="password" class="fadeIn third" name="login" placeholder="Password">
+                    <form name="loginform"> 
+                    <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username" required>
+                    <div id="user_error">Please Enter Valid Username</div>
+                    <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password" required> 
+                    <div id="pass_error">Please Enter Valid Password</div>
                     <input type="submit" class="fadeIn fourth" value="Log In">
                     </form>
 
