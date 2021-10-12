@@ -29,7 +29,7 @@ $message = '
             padding: 30px 0;
             font-size: 35px;
         }
-        p{
+        h2{
             font-size: 18px;
             line-height: 1.3;
             color: #000;
@@ -69,18 +69,18 @@ $message = '
         <div class="content">
             <div class="inner">
                 <div class="cellotax">
-                    <p>Hi CelloTax,</p>
+                    <h2>Hi CelloTax,</h2>
                 </div>
                 <div class="plan">
-                    <p>I <strong>'.$name.'</strong> has register for</p>
-                    <p><strong>'.$cat.' Plan</strong></p>
-                    <p>Plan: <strong>'.$planname.'</strong></p>
-                    <p>Amount: <strong>'.$planamt.'</strong></p>
-                    <p>Name: <strong>'.$name.'</strong></p>
-                    <p>Phone: <strong>'.$phone.'</strong></p>
+                    <h2>I <strong>'.$name.'</strong> has register for</h2>
+                    <h2><strong>'.$cat.' Plan</strong></h2>
+                    <h2>Plan: <strong>'.$planname.'</strong></h2>
+                    <h2>Amount: <strong>'.$planamt.'</strong></h2>
+                    <h2>Name: <strong>'.$name.'</strong></h2>
+                    <h2>Phone: <strong>'.$phone.'</strong></h2>
                 </div>
                 <div class="footer">
-                    <p>Thanks & Regards</p>
+                    <h2>Thanks & Regards</h2>
                     <img src="https://cellotax.com/assets/icons/CelloTax2@2x.png" alt="CelloTax">
                 </div>
             </div>
