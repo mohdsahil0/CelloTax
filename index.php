@@ -286,7 +286,7 @@ mysqli_close($conn);
                                             <p><?=$review->review?></p>
                                         </div>
                                         <div class="read-more">
-                                            <a href="/client-review">Read More...</a>
+                                            <a href="/client-review?id=<?=$review->id?>">Read More...</a>
                                         </div>
                                         <div class="rating">
                                         <?php for($i = 1; $i <= $review->ratings; $i++) {

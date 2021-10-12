@@ -1,4 +1,20 @@
 <?php
+if($_GET['id'] != '') {
+    // echo $_GET['cat'].'=======> '.$_GET['planname'].'========> '.$_GET['planamt'];
+
+    $id = $_GET['id'];
+
+} else {
+    header('location: /');
+}
+
+include('mysql.php');
+
+$query = "SELECT * FROM clientreviews WHERE id = ".$id."";
+$result = @mysqli_query($conn, $query);
+
+// Close the connection
+mysqli_close($conn);
 
 ?>
 <!DOCTYPE html>
@@ -17,7 +33,10 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <script src="/js/main.js">
     </script>
-    <title>Document</title>
+                <?php if ($result -> num_rows > 0) { $row = $result -> fetch_assoc();
+
+echo '
+    <title>'.$row["name"].'</title>
     <link rel="icon" href="/assets/icons/fevicon.png" type="image/icon">
 </head>
 <body>
@@ -62,11 +81,11 @@
         <div class="container" >
             <div class="client-hero">
             <div class=" left" >
-            
+
                     <div class="client-img">
                         <img src="/assets/images/campaign-creators-pypeCEaJeZY-unsplash.png" alt="">
                         <div class="client-name">
-                            <h2>Mohd Asim</h2>
+                            <h2>'.$row["name"].'</h2>
                         </div>
                     </div>
                     
@@ -74,7 +93,7 @@
             </div>
                 <div class=" right ">
                     <div class="content">
-                        <p>Highly responsive ! my IT return has been done in 1 hour, so fast service. The staff also of good nature and helpful.</p>
+                        <p>'.$row["review"].'</p>
                         <ul>
                             <li><a href="#"><img src="/assets/icons/instagram.png" alt=""></a></li>
                             <li><a href="#"><img src="/assets/icons/facebook.png" alt=""></a></li>
@@ -84,6 +103,8 @@
                     </div>
                 </div>
             </div>
+'; } ?>
+            
         
         </div>
         
