@@ -83,7 +83,7 @@ echo '
             <div class=" left" >
 
                     <div class="client-img">
-                        <img src="/assets/images/campaign-creators-pypeCEaJeZY-unsplash.png" alt="">
+                        <img src="/assets/icons/'.$row["featuredimg"].'" alt="'.$row["name"].'">
                         <div class="client-name">
                             <h2>'.$row["name"].'</h2>
                         </div>
