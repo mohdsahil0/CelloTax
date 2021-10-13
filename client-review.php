@@ -161,7 +161,7 @@ echo '
         <div class="right">
             <div class="right-form">
                 <h1>CONTACT US</h1>
-                <form action="/" method="POST">
+                <form action="/" method="POST" onsubmit="return contactformfunc()"> 
                     <div class="form-group">
                         <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Enter Your Name" required>
                     </div>

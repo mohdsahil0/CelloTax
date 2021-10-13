@@ -205,20 +205,23 @@
         <div class="right">
             <div class="right-form">
                 <h1>CONTACT US</h1>
-                <form action="" method="POST">
+                <form action="/thankyou" method="POST" onsubmit="return contactformfunc()">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Your Name" required>
+                        <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Enter Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email" required>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="contactemail" placeholder="Enter Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputnumber1" placeholder="Enter Your Number" required>
+                        <input type="text" class="form-control" id="exampleInputnumber1" name="contactphone" placeholder="Enter Your Number" required>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Your Message" rows="3" required></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="contactmsg" placeholder="Enter Your Message" rows="3" required></textarea>
                     </div>
-                    <a href="#" class="submit">SUBMIT</a>
+                    <!-- <a href="#" class="submit">SUBMIT</a> -->
+                    <div class="submit">
+                        <input type="submit" value="SUBMIT" />
+                    </div>
                 </form>
             </div>
         </div>

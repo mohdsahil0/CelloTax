@@ -848,7 +848,8 @@ textarea:focus:-webkit-placeholder {
 
 .owl-prev:after,
 .owl-next:after {
-    content: "";
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 30px;
     color: transparent;

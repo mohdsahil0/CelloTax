@@ -74,3 +74,29 @@ function formfunc() {
     }
 
 }
+
+function contactformfunc(){
+    var contact = document.getElementById("contactname").value;
+    if (contact == "") {
+        alert("Please fill Mobile Number!");
+        return false;
+    }
+    if (isNaN(contact)) {
+        alert("Only Numbers are Allowed");
+        return false;
+    }
+    if (contact.length < 10) {
+        alert("Mobile Number must be atleast 10 digits");
+        return false;
+    }
+    if (contact.length > 10) {
+        alert("Mobile Number must be only 10 digits");
+        return false;
+    }
+
+    var email = document.getElementById("exampleInputEmail1").value;
+    if(contact.indexOf('@')<=0){
+        alert("Invalid @ Position");
+        return false;
+    }
+}
