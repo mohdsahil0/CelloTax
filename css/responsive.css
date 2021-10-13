@@ -18,7 +18,8 @@
     padding: 20px 30px;
     margin-right: 20px;
   }
-  .hero .form-area .form a {
+  .hero .form-area .form a,
+  .hero .form-area .form input {
     margin: 30px 0 0 150px;
   }
   .hero {
@@ -43,7 +44,8 @@
   #home .lable img {
     width: 55%;
   }
-  .hero .form-area .form a {
+  .hero .form-area .form a,
+  .hero .form-area .form input {
     margin: 30px 0 0 120px;
   }
   #services .main {
@@ -81,7 +83,8 @@
   .hero .form-area {
     margin: 200px 0;
   }
-  .hero .form-area .form a {
+  .hero .form-area .form a,
+  .hero .form-area .form input {
     margin: 30px 0 0 170px;
   }
   .hero .form-area .line {
@@ -445,7 +448,8 @@
   .hero .content h3 {
     font-size: 16px;
   }
-  .hero .form-area .form a {
+  .hero .form-area .form a,
+  .hero .form-area .form input {
     margin: 30px 0 0 120px;
   }
   .hero .form-area .line {
@@ -489,7 +493,8 @@
   #services .heading .box-4 {
     max-width: 215px;
   }
-  .hero .form-area .form a {
+  .hero .form-area .form a,
+  .hero .form-area .form input {
     font-size: 14px;
     padding: 5px 35px;
   }
@@ -716,7 +721,8 @@
   #services .content .left .content-item img {
     margin: 10px 1px 0px 0;
   }
-  .hero .form-area .form a {
+  .hero .form-area .form a,
+  .hero .form-area .form input {
     margin: 20px 0 0 100px;
   }
   #services .content .right .tax-notice-content h4 {
