@@ -307,7 +307,7 @@ mysqli_close($conn);
                 </div>
                 <div class="connect">
                     <div class="mail">
-                        <div class="mail1"><a href="mailto:cellotax@gmail.com"><i class="fa fa-envelope"></i> <span>cellotax@gmail.com</span></a></div>
+                        <div class="mail1"><a href="mailto:cellotax.com@gmail.com"><i class="fa fa-envelope"></i> <span>cellotax.com@gmail.com</span></a></div>
                         <div class="mail2"><a href="mailto:support1@cellotax.com"><i class="fa fa-envelope"></i> <span>support1@cellotax.com</span></a></div>
                     </div>
                     <div class="social">
@@ -352,7 +352,7 @@ mysqli_close($conn);
         </div>
     </div>
     <div class="copyright">
-        <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com/">CelloTax</a> All rights reserved. &nbsp; Designed by <a href="https://frazile.com/" target="_blank">Frazile Inc.</a></p>
+        <p>&copy; Copyright 2021 by <a href="https://www.cellotax.com/">CelloTax</a> All rights reserved. &nbsp; Developed by <a href="https://frazile.com/" target="_blank">Frazile Inc.</a></p>
     </div>
 </body>
 
