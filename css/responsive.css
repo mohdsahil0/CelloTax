@@ -19,7 +19,7 @@
     margin-right: 20px;
   }
   .hero .form-area .form a,
-  .hero .form-area .form input {
+  .hero .form-area .form .submit input {
     margin: 30px 0 0 150px;
   }
   .hero {
@@ -45,7 +45,7 @@
     width: 55%;
   }
   .hero .form-area .form a,
-  .hero .form-area .form input {
+  .hero .form-area .form .submit input {
     margin: 30px 0 0 120px;
   }
   #services .main {
@@ -84,7 +84,7 @@
     margin: 200px 0;
   }
   .hero .form-area .form a,
-  .hero .form-area .form input {
+  .hero .form-area .form .submit input {
     margin: 30px 0 0 170px;
   }
   .hero .form-area .line {
@@ -449,7 +449,7 @@
     font-size: 16px;
   }
   .hero .form-area .form a,
-  .hero .form-area .form input {
+  .hero .form-area .form .submit input {
     margin: 30px 0 0 120px;
   }
   .hero .form-area .line {
@@ -494,7 +494,7 @@
     max-width: 215px;
   }
   .hero .form-area .form a,
-  .hero .form-area .form input {
+  .hero .form-area .form .submit input {
     font-size: 14px;
     padding: 5px 35px;
   }
@@ -722,7 +722,7 @@
     margin: 10px 1px 0px 0;
   }
   .hero .form-area .form a,
-  .hero .form-area .form input {
+  .hero .form-area .form .submit input {
     margin: 20px 0 0 100px;
   }
   #services .content .right .tax-notice-content h4 {
