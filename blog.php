@@ -1,5 +1,14 @@
 <?php
 
+include('mysql.php');
+
+$query = "SELECT * FROM blogs";
+$result = @mysqli_query($conn, $query);
+while($row = mysqli_fetch_object($result)) $blogs[] = (object) $row;
+
+// Close the connection
+mysqli_close($conn);
+
 ?>
 
 <!DOCTYPE html>
@@ -84,85 +93,39 @@
         <div id="blog">
             <div class="container">
                 <div class="row">
+
+                <?php foreach($blogs as $key => $blog) :?>
+<?php
+// strip tags to avoid breaking any html
+$content = strip_tags($blog->content);
+    // truncate content
+    $contentCut = substr($content, 0, 50);
+    $endPoint = strrpos($contentCut, ' ');
+
+    //if the content doesn't contain any space then it will cut without word basis.
+    $content .= ($endPoint ? substr($contentCut, 0, $endPoint) : substr($contentCut, 0)) . '...';
+    // $teaser = ($endPoint ? substr($contentCut, 0, $endPoint) : substr($contentCut, 0)) . ' ...';
+    // $content .= 'wgfew...';
+// echo $content;
+    
+    ?>
+
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="/assets/icons/blog3.png" alt="Card image cap">
+                            <img class="card-img-top" src="/assets/icons/<?=$blog->image?>" alt="Card image cap">
                             <div class="card-body">
-                                <h3 class="">Income Tax exemption in new tax slab on NPS!</h3>
-                                <p class="card-text">A system of new tax slab is being given for the taxpayers along with the old slab from 2020-21. This was peoposed by the Finance Minister of India in the Budget-2020</p>
+                                <h3 class=""><?=$blog->title?></h3>
+                                <p class="card-text"><?=$content?></p>
                                 <div class="text-right">
                                     <a href="blog_view.php" class="read-more-btn">Read More...</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="/assets/icons/blog2.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3 class="">Section 194H: TDS on income from commission & brokerage:</h3>
-                                <h5>Introduction of Section 194H:</h5>
-                                <p class="card-text">Any income from commission or brokerage includes any payment made directly.</p>
-                                <div class="text-right">
-                                    <a href="#" class="read-more-btn">Read More...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="/assets/icons/blog3.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3 class="">Section 194C: TDS on payment to contractors</h3>
-                                <h5>Introduction of Section 194C:</h5>
-                                <p class="card-text">Any person responsible for paying any amount to any resident (hereafter in this section referred to as the contractor)</p>
-                                <div class="text-right">
-                                    <a href="#" class="read-more-btn">Read More...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- </div>
-                <div class="row"> -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="/assets/icons/blog3.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3 class="">Income Tax exemption in new tax slab on NPS!</h3>
-                                <p class="card-text">A system of new tax slab is being given for the taxpayers along with the old slab from 2020-21. This was peoposed by the Finance Minister of India in the Budget-2020</p>
-                                <div class="text-right">
-                                    <a href="#" class="read-more-btn">Read More...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="/assets/icons/blog2.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3 class="">Section 194H: TDS on income from commission & brokerage:</h3>
-                                <h5>Introduction of Section 194H:</h5>
-                                <p class="card-text">Any income from commission or brokerage includes any payment made directly.</p>
-                                <div class="text-right">
-                                    <a href="#" class="read-more-btn">Read More...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="/assets/icons/blog3.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3 class="">Section 194C: TDS on payment to contractors</h3>
-                                <h5>Introduction of Section 194C:</h5>
-                                <p class="card-text">Any person responsible for paying any amount to any resident (hereafter in this section referred to as the contractor)</p>
-                                <div class="text-right">
-                                    <a href="#" class="read-more-btn">Read More...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                    <?php endforeach ?>            
+
+
                 <!-- <div class="view-all text-right mb-3 mt-3">
                     <a href="#">View All <i class="fa fa-arrow-circle-right"></i></a>
                 </div> -->

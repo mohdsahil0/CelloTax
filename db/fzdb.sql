@@ -68,3 +68,12 @@ CREATE TABLE IF NOT EXISTS `admin` (
     `password` varchar(200) NOT NULL,
     PRIMARY KEY(`id`)
 );
+
+/* Blog */
+CREATE TABLE IF NOT EXISTS `blogs` (
+    `id` bigint(10) NOT NULL AUTO_INCREMENT,
+    `title` varchar(200) NOT NULL,
+    `image` varchar(100) NOT NULL,
+    `content` varchar(200) NOT NULL,
+    PRIMARY KEY (`id`)
+);
