@@ -99,11 +99,11 @@ mysqli_close($conn);
 // strip tags to avoid breaking any html
 $content = strip_tags($blog->content);
     // truncate content
-    $contentCut = substr($content, 0, 50);
+    $contentCut = substr($content, 0, 265);
     $endPoint = strrpos($contentCut, ' ');
 
     //if the content doesn't contain any space then it will cut without word basis.
-    $content .= ($endPoint ? substr($contentCut, 0, $endPoint) : substr($contentCut, 0)) . '...';
+    $content = ($endPoint ? substr($contentCut, 0, $endPoint) : substr($contentCut, 0)) . '...';
     // $teaser = ($endPoint ? substr($contentCut, 0, $endPoint) : substr($contentCut, 0)) . ' ...';
     // $content .= 'wgfew...';
 // echo $content;
@@ -117,7 +117,7 @@ $content = strip_tags($blog->content);
                                 <h3 class=""><?=$blog->title?></h3>
                                 <p class="card-text"><?=$content?></p>
                                 <div class="text-right">
-                                    <a href="blog_view.php" class="read-more-btn">Read More...</a>
+                                    <a href="blog_view.php?id=<?=$blog->id?>" class="read-more-btn">Read More...</a>
                                 </div>
                             </div>
                         </div>
