@@ -99,7 +99,7 @@ mysqli_close($conn);
 // strip tags to avoid breaking any html
 $content = strip_tags($blog->content);
     // truncate content
-    $contentCut = substr($content, 0, 265);
+    $contentCut = substr($content, 0, 250);
     $endPoint = strrpos($contentCut, ' ');
 
     //if the content doesn't contain any space then it will cut without word basis.
