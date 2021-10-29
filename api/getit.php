@@ -5,7 +5,7 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Methods: GET');
 header('Access-Control-Allow-Origin: *');
 
-$sql = "SELECT id, amt, planname, content FROM itPlans";
+$sql = "SELECT id, amt, planname, content, services FROM itPlans";
 $result = mysqli_query($conn, $sql);
 
 $json_array = array();
@@ -19,6 +19,7 @@ if (mysqli_num_rows($result) > 0) {
     $json_array[$i]['amt'] = $row['amt'];
     $json_array[$i]['planname'] = $row['planname'];
     $json_array[$i]['content'] = strip_tags(str_replace("</li>", "\n", $row['content']));
+    $json_array[$i]['services'] = strip_tags(str_replace("</li>", "\n", $row['services']));
     $i++;
   }
 }
