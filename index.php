@@ -52,7 +52,7 @@ mysqli_close($conn);
                         <div class="menu col-md-8">
                             <ul>
                                 <li class="item active"><a href="#">HOME</a></li>
-                                <li class="item"><a href="/it">INCOMETAX</a></li>
+                                <li class="item"><a href="/it">INCOME TAX</a></li>
                                 <li class="item"><a href="/gst">GST</a></li>
                                 <li class="item"><a href="/blog">BLOG</a></li>
                                 <li class="item"><a href="#contact">CONTACT US</a></li>
@@ -73,7 +73,7 @@ mysqli_close($conn);
                     </div>
                     <ul>
                         <li class="item active"><a href="#home">HOME</a></li>
-                        <li class="item"><a href="/it">INCOMETAX</a></li>
+                        <li class="item"><a href="/it">INCOME TAX</a></li>
                         <li class="item"><a href="/gst">GST</a></li>
                         <li class="item"><a href="/blog">BLOG</a></li>
                         <li class="item"><a href="#contact">CONTACT US</a></li>

@@ -204,7 +204,7 @@ html {
     border-radius: 35px;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.2);
-    z-index: 9999;
+    z-index: 9999999;
 }
 
 .hero .form-area h3 {
@@ -245,6 +245,7 @@ outline: none;
     border-radius: 0px;
     margin-bottom: 30px;
     border: none;
+    z-index: 99999999;
 }
 
 .hero .form-area .form a,
@@ -258,6 +259,7 @@ outline: none;
     transition: 0.4s ease-in-out;
     margin: 40px 0 0 150px;
     background-color: transparent;
+    z-index: 99999990;
 }
 
 .hero .form-area .form a:hover,
