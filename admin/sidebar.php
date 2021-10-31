@@ -88,7 +88,7 @@
                         <a href="blog.php">Blog</a>
                     </li>
                     <li>
-                        <a href="#">Log Out</a>
+                        <a href="/logout.php">Log Out</a>
                     </li>
                 </ul>
             </div>

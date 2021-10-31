@@ -1,5 +1,30 @@
 <?php
+include('../mysql.php');
 
+if(isset($_POST['login-submit'])) {
+    $uname = $_POST['username'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT * FROM admin WHERE username = '".$uname."' AND password = '".$password."' LIMIT 0,1";
+    $result = mysqli_query($conn, $sql);
+
+    if(mysqli_num_rows($result) == 1) {
+        setcookie('username', $uname, time() + (86400 * 30), "/"); // 86400 = 1 day
+        setcookie('password', $password, time() + (86400 * 30), "/"); // 86400 = 1 day
+        header('Location: /recent.php');
+        // echo "You Have logged in";
+        exit();
+    } else {
+        echo "You Have entered incorrect password!";
+        exit();
+    }
+}
+
+if(isset($_COOKIE['username']) && isset($_COOKIE['password'])) {
+    header('Location: /recent.php');
+    // echo $_COOKIE['password'];
+    exit();
+}
 
 
 ?>
@@ -17,7 +42,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/admin-style.css">
     <script src="js/admin.js"></script>
-    <title>Admin Login</title>
+    <title>Cello Tax - Admin Panel</title>
 </head>
 <body>
         <div class="log-in">
@@ -31,12 +56,12 @@
                     </div>
 
                     <!-- Login Form -->
-                    <form name="loginform"> 
-                    <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username" required>
+                    <form name="loginform" method="POST"> 
+                    <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username" required />
                     <div id="user_error">Please Enter Valid Username</div>
-                    <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password" required> 
+                    <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password" required /> 
                     <div id="pass_error">Please Enter Valid Password</div>
-                    <input type="submit" class="fadeIn fourth" value="Log In">
+                    <input type="submit" class="fadeIn fourth" value="Log In" name="login-submit">
                     </form>
 
                     <!-- Remind Passowrd -->
