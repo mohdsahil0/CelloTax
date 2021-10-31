@@ -1,3 +1,14 @@
+<?php
+
+if(!isset($_COOKIE['username']) && !isset($_COOKIE['password'])) {
+    header('Location: /');
+    // echo $_COOKIE['password'];
+    exit();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
