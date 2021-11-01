@@ -18,8 +18,8 @@ if (mysqli_num_rows($result) > 0) {
     $json_array[$i]['id'] = $row['id'];
     $json_array[$i]['amt'] = $row['amt'];
     $json_array[$i]['planname'] = $row['planname'];
-    $json_array[$i]['content'] = str_replace("<li>", "•", str_replace("</li>", "\n", $row['content']));
-    $json_array[$i]['services'] = str_replace("&nbsp;"," ",str_replace("<br>","\n",str_replace("<li>", "•", str_replace("</li>", "\n", $row['services']))));
+    $json_array[$i]['content'] = str_replace("<li>", "• ", str_replace("</li>", "\n", $row['content']));
+    $json_array[$i]['services'] = str_replace("&nbsp;"," ",str_replace("<br>","\n",str_replace("<li>", "• ", str_replace("</li>", "\n", $row['services']))));
     $i++;
   }
 }
